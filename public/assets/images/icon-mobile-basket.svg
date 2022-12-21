@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.566" height="18" viewBox="0 0 13.566 18">
+  <g id="ico_warenkorb" transform="translate(-3)">
+    <g id="XMLID_1396_" transform="translate(3.5 0.5)">
+      <path id="XMLID_1399_" d="M16.065,5.5H3.5V17.7A1.109,1.109,0,0,0,4.609,18.8H14.957A1.109,1.109,0,0,0,16.065,17.7Z" transform="translate(-3.5 -1.804)" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="XMLID_1397_" d="M7.5,5.674V1.609A1.109,1.109,0,0,1,8.609.5h4.435a1.109,1.109,0,0,1,1.109,1.109V5.674" transform="translate(-4.543 -0.5)" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+    <line id="XMLID_1480_" x2="11.908" transform="translate(4.158 14.5)" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>

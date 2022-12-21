@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43.638" height="37.783" viewBox="0 0 43.638 37.783">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.2px}
+        </style>
+    </defs>
+    <g id="ico" transform="translate(0.225 -1.793)">
+        <path id="XMLID_1170_" d="M0 0H7V9H0z" class="cls-1" transform="translate(30.156 20.238)"/>
+        <path id="XMLID_1171_" d="M0 0L13 0" class="cls-1" transform="translate(12.156 34.238)"/>
+        <path id="XMLID_1172_" d="M0 0L7 0" class="cls-1" transform="translate(12.156 30.238)"/>
+        <path id="XMLID_1174_" d="M37.409 14.136L31.751 3.613a2.111 2.111 0 0 0-2.862-.86L1.611 17.474a2.118 2.118 0 0 0-.858 2.867l5.6 10.406" class="cls-1" transform="translate(0)"/>
+        <g id="XMLID_1175_" transform="translate(0.605 2.577)">
+            <path id="XMLID_1177_" d="M0 11.559L4.787 0" class="cls-1" transform="translate(24.994)"/>
+            <path id="XMLID_1180_" d="M0 0L5.743 1.097" class="cls-1" transform="translate(0 16.089)"/>
+        </g>
+        <g id="XMLID_1181_" transform="translate(6.336 14.172)">
+            <path id="XMLID_1182_" d="M38.788 35.3H6.689A2.189 2.189 0 0 1 4.5 33.115V12.689A2.189 2.189 0 0 1 6.689 10.5h32.1a2.189 2.189 0 0 1 2.189 2.189v20.426a2.189 2.189 0 0 1-2.19 2.185z" class="cls-1" transform="translate(-4.5 -10.5)"/>
+        </g>
+    </g>
+</svg>

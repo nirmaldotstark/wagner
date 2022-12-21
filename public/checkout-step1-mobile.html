@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css?var=2">
+    <title>Checkout Step1 - Mobile</title>
+</head>
+<body>
+    <div class="shop-login-header position-relative">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-8">
+                <div class="cart-breadcrumb position-absolute pt-0">
+                    <a href="" class="default-link-icon"><object type="image/svg+xml" data="assets/images/language-arrow-icon.svg" class="icon icon-contact">
+                    </object> Zurück zum Webshop</a>
+                  </div>
+                <div class="shop-logo text-center">
+                    <a href="index.html"><img src="assets/images/logo.svg" alt="header-logo"></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="shop-header-contact text-right">
+                    <ul>
+                        <li><a href="mailto:info@juwelier-wagner.at" class="default-text"> <object type="image/svg+xml" data="assets/images/envelope-icon.svg" class="icon icon-contact">
+                        </object>  info@juwelier-wagner.at</a></li>
+                        <li><a href="tel:+43 1 512 0 512" class="default-text"> <object type="image/svg+xml" data="assets/images/contact-icon.svg" class="icon icon-contact">
+                        </object>  +43 1 512 0 512</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="section checkout-mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                   <form method="post" class="common-form">
+                    <div class="checkout-main-left">
+                        <h3 class="display-text3">Kundeninformation</h3>
+                        <div class="checkout-main-details new-subscribe-form-fields">
+                            <div class="form-group">
+                              <span class="has-float-label">
+                                <input type="email" value="" placeholder="E-Mail Adresse" id="email_address" name="email_address" class="form-control1">
+                                <label for="email_address">E-Mail Adresse</label>
+                                </span>
+                               </div>
+                            <div class="form-group checkout-info">
+                                <span>Wir benötigen diese ausschließlich zur Bestätigung Ihrer Bestellung.</span>
+                            </div>
+                            <div class="form-group newsletter-checkbox mb-0">
+                                <label class="text-left" for="checkbox2"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox2" id="checkbox2">
+                                    <span class="checkmark"></span>
+                                    Ich möchte ein Kundenkonto eröffnen.
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <a href="" class="d-block primary-btn">Weiter</a>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer login-footer">
+    <div class="footer-offer white-border">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="lead-text">
+              <li>
+                <object type="image/svg+xml" data="assets/images/offer-icon1.svg" class="offer-icons">
+                </object>
+                <span>kostenlose Lieferung</span>
+              </li>
+              <li>
+                <object type="image/svg+xml" data="assets/images/offer-icon2.svg" class="offer-icons">
+                </object>
+                <span>sichere Bezahlung</span>
+              </li>
+              <li>
+                <object type="image/svg+xml" data="assets/images/offer-icon3.svg" class="offer-icons">
+                </object>
+                <span>luxuriöse
+                Geschenksverpackung</span>
+              </li>
+              <li>
+                <object type="image/svg+xml" data="assets/images/offer-icon5.svg" class="offer-icons">
+                </object>
+                <span>Kostenlose Retoure</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-newsletter white-border">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-8">
+              <a class="footer-text-link  text-left d-block">Lieferung und Rücksendungen<br>
+                Datenschutz
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <h5>Zahlungsmöglichkeiten</h5>
+              <div class="payment-icons">
+                <ul>
+                  <li><a href="#"><img src="assets/images/payment-icon1.png" alt="payment-icon1" ></a></li>
+                  <li><a href="#"><img src="assets/images/payment-icon2.png" alt="payment-icon2" ></a></li>
+                  <li><a href="#"><img src="assets/images/payment-icon3.png" alt="payment-icon3" ></a></li>
+                  <li><a href="#"><img src="assets/images/payment-icon4.png" alt="payment-icon4" ></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+<!-- JS Global Compulsory (Do not remove)-->
+<script src="assets/js/jquery.min.js"></script>
+<script>
+    $(".close-pop").click(function(){
+    $("#cart-pop").show();
+    });
+    $(".cart-pop-open").click(function(){
+    $("#cart-pop").hide();
+    });
+</script>
+<script>
+    $(".next-cart-pop").click(function(){
+        $("#cart-pop2").show();
+        $("#cart-pop").hide();
+        setTimeout(function() { $("#delete-cart").hide(); }, 3000);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ico_free_return" width="58" height="58" viewBox="0 0 58 58">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#777;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.25px}
+        </style>
+    </defs>
+    <g id="Ellipse_24" fill="none" stroke="#777">
+        <circle cx="29" cy="29" r="29" stroke="none"/>
+        <circle cx="29" cy="29" r="28.5"/>
+    </g>
+    <g id="Shipping_delivery_box_cancel_disable" transform="translate(17.5 15.5)">
+        <g id="XMLID_1645_" transform="translate(15.761 15.761)">
+            <g id="XMLID_1620_">
+                <circle id="XMLID_1621_" cx="6" cy="6" r="6" class="cls-2" transform="translate(-.262 -.261)"/>
+            </g>
+            <path id="XMLID_1618_" d="M0 0L8.301 8.301" class="cls-2" transform="translate(1.719 1.719)"/>
+        </g>
+        <path id="Pfad_156" d="M22.8 15.01V5.5H.5v16.435h15.379" class="cls-2" transform="translate(0 .87)"/>
+        <path id="Pfad_157" d="M.5 6.37L4.022.5h15.261L22.8 6.37" class="cls-2"/>
+        <path id="Pfad_158" d="M8.674.5L7.5 6.37v3.521h5.87V6.37L12.2.5" class="cls-2" transform="translate(1.217)"/>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.186" height="12.224" viewBox="0 0 16.186 12.224">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#777;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="ico_envelope" transform="translate(0 -3)">
+        <path id="XMLID_1378_" d="M14.7 14.724H1.49a.99.99 0 0 1-.99-.99V4.49a.99.99 0 0 1 .99-.99H14.7a.99.99 0 0 1 .99.99v9.243a.99.99 0 0 1-.99.991z" class="cls-1"/>
+        <path id="XMLID_1377_" d="M.94 3.94s5.033 4.608 6.6 6.022a.99.99 0 0 0 1.4 0c1.569-1.414 6.6-6.022 6.6-6.022" class="cls-1" transform="translate(-.149 -.149)"/>
+        <path id="XMLID_1375_" d="M20.08 17.322S16.321 13.713 14.288 12" class="cls-1" transform="translate(-4.685 -2.888)"/>
+        <path id="XMLID_1373_" d="M6.731 12C4.7 13.713.94 17.322.94 17.322" class="cls-1" transform="translate(-.149 -2.888)"/>
+    </g>
+</svg>

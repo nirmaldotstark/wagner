@@ -1,0 +1,60 @@
+// Base Font
+$font-centurygothic: 'Century Gothic' !default;
+$font-centurygothic-bold: 'gothicb';
+$font-spectral: 'Spectral';
+$font-spectral-ital: 'Spectral-ital';
+$font-neutosans: 'Nunito Sans';
+$font-ebgaramond:"EB Garamond 12";
+$font-ebgaramond-regular:'EB Garamond 12';
+$font-helvetica:'Helvetica';
+
+
+//text-color
+$color-primary: #333333 !default;
+$color-secondary: #777777 !default;
+$color-success:#42972e;
+$color-danger:#c12626;
+$color-text-info:#977d2e;
+$color-text-white:#ffffff;
+
+//text-color-opacity
+$color-text-dark-50:0.5;
+$color-text-white-50:0.5;
+
+//bg-color
+$bg-primary:#977d2e !default;
+$bg-primary-hover:#ceac52 !default;
+$bg-secondary:#efefef !default;
+$bg-success:rgba(68, 152, 49,0.1);
+$bg-danger:rgba(193, 38, 38,0.1);
+$bg-info:rgba(151, 125, 46,0.1);
+$bg-light:#f2f2f2;
+$bg-dark:#3a3a3a;
+$bg-white:#ffffff;
+$bg-transparent:transparent;
+
+//border-color
+$border-default:#f0f0f0;
+$border-primary:#977d2e;
+$border-secondary:#ededed;
+$border-success:#42972e;
+$border-danger:#c12626;
+$border-white:#ffffff;
+$border-light:#f4f4f4;
+$border-dark:#3a3a3a;
+
+//border-radius
+$border-radius-default:0px;
+$border-radius-secondary:4px;
+
+//box-shadow
+$box-shadow-default:none;
+$box-shadow-secondary:0 0 20px 0 rgba(0, 0, 0, 0.16);
+
+//===== Paths =====//
+$imgpath: "../images";
+$webfonts: "../webfonts";
+
+// Override variable
+//$fa-font-path: "assets/webfonts";
+ 

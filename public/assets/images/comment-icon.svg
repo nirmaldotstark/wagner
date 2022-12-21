@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20.174" viewBox="0 0 22 20.174">
+  <g id="message_chat_bubble_9_" data-name="message; chat; bubble (9)" transform="translate(0.5 0.5)">
+    <path id="Path_68" data-name="Path 68" d="M11,1.5C5.2,1.5.5,5.792.5,11.087a9.134,9.134,0,0,0,2.942,6.645L.5,20.674H11c5.8,0,10.5-4.292,10.5-9.587S16.8,1.5,11,1.5Z" transform="translate(-0.5 -1.5)" fill="none" stroke="#303c42" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <circle id="Ellipse_18" data-name="Ellipse 18" cx="0.5" cy="0.5" r="0.5" transform="translate(10 9.174)" fill="none" stroke="#303c42" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <circle id="Ellipse_19" data-name="Ellipse 19" cx="0.5" cy="0.5" r="0.5" transform="translate(5 9.174)" fill="none" stroke="#303c42" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <circle id="Ellipse_20" data-name="Ellipse 20" cx="0.5" cy="0.5" r="0.5" transform="translate(15 9.174)" fill="none" stroke="#303c42" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>UHREN WatchesV2</title>
+</head>
+<body>
+  <div class="uhren-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-7 float-right">
+          <div class="uhren-banner-img">
+            <img src="../assets/images/uhren-banner1.jpg" alt="uhren-banner1">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-5 float-left">
+          <div class="uhren-banner-content">
+            <div class="ubhren-logo-img">
+            <img src="../assets/images/uhren-logo1.jpg" alt="uhren-logo1">
+            </div>
+            <p class="lead-text">Die Schweizer Uhren-Marke Breitling verbindet eine lange Zusammenarbeit mit der Luftfahrt. Das intensive Engagement von Breitling spiegelt sich in der Entwicklung und Fertigung von aussagekräftigen Chronographen wider. Mit den robusten, leistungsstarken und zuverlässigen Uhren Collectionen nimmt Breitling aktiv an der Eroberung der Lüfte teil. Die Marke stattet alle Uhren-Modelle mit offiziell Chronometer-zertifizierten Werken aus, einem wichtigen Gütesiegel hinsichtlich Präzision</p>
+            <div class="collapse lead-text" id="more-description"><p>mechanischen Chronographenwerke werden vollständig in den Breitling Ateliers konzipiert und gefertigt.Breitling Uhren sind zwar für aktive Piloten entwickelt worden. Getragen am Armgelenk, erfreuen sie jedoch auch viele andere Uhrenliebhaber.</p></div>
+            <a  class="text-link" data-toggle="collapse" data-target="#more-description" >mehr anzeigen <object type="image/svg+xml" data="assets/images/language-arrow-icon.svg" class="icon icon-dropdown-arrow">
+            </object></a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<!-- JS Global Compulsory (Do not remove)-->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/slick.min.js"></script>
+<script src="../assets/js/jquery-ui.min.js"></script>
+<script> 
+$(function() {
+	$( "#slider-range" ).slider({
+	  range: true,
+	  min: 250,
+	  max: 500,
+	  values: [ 5, 500 ],
+	  slide: function( event, ui ) {
+        $( "#amount" ).val( "€" + ui.values[ 0 ] );
+        $( "#amount1" ).val( "€" + ui.values[ 1 ] );
+	  }
+	});
+    $( "#amount" ).val( "€" + $( "#slider-range" ).slider( "values", 0 ));
+    $( "#amount1" ).val( "€" + $( "#slider-range" ).slider( "values", 1 ));
+});
+</script>
+</body>
+</html>

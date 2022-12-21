@@ -1,0 +1,86 @@
+.lexikon-middle-section{
+    @include reset-list; 
+    margin-top: 23px;
+    @media (max-width: 767px) {
+        margin-top: 20px;
+    }
+    ul{
+        margin:0 auto;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 1200px) {
+            overflow-x: auto;
+            flex-wrap: nowrap;
+        }
+        li{
+            a{
+                display: inline-block;
+                color: #757575;
+                border: 1px solid #c1c1c1;
+                padding: 8.3px 9px 9.7px 10px;
+                border-radius: 3px;
+                margin: 0 5px;
+                height: 35px;
+                width: 35px;
+                text-align: center;
+                &:hover, &.active{
+                    border-color: $color-text-info;
+                    color: $color-text-info;
+                }
+            }
+        }
+    }
+}
+.lexikon-new-layout {
+    margin-bottom: 60px;
+    @media (max-width: 767px) {
+        margin-bottom: 0;
+    }
+    .privacy-section-detail{
+        border-bottom: none;
+        .panel{
+            &:last-child{
+                .panel-heading{
+                    border-bottom: 1px solid #e0e0e0;
+                   
+                }
+                .collapse{
+                    &.show{
+                        background-color: #fff;
+                        margin-top: -1px;
+                        border-bottom: 1px solid #e0e0e0;
+                    }  
+                  }
+            }
+            
+        }
+        .panel-heading{
+            a{
+                img{
+                    @media (max-width: 767px) {
+                    height: 10px;
+                    top:6px;
+                    }
+                }
+            }
+
+        }
+        p {
+            @media (max-width: 767px) {
+            font-size: 16px;
+            line-height: 24px;
+            }
+        }
+    }
+    .faq-section-m {
+        .privacy-section-detail{
+            .display-text3 {
+                line-height: 34px;
+                margin-top: 40px;
+                @media (max-width: 767px) {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}  

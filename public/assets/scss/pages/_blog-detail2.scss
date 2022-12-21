@@ -1,0 +1,257 @@
+.blog2-heading-text{
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 9px;
+    font-family: $font-spectral-ital;
+    font-style: italic;
+    padding-top: 12px;
+    p{
+        margin-bottom: 0;
+        line-height: 26px;
+    &.blog2-text{
+        margin-bottom: 15px;
+        font-size:15px;
+        line-height: 28px;
+        @media (min-width: 1520px) {
+            font-size:16px;
+            margin-bottom: 30px;
+        }
+    }
+    }
+}
+.blog-detail2-center-section2{
+    width:930px;
+    margin:0 auto;
+    overflow: hidden;
+    @media (max-width: 991px) and (min-width: 768px) {
+        width:100%;
+    }
+    @media (max-width: 767px) {
+        width:100%;
+        .blog-detail2-left-img{
+            text-align: center;
+            float: none !important;
+        }
+    }
+    .blog-detail2-right-content{
+        width: 73%;
+        margin: 40px auto;
+        @media (max-width: 991px) and (min-width: 768px) {
+            width:63%;
+        }
+        @media (max-width: 767px) {
+            width:100%;
+            margin: 30px auto 0;
+        }
+    }
+}
+.blog-detail2-text{
+    padding: 48px 0;
+    @media (max-width: 767px) {
+        padding-bottom: 30px;
+    }
+}
+.blog-detail2-center-section-m{
+    width:673px;
+    margin:0 auto;
+    clear: both;
+    @media (max-width: 991px) and (min-width: 768px) {
+        width:100%;
+    } 
+    @media (max-width: 767px) {
+        width:100%;
+        p{
+            margin-bottom: 0;
+            &.blog2-text{
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                margin-bottom: 30px;
+            }
+        }
+    }
+    
+}
+.blog-detail2-list-section{
+    padding: 40px 0;
+    @media (max-width: 767px) {
+        padding: 30px 0 15px;
+    }
+    .list-margin-section{
+        margin-top:60px;
+        @media (max-width: 767px) {
+            margin-top: 30px;
+        }
+        @media (min-width: 1520px) {
+            margin-top:159px;
+        }
+        @media (max-width: 1200px) and (min-width: 992px) {
+            margin-top:0px;
+        }
+        ul{
+            padding-left: 28px;
+        }
+    }
+    ul{
+        li{
+            list-style: none;
+            font-size:16px;
+            line-height: 28px;
+            margin-bottom: 15px;
+            position: relative;
+            @media (min-width: 1520px) {
+                margin-bottom: 30px;
+                line-height: 28px;
+            }
+            &::after{
+                position: absolute;
+                content: "\f055";
+                top: 2px;
+                left: -27px;
+                font-size:19px;
+                color: $color-text-info;
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                @media (max-width: 767px) {
+                    top:0;
+                }
+            }
+        }
+    }
+    .blog-detail2-img{
+        img{
+            @media (max-width: 767px) {
+            width: 100%;
+            }
+        }
+    }
+}
+.blog-detail2-left-heading{
+    padding: 90px 0;
+    @media (max-width: 991px) and (min-width: 768px) {
+        padding: 40px 0;
+    }
+    @media (max-width: 767px) {
+       padding: 0;
+       ul{
+           padding: 0;
+       }
+       .display-text2{
+           font-size: 36px;
+           margin-bottom: 15px;
+           font-family: $font-ebgaramond-regular;
+           line-height: 40px;
+       }
+    }
+    .display-text2{
+        position: relative;
+        padding-bottom: 15px;
+           &::after{
+               position: absolute;
+               content: "";
+               bottom: 0;
+               border-bottom: 1px solid #333;
+               height: 1px;
+               width: 49px;
+               left: 0;
+               right: 0;
+               text-align: center;
+               margin: 0 auto;
+           }
+    }
+}
+.uhren-blog-section{
+    .lead-text{
+        line-height: 28px;
+        @media (min-width: 1520px) {
+        width: 75%;
+        }
+        @media (max-width: 767px) {
+            font-size: 16px;
+            font-family: $font-centurygothic;
+        }
+    }
+}
+.blog-gallery-slider{
+    img{
+        width: 100%;
+    }
+    .slick-dots{
+        li{
+            width: 150px;
+            margin-right: 5px;
+            button{
+                height: 3px;
+                width: 100%;
+                background-color: #757575;
+                border-radius: 0;
+            }
+        }
+        @media (max-width: 767px) {
+        width: 91%;
+        li{
+            width:31%;
+            button{
+                height: 5px;
+            }
+        }
+        }
+    }
+    .blog-gallery-img{
+        @media (max-width:767px) {
+            height: 241px;
+            width: 241px;
+        }
+    }
+}
+.uhren-products-list{
+    .product-detail{
+        margin-bottom: 30px;
+        @media (max-width:767px) {
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+       
+    }
+}
+.blog-detail2-new-layout{
+    .blog-detail-left-text{
+        padding-left: 0;
+        @media (max-width:767px) {
+            h2 {
+                font-size: 36px;
+                line-height: 40px;
+            }
+        }
+        @media (min-width: 1520px) {
+            padding-left: 182px;
+        }
+        .heading-border{
+            margin-bottom: 20px;
+            @media (max-width:991px) {
+                text-align: center;
+            }
+            &::after{
+                right: auto;
+                @media (max-width:991px) {
+                    right:0
+                }
+            }
+        }
+        .lead-text{
+            @media (max-width:767px) {
+            font-size: 16px;
+            line-height: 24px;
+            font-family:$font-centurygothic;
+            }
+        }
+    }
+}
+.blog-detail2-list-new-section{
+    @media (min-width: 1520px) {
+        .blog-detail2-img{
+            max-width: 702px;
+        }
+        
+    }
+}

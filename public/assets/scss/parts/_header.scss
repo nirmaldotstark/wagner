@@ -1,0 +1,490 @@
+.header-top{
+  background-color: #ececec;
+  padding: 10px 0;
+  display: none;
+  border-radius: 0;
+  @media (max-width: 991px) {
+    display: block;
+  }
+.header-left-side{
+  @media (max-width: 991px) {
+    width:96%;
+  }
+  span{
+    @include text-heading;
+    font-size:14px;
+    line-height: 28px;
+    color: $color-secondary;
+  }
+  img{
+    margin-right:5px;
+    height: 17px;
+    width: 17px;
+  }
+}
+.header-top-close-icon {
+  top: 17px;
+  right: 14px;
+  .close{
+    opacity: 1;
+    font-size: 12px;
+  }
+}
+}
+.header-middle{
+  padding-top: 10px;
+  position: relative;
+  z-index: 99;
+  background-color: #fff;
+  @media (max-width: 991px) {
+   display: none;
+  }
+  .container-fluid{
+    padding: 0;
+  }
+  .col-lg-8{
+    padding: 0;
+  }
+  .header-right-side{
+    line-height: 28px;
+    display: flex;
+    .header-contact-info{
+      display:inline-flex;
+      @include reset-list;
+      img{
+        height: 18px;
+        width: 18px;
+        vertical-align: middle;
+        margin-right: 2.5px;
+      }
+      a{
+        margin-right: 20px;
+      }
+    }
+  }
+  .header-menu{
+    text-align: center;
+    margin-bottom: 10px;
+    .main-menu{
+      margin-top: 2px;
+      nav{
+        padding: 0;
+      ul{
+        width: 100%;
+        display: block;
+        li{
+          padding: 0;
+          justify-content: center;
+          text-align: center;
+          margin: 0 25px;
+          display: inline-flex;
+          @media (max-width: 1200px) and (min-width: 992px) {
+            margin:0 20px;
+          }
+        &:hover{
+            a{
+              position: relative;
+                color: $color-text-info;
+                &::after{
+                  display: block;
+                  transition: 0.3s all ease-in-out;
+                }
+            }
+          }
+          a{
+            @include text-heading;
+            padding: 10px 0;
+            font-size: 19px;
+            line-height: 23px;
+            color: #6f6f6f;
+            text-transform: uppercase;
+            display: block;
+            position: relative;
+          @media (max-width: 1200px) and (min-width: 992px) {
+            font-size:17px;
+          }
+            &::after{
+              position: absolute;
+              content: "";
+              top:0;
+              left:0;
+              height: 100%;
+              width: 100%;
+              border-bottom: 2px solid $color-text-info;
+              display: none;
+              transition: 0.3s all ease-in-out;
+            }
+            &.active{
+              color: $color-text-info;
+                &::after{
+                  display: block;
+                  transition: 0.3s all ease-in-out;
+                }
+            }
+          }
+        }
+      }
+      .slick-dots {
+        padding: 0;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        li {
+          width: 25%;
+          margin: 0 auto !important;
+          button {
+            height: 3px;
+            width: 100%;
+            background-color: #777777;
+            border-radius: 0;
+            margin: 0 auto;
+            font-size: 0;
+        }
+      }
+    }
+    }
+    }
+  }
+  .header-logo{
+    margin-bottom: 10px;
+    margin-left: 22px;
+    @media (max-width: 991px) {
+      margin-left: 0;
+    }
+    .rolex-img {
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+    a{
+      img{
+        max-width: 164px;
+      }
+    }
+  }
+  .header-shopping-icon{
+    clear: both;
+    ul{
+      padding: 0;
+      margin-bottom: 5.3px;
+      li{
+        list-style: none;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        &:last-child{
+          a{
+            margin-right: 0;
+          }
+        }
+        a{
+          margin-right:15px;
+          display: inline-block;
+          position: relative;
+          z-index: 2;
+          cursor: pointer;
+          font-size: 14px;
+          img{
+            height: 19px;
+            vertical-align: middle;
+          }
+        }
+        .small-link-icon{
+          margin-bottom: 15px;
+          font-family: $font-centurygothic;
+          font-weight: normal;
+          margin-right: 0;
+        }
+        .primary-btn{
+          font-family: $font-centurygothic;
+          font-weight: normal;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+.mobile-menu{
+  display: none;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  @media (max-width: 991px) {
+    display: block;
+  }
+  .mobile-menu-icon, .mobile-phone-icon{
+    margin-right: 12px;
+  }
+  .logo{
+    img{
+      margin-top: -5px;
+      max-width: 140px;
+    }
+  }
+}
+.mobile-menu-slide{
+  .close{
+    opacity: 1;
+    float: none;
+    &.megamenu-close-text{
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: 400;
+    }
+    span{
+      font-size:26px;
+      opacity: 0.5;
+      vertical-align: top;
+    }
+  }
+  .mobile-logo{
+    margin-top: 7px;
+    margin-bottom: 3px;
+    img{
+      max-width: 140px;
+    }
+  }
+  ul{
+    padding: 0;
+      li{
+        list-style: none;
+        .nav-link{
+          display: block;
+          border-bottom: 1px solid #ececec;
+          padding: 30px 0px;
+          font-size:17px;
+          line-height: 21px;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: $color-primary;
+          font-family: $font-centurygothic-bold;
+          margin: 0 6.5px;
+          img{
+            float: right;
+            margin-top:8px;
+            width:8px;
+          }
+        }
+        .pushNav{
+          .mobile-logo{
+            margin-bottom: 40px;
+          }
+        }
+      }
+  }
+  .js-pushNavLevel{
+    .mobile-logo {
+      margin-top: 30px;
+    }
+    .js-closeLevel{
+      position: absolute;
+      top:32px;
+      width: 100%;
+      z-index: 2;
+      .back-btn{
+        font-size: 13px;
+        color: $color-primary;
+        font-weight: 700;
+        text-transform: uppercase;
+        vertical-align: middle;
+        display: inline-block;
+        padding: 0;
+        font-family: $font-centurygothic-bold;
+        img{
+          vertical-align: middle;
+          margin-top: -2px;
+        }
+      }
+    }
+    ul{
+      margin-top: 30px;
+    }
+    li{
+      &.nav-item{
+        .openLevel{
+          opacity: 0.7;
+          margin: 0 6px;
+        }
+      }
+      a{
+        font-size: 16px;
+        color: $color-primary;
+        padding: 0 0 20px;
+        display: block;
+        
+        .right-menu-icon{
+          float: right;
+          margin-top:8px;
+          width:8px;
+        }
+      }
+      ul{
+        margin-top: 0;
+      }
+    }
+    h6{
+      font-family: $font-centurygothic-bold;
+      font-weight: 700;
+      opacity: 0.7;
+      margin: 10px 6px 15px;
+    }
+  }
+  .mobile-menu-contact{
+    padding: 40px 6.5px 0;
+    ul{
+      padding: 0;
+      margin: 0 auto;
+      li{
+        list-style: none;
+        display: inline-block;
+        width: 49%;
+        margin-bottom: 18px;
+        img{
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+        a{
+          line-height: 21px;
+        }
+      }
+    }
+  }
+  .mobile-blog {
+    padding: 0px 0px 15px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    .mobile-blog-detail{
+    .mobile-blog-img{
+      margin:0 6.5px;
+      overflow: hidden;
+      text-align: center;
+
+    }
+    .menu-blog-content{
+      padding: 0 6.5px;
+      a{
+        font-weight: bold;
+        margin-top: 10px;
+        color: $color-secondary;
+        display: inline-block;
+        padding-bottom: 0;
+      }
+    }
+  }
+  .slick-dots{
+    padding: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 3px solid #eaeaea;
+    border-radius: 2px;
+    width: 97%;
+    li{
+        list-style: none;
+        display: inline-block;
+        position: absolute;
+        bottom: -19px;
+        left: 0;
+        @media (max-width:767px) {
+        position: relative;
+        left: 0;
+        width: 33%;
+        bottom: -20px;
+        }
+        @media (max-width: 991px) and (min-width: 768px) {
+          position: relative;
+          left: 0;
+          width: 20%;
+          bottom: -20px;
+        }
+        &:first-child{
+            button{
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            }
+            
+        }
+        &:last-child{
+            button{
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            }
+            
+        }
+        &.slick-active{
+            button{
+            background-color: $color-secondary;
+            @media (max-width: 991px) {
+                background-color: #000;
+            }
+        }
+        }
+        button{
+            border: none;
+            padding: 0;
+            height: 3px;
+            width: 100%;
+            opacity: 0.5;
+            background-color: transparent;
+            border-radius: 0;
+            margin: 0;
+            font-size: 0;
+        }
+    }
+}
+.slick-slider {
+  display: flex !important;
+  }
+  }
+}
+.modal{
+&.left {
+  .modal-dialog {
+		position: fixed;
+		margin: auto;
+		width: 100%;
+		height: 100%;
+		-webkit-transform: translate3d(0%, 0, 0);
+		-ms-transform: translate3d(0%, 0, 0);
+		-o-transform: translate3d(0%, 0, 0);
+		transform: translate3d(0%, 0, 0);
+    max-width: 100%;
+    .modal-header{
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .modal-content{
+      border-radius: 0;
+    }
+    .modal-body{
+      padding: 0;
+    }
+	}
+  .modal-content {
+		height: 100%;
+		overflow-y: auto;
+	}
+}
+}
+/*Left*/
+	.modal.left.fade .modal-dialog{
+		left: 0px;
+		-webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+		-moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+		-o-transition: opacity 0.3s linear, left 0.3s ease-out;
+		transition: opacity 0.3s linear, left 0.3s ease-out;
+	}
+	.modal.left.fade.in .modal-dialog{
+		left: 0;
+	}
+  .mobile-menu-left, .mobile-menu-right {
+    width: 49%;
+    img{
+      height:18px;
+      width: 18px;
+    }
+}
+

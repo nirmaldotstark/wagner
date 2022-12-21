@@ -1,0 +1,232 @@
+.product-tabs{
+    margin-bottom: 45px;
+    @media (max-width: 767px) {
+        margin-bottom: 0;
+    }
+    .nav-tabs{
+        border:none;
+        display: block;
+        li{
+            display: inline-block;
+            padding: 0 15px;
+            a{
+                color: $color-secondary;
+                padding-bottom: 10.5px;
+                border-bottom:2px solid transparent;
+                line-height: 22px;
+                &.active, &:hover, &:focus{
+                    border-color: $border-primary;
+                    color: $color-text-info;
+                }
+                .icon{
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+                
+            }
+        }
+    }
+}
+.client-logo-home{
+    padding: 30px 0 0;
+    @media (max-width: 767px) {
+        padding-bottom: 30px;
+        position: relative;
+        z-index: 1;
+    }
+}
+.product-slider-bottom-space{
+    padding-bottom: 54px;
+    @media (max-width: 767px) {
+        padding-bottom: 0;
+    }
+    .p-0{
+        padding: 0 15px !important;
+        @media (max-width: 767px) {
+            padding: 0 13px !important;
+        }
+    }
+    .heading{
+        margin-bottom: 19.5px;
+    }
+}
+.join-journey-section{
+    padding-top: 41px;
+    @media (max-width: 767px) {
+        padding-top: 40px;
+    }
+    .heading{
+        p{
+            margin-bottom: 0;
+            margin-top: 8px;
+            text-transform: lowercase;
+            color: #777;
+        }
+    }
+    .journey-feeds{
+        .our-journey-slider{
+            @media (max-width: 767px) {
+                margin-bottom: 20px;
+            }
+            .slick-dots{
+                padding: 0;
+                bottom: -20px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                text-align: center;
+                border-bottom: 3px solid #eaeaea;
+                width: 98%;
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    position: absolute;
+                    bottom: -19px;
+                    left: 0;
+                    @media (max-width: 767px) {
+                    position: relative;
+                    left: 0;
+                    width: 33%;
+                    bottom: -20px;
+                    }
+                    &.slick-active{
+                        button{
+                        background-color: $color-secondary;
+                        @media (max-width: 767px) {
+                            background-color: #000;
+                        }
+                    }
+                    }
+                    button{
+                        border: none;
+                        padding: 0;
+                        height: 3px;
+                        width: 100%;
+                        opacity: 0.5;
+                        background-color: transparent;
+                        border-radius: 0;
+                        margin: 0;
+                        font-size: 0;
+                    }
+                }
+            }
+        }
+        .journey-detail{
+            @media (min-width: 1201px) {
+                width: 168px !important;
+            }
+            @media (min-width: 1520px){
+                width: 214px !important;
+            }
+            
+            @media (max-width: 1200px) and (min-width: 992px){
+                width: 138px !important;
+            }
+            position: relative;
+            margin-right: 19px;
+            @media (min-width: 1520px) {
+                margin-right: 30px;
+            }
+            @media (max-width: 991px) and (min-width: 768px){
+                margin: 0 10px;
+             }
+            &:first-child{
+                @media (max-width: 767px) {
+                    margin-left: 8px;
+                }
+            }
+            @media (max-width: 767px) {
+                margin: 0 6px;
+            }
+            &:last-child{
+                margin-right:0 ;
+                margin-left: 5px;
+            }
+            .journey-feeds-content {
+                background-color: rgba(255,255,255, 0.9);
+                top: 0;
+                height: 100%;
+                text-align: center;
+                padding: 10px 5px;
+                transition: 0.3s all ease-in-out;
+                opacity: 0;
+                &:hover{
+                    opacity: 1;
+                }
+                @media (min-width: 1520px) {
+                    padding: 20px 5px;
+                }
+                .feeds-like-comments{
+                    margin-top: 5px;
+                    @media (min-width: 1520px) {
+                        margin-top: 22px;
+                    }
+                    @media (max-width: 1200px) and (min-width: 992px) {
+                        font-size: 12px;
+                        margin-bottom: 5px;
+                    }
+                    span{
+                        margin-right: 10px;
+                        @media (min-width: 1520px) {
+                            margin-right: 20px;
+                        }
+                    }
+                    img{
+                        width: 18px;
+                        @media (min-width: 1520px) {
+                            width: 22px;
+                        }
+                        @media (max-width: 1200px) and (min-width: 992px) {
+                            width: 15px;
+                        }
+                    }
+                }
+                p{
+                    margin-bottom: 0;
+                    font-size: 12px;
+                    line-height: 20px;
+                    max-height: 80px;
+                    overflow: hidden;
+                    @media (min-width: 1520px) {
+                        margin-top: 30px;
+                        max-height: auto;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+.overview-page-box {
+    width: 49%;
+    vertical-align: top;
+    display: inline-block;
+    margin: 30px auto 0;
+    ul{
+        li{
+            line-height: 36px;
+            position: relative;
+            a{
+                word-wrap: break-word;
+            }
+        }
+    }
+    h3{
+        font-weight: bold;
+    }
+    @media (min-width: 1520px) {
+        width: 33%;
+    }
+    @media (max-width: 767px) {
+        width: 100%;
+        ul{
+            li{
+                font-size: 15px;
+                line-height: 30px;
+            }
+        }
+    }
+}

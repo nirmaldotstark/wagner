@@ -1,0 +1,171 @@
+.search-banner-content{
+    margin-top: 8px;
+    margin-bottom: 25px;
+    @media screen and (max-width: 767px) {
+       margin-top: 15px;
+    }
+    .display-text2{
+        line-height: 61px;
+        margin-bottom: 5px;
+        @media screen and (max-width: 767px) {
+            line-height: 55px;
+            margin-bottom: 9px;
+            font-size: 28px;
+        }
+    }
+    .display-text3{
+        font-family: $font-spectral-ital;
+        padding-bottom: 21px;
+        margin-bottom: 0;
+        line-height: 36px;
+        @media screen and (max-width: 767px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            width: 49px;
+            height: 1px;
+            border-bottom: 1px solid #777777;
+            left:0;
+            right:0;
+            text-align: center;
+            margin: 0 auto;
+            bottom: 0;
+        }
+    }
+}
+.search-filter{
+    &.filter-module {
+       .filter-section {
+        ul {
+                li{
+                    &:last-child{
+                        @media screen and (max-width: 991px) {
+                        margin-top: 0;
+                        margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+       }
+    }
+    .selected-filter{
+        ul{
+            li{
+                &.no-filter-text{
+                span{
+                    color: #757575;
+                    font-size: 14px;
+                }
+                }
+            }
+        }
+    }
+}
+.search-filter-uhren{
+    &.filter-module {
+    .advanced-filter {
+        .advanced-filter-section{
+            &:nth-child(5) {
+                border-right: none;
+            }
+        }
+    }
+}
+}
+.search-uhren-product{
+    @media screen and (max-width: 767px) {
+        .filter-diameter-icon{
+            display: none;
+        }
+        &.section{
+            padding-top: 20px;
+        }
+    }
+}
+.no-search-result{
+    .search-banner-content{
+        .display-text3{
+            &::after{
+                display: none;
+            }
+        }
+    } 
+}
+.no-search-result-section{
+    &.section{
+        @media (max-width: 767px) {
+            padding-top: 4px;
+        }
+    }
+    .container{
+        @media (min-width: 1520px) {
+        max-width: 1180px;
+        }
+    }
+    h3{
+        font-family: $font-spectral-ital;
+        margin-bottom: 10px;
+        @media (max-width: 767px) {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+    form {
+        .form-group{
+            position: relative;
+            input {
+                font-size: 20px;
+                color: #333;
+                width: 100%;
+                border: 1px solid #977d2e;
+                padding: 15px 10px 15px 55px;
+                opacity: .6;
+                max-width: 458px;
+                @media (max-width: 1200px) {
+                   max-width: 100%;
+                }
+            }
+             button {
+                background-color: #fff;
+                border: none;
+                left: 1px;
+                padding:13px 10px 15px 10px;
+                top: 1px;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    filter: invert(44%) sepia(68%) saturate(418%) hue-rotate(8deg) brightness(98%) contrast(87%);
+                    -ms-filter: invert(44%) sepia(68%) saturate(418%) hue-rotate(8deg) brightness(98%) contrast(87%);
+                }
+            }
+        }
+    } 
+    .no-search-result-text{
+        padding-left: 120px;
+        @media (min-width: 1520px) {
+            padding-left: 130px;
+        }
+        @media (max-width:1200px) and (min-width: 768px) {
+            padding-left: 30px;
+        }
+        border-left: 1px solid #ddd;
+        margin-bottom: 30px;
+        @media (max-width: 767px) {
+            padding-left: 0;
+            border: none;
+            margin-top: 20px;
+        }
+        p{
+            max-width: 559px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            @media (max-width: 767px) {
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

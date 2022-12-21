@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.041" height="29.119" viewBox="0 0 35.041 29.119">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#303c42;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="ico_new" transform="translate(.695 .5)">
+        <g id="ui_interface_user_user_interface_add_plus" transform="translate(21.846 15.846)">
+            <circle id="Ellipse_42" cx="6" cy="6" r="6" class="cls-1"/>
+            <path id="Linie_270" d="M0 0L7.065 0" class="cls-1" transform="translate(2.217 5.75)"/>
+            <path id="Linie_271" d="M0 0L0 7.065" class="cls-1" transform="translate(5.75 2.217)"/>
+        </g>
+        <g id="XMLID_1430_">
+            <path id="XMLID_1307_" d="M21.747 23.251l-.328-.476h-1.374l-.687-2.659a7.261 7.261 0 0 0 2.061-3.989c.923 0 1.374-3.47 1.374-3.989s-.24-1.658-1.034-1.658a4.472 4.472 0 0 0 1.034-3l.687-.665c0-2.438-2.518-5.319-6.869-5.319-3.091 0-4.121 1.33-4.121 1.33a3.582 3.582 0 0 0-2.748 3.328c0 1.44-.09 3.9.347 4.325-.794 0-1.034 1.139-1.034 1.658s.451 3.989 1.374 3.989a7.261 7.261 0 0 0 2.061 3.989l-.69 2.66h-1.371l-.328.476a5.477 5.477 0 0 1-2.834 2.1l-2.157.7c-1.45.459-2.763 2.142-3.61 3.372" class="cls-1" transform="translate(-1.5 -1.5)"/>
+        </g>
+    </g>
+</svg>

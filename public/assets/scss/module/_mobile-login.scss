@@ -1,0 +1,32 @@
+.mobile-login{
+    display: none;
+    @media (max-width: 767px) {
+        display: block;
+    }
+    .cart-breadcrumb {
+        position: absolute;
+        top: 0;
+    }
+    .display-text2{
+        font-size: 32px;
+        line-height: 42px;
+        font-family:$font-ebgaramond-regular;
+        font-style: normal;
+        margin-bottom: 20px;
+    }
+    .login-list{
+        &:last-child{
+            margin-bottom: 18px;
+        }
+        border:1px solid #c1c1c1;
+        padding: 26px 15px;
+        border-radius: 3px;
+        p{
+            font-size:16px;
+            margin-bottom: 0;
+        }
+        img{
+            width:30px;
+        }
+    }
+}

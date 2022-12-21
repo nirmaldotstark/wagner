@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Filter Module</title>
+</head>
+<body>
+    <!-- filter-module-with-collection-->
+    <div class="section filter-module">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="filter-section">
+                        <ul>
+                            <li><span class="filter-heading filter-link">
+                            <object type="image/svg+xml" data="../assets/images/collection-icon.svg" class="icon icon-collection">
+                            </object>
+                            Collection</span></li>
+                            <li><span class="filter-heading filter-link">
+                             <object type="image/svg+xml" data="../assets/images/jewellery-icon.svg" class="icon jewellery-icon">
+                             </object>
+                             Schmuckart</span></li>
+                             <li><span class="filter-heading filter-link">
+                            <object type="image/svg+xml" data="../assets/images/material-icon.svg" class="icon material-icon">
+                                </object>
+                            Material</span></li>
+                            <li><span class="filter-heading filter-link">
+                            <object type="image/svg+xml" data="../assets/images/diamond-icon.svg" class="icon diamond-icon">
+                            </object>
+                            Besatz</span></li>
+                            <li><span class="filter-heading filter-link">
+                            <object type="image/svg+xml" data="../assets/images/price-icon.svg" class="icon price-icon">
+                            </object>
+                            Preis</span></li>
+                            <li>
+                                <a href="" class="small-link-icon collapsed" data-toggle="collapse" data-target="#filtermenu" aria-expanded="false" aria-controls="filtermenu">
+                                    <span class="before-filter-text">Filter einblenden</span> <span class="after-filter-text">Filter ausblenden</span> <object type="image/svg+xml" data="../assets/images/language-arrow-icon.svg" class="icon icon-arrow">
+                                </object>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="collapse advanced-filter alert" id="filtermenu">
+                      <div class="filter-heading-mobile reset-filter-section small-link-icon overflow-hidden ">
+                        <a href="" class="float-left" data-dismiss="alert"><object type="image/svg+xml" data="../assets/images/close-wishlist-icon.svg" class="icon">
+                        </object>Filter</a>
+                        <a href="" class="float-right"><object type="image/svg+xml" data="../assets/images/icon-delete-filter.svg" class="icon close-icon">
+                        </object>Filter löschen</a>
+                          
+                      </div>
+                        <form method="post" id="accordion-filter">
+                            <div class="advanced-filter-section">
+                              <a href="" class="filter-heading filter-link hide-desktop-filter" data-toggle="collapse" data-target="#filter1">
+                                <object type="image/svg+xml" data="../assets/images/collection-icon.svg" class="icon jewellery-icon">
+                                </object>
+                                Collection <object type="image/svg+xml" data="../assets/images/language-arrow-icon.svg" class="icon float-right">
+                                </object></a>
+                                <div id="filter1" class="collapse show" data-parent="#accordion-filter">
+                                <div class="form-group text-link">
+                                  <label for="search" class="d-none">.</label>
+                                    <input type="search" value="" placeholder="Suchen …" name="Search" id="search">
+                                    <button class="search-btn"> <object type="image/svg+xml" data="../assets/images/search-icon.svg" class="icon icon-search">
+                                    </object></button>
+                                </div>
+                                <div class="filter-scrollbar" data-mdb-perfect-scrollbar='true'>
+                               <div class="form-group">
+                                <label class="text-link" for="checkbox1"><div  class="d-none">.</div>
+                                    <input type="checkbox" checked="checked" name="checkbox1" id="checkbox1">
+                                    <span class="checkmark"></span>
+                                    Solitaire
+                                  </label>
+                               </div> 
+                               <div class="form-group">
+                                <label class="text-link" for="checkbox2"><div  class="d-none">.</div>
+                                  <input type="checkbox" name="checkbox2" id="checkbox2">
+                                    <span class="checkmark"></span>
+                                    Aura
+                                  </label>
+                               </div> 
+                               <div class="form-group">
+                                <label class="text-link" for="checkbox3"><div  class="d-none">.</div>
+                                  <input type="checkbox" name="checkbox3" id="checkbox3">
+                                    <span class="checkmark"></span>
+                                    Balou
+                                  </label>
+                               </div> 
+                               <div class="form-group">
+                                <label class="text-link" for="checkbox4"><div  class="d-none">.</div>
+                                  <input type="checkbox" name="checkbox4" id="checkbox4">
+                                    <span class="checkmark"></span>
+                                    Bloom
+                                  </label>
+                               </div> 
+                               <div class="form-group">
+                                <label class="text-link" for="checkbox5"><div  class="d-none">.</div>
+                                  <input type="checkbox" name="checkbox5" id="checkbox5">
+                                    <span class="checkmark"></span>
+                                    Butterfly
+                                  </label>
+                               </div> 
+                               <div class="form-group">
+                                <label class="text-link" for="checkbox6"><div  class="d-none">.</div>
+                                  <input type="checkbox" name="checkbox6" id="checkbox6">
+                                    <span class="checkmark"></span>
+                                    Cala
+                                  </label>
+                               </div> 
+                               <div class="form-group">
+                                <label class="text-link" for="checkbox7"><div  class="d-none">.</div>
+                                  <input type="checkbox" name="checkbox7" id="checkbox7">
+                                    <span class="checkmark"></span>
+                                    Carmen
+                                  </label>
+                               </div> 
+                               <div class="form-group">
+                                <label class="text-link" for="checkbox8"><div  class="d-none">.</div>
+                                  <input type="checkbox" name="checkbox8" id="checkbox8">
+                                    <span class="checkmark"></span>
+                                    Century
+                                  </label>
+                               </div> 
+                                </div>
+                              </div>
+                            </div>
+                            <div class="advanced-filter-section">
+                              <a href="" class="filter-heading filter-link hide-desktop-filter collapsed" data-toggle="collapse" data-target="#filter2">
+                                <object type="image/svg+xml" data="../assets/images/jewellery-icon.svg" class="icon jewellery-icon">
+                                </object>
+                                Schmuckart <object type="image/svg+xml" data="../assets/images/language-arrow-icon.svg" class="icon float-right">
+                                </object></a>
+                                <div id="filter2" class="dont-collapse-sm collapse" data-parent="#accordion-filter">
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox9"><div  class="d-none">.</div>
+                                    <input type="checkbox" checked="checked" name="checkbox9" id="checkbox9">
+                                     <span class="checkmark"></span>
+                                     Ringe
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox10"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox10" id="checkbox10">
+                                     <span class="checkmark"></span>
+                                     Armschmuck
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox11"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox11" id="checkbox11">
+                                     <span class="checkmark"></span>
+                                     Ketten & Colliers
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox12"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox12" id="checkbox12">
+                                     <span class="checkmark"></span>
+                                     Ohrschmuck
+                                   </label>
+                                </div> 
+                              </div>
+                             </div>
+                             <div class="advanced-filter-section">
+                              <a href="" class="filter-heading filter-link hide-desktop-filter" data-toggle="collapse" data-target="#filter3">
+                                <object type="image/svg+xml" data="../assets/images/jewellery-icon.svg" class="icon jewellery-icon">
+                                </object>
+                                Material <object type="image/svg+xml" data="../assets/images/language-arrow-icon.svg" class="icon float-right">
+                                </object></a>
+                                <div id="filter3" class="dont-collapse-sm collapse show" data-parent="#accordion-filter">
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox13"><div  class="d-none">.</div>
+                                    <input type="checkbox"  checked="checked" name="checkbox13" id="checkbox13">
+                                     <span class="checkmark"></span>
+                                     Weißgold
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox14"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox14" id="checkbox14">
+                                     <span class="checkmark"></span>
+                                     Gelbgold
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox15"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox15" id="checkbox15">
+                                     <span class="checkmark"></span>
+                                     Roségold
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox16"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox16" id="checkbox16">
+                                     <span class="checkmark"></span>
+                                     Platin
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox17"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox17" id="checkbox17">
+                                     <span class="checkmark"></span>
+                                     Silber
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox18"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox18" id="checkbox18">
+                                     <span class="checkmark"></span>
+                                     Diverses
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox19"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox19" id="checkbox19">
+                                     <span class="checkmark"></span>
+                                     Stahl
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox20"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox20" id="checkbox20">
+                                     <span class="checkmark"></span>
+                                     Keramik
+                                   </label>
+                                </div> 
+                              </div>
+                             </div>
+                             <div class="advanced-filter-section">
+                              <a href="" class="filter-heading filter-link hide-desktop-filter collapsed" data-toggle="collapse" data-target="#filter4">
+                                <object type="image/svg+xml" data="../assets/images/jewellery-icon.svg" class="icon jewellery-icon">
+                                </object>
+                                Besatz <object type="image/svg+xml" data="../assets/images/language-arrow-icon.svg" class="icon float-right">
+                                </object></a>
+                                <div id="filter4" class="dont-collapse-sm collapse" data-parent="#accordion-filter">
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox21"><div  class="d-none">.</div>
+                                    <input type="checkbox"  checked="checked" name="checkbox21" id="checkbox21">
+                                     <span class="checkmark"></span>
+                                     Diamant
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox22"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox22" id="checkbox22">
+                                     <span class="checkmark"></span>
+                                     Farb-Edelstein
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox23"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox23" id="checkbox23">
+                                     <span class="checkmark"></span>
+                                     Quarze
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox24"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox24" id="checkbox24">
+                                     <span class="checkmark"></span>
+                                     Perlen
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox25"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox25" id="checkbox25">
+                                     <span class="checkmark"></span>
+                                     Perlmutt
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox26"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox26" id="checkbox26">
+                                     <span class="checkmark"></span>
+                                     Rubin
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox27"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox27" id="checkbox27">
+                                     <span class="checkmark"></span>
+                                     Saphir
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox28"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox28" id="checkbox28">
+                                     <span class="checkmark"></span>
+                                     Smaragd
+                                   </label>
+                                </div> 
+                              </div>
+                             </div>
+                             <div class="advanced-filter-section">
+                              <a href="" class="filter-heading filter-link hide-desktop-filter" data-toggle="collapse" data-target="#filter5">
+                                <object type="image/svg+xml" data="../assets/images/jewellery-icon.svg" class="icon jewellery-icon">
+                                </object>
+                                Preis <object type="image/svg+xml" data="../assets/images/language-arrow-icon.svg" class="icon float-right">
+                                </object></a>
+                                <div id="filter5" class="dont-collapse-sm collapse show" data-parent="#accordion-filter">
+                                <div class="price-range-slider">
+                                    <div id="slider-range" class="range-bar"></div>
+                                    <div class="range-value">
+                                        <label for="amount" class="d-none">.</label>
+                                        <input type="text" id="amount" readonly class="float-left"  name="amount">
+                                        <label for="amount1" class="d-none">.</label>
+                                        <input type="text" id="amount1" readonly class="float-right text-right"  name="amount1">
+                                    </div>
+                                  </div>
+                                  <div class="grp-icon">
+                                      <span class="small-text-bold">Gefundene Produkte </span>
+                                      <img src="../assets/images/group-icon.svg" alt="Group-icon">
+                                  </div>
+                                </div>
+                             </div>
+                             <div class="advanced-filter-section">
+                                <ul class="small-link-icon">
+                                    <li><a href=""> <object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                                    </object>Ringe</a></li>
+                                    <li><a href=""> <object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                                    </object>Weißgold</a></li>
+                                    <li><a href=""> <object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                                    </object>€ 1.000 - € 2.000</a></li>
+                                </ul>
+                                <div class="reset-filter-section small-link-icon">
+                                    <a href=""><object type="image/svg+xml" data="../assets/images/icon-delete-filter.svg" class="icon close-icon">
+                                    </object>Filter löschen</a>
+                                    <a href="" class="primary-ghosted-btn">Filter übernehmen</a>
+                                </div>
+                             </div>
+                            </form>
+                    </div>
+                    <div class="selected-filter">
+                        <ul class="small-link-icon">
+                            <li><span class="strong-text">Ausgewählte Filter:</span></li>
+                            <li><a href=""> <object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                            </object>Ringe</a></li>
+                            <li><a href=""><object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                            </object> Ketten & Colliers</a></li>
+                            <li><a href=""><object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                            </object> Ohrschmuck</a></li>
+                            <li><a href=""><object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                            </object> Weißgold</a></li>
+                            <li><a href=""><object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                            </object> 1.000 € - 2.000 €</a></li>
+                            <li><a href=""><object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                            </object> alle Filter löschen</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- filter-module-with-no-sub-collection-->
+    <div class="section filter-module">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 no-collections">
+                    <div class="filter-section ">
+                        <ul>
+                            <li><span class="filter-heading filter-link">
+                            <object type="image/svg+xml" data="../assets/images/collection-icon.svg" class="icon icon-collection">
+                            </object>
+                            Collection</span></li>
+                            <li><span class="filter-heading filter-link">
+                             <object type="image/svg+xml" data="../assets/images/jewellery-icon.svg" class="icon jewellery-icon">
+                             </object>
+                             Schmuckart</span></li>
+                             <li><span class="filter-heading filter-link">
+                            <object type="image/svg+xml" data="../assets/images/material-icon.svg" class="icon material-icon">
+                                </object>
+                            Material</span></li>
+                            <li><span class="filter-heading filter-link">
+                            <object type="image/svg+xml" data="../assets/images/diamond-icon.svg" class="icon diamond-icon">
+                            </object>
+                            Besatz</span></li>
+                            <li><span class="filter-heading filter-link">
+                            <object type="image/svg+xml" data="../assets/images/price-icon.svg" class="icon price-icon">
+                            </object>
+                            Preis</span></li>
+                            <li>
+                              <a href="" class="small-link-icon collapsed" data-toggle="collapse" data-target="#filtermenu2" aria-expanded="false" aria-controls="filtermenu">
+                                  <span class="before-filter-text">Filter einblenden</span> <span class="after-filter-text">Filter ausblenden</span> <object type="image/svg+xml" data="../assets/images/language-arrow-icon.svg" class="icon icon-arrow">
+                              </object>
+                              </a>
+                          </li>
+                        </ul>
+                    </div>
+                    <div class="collapse advanced-filter alert" id="filtermenu2">
+                      <div class="filter-heading-mobile reset-filter-section small-link-icon overflow-hidden ">
+                        <a href="" class="float-left" data-dismiss="alert"><object type="image/svg+xml" data="../assets/images/close-wishlist-icon.svg" class="icon">
+                        </object>Filter</a>
+                        <a href="" class="float-right"><object type="image/svg+xml" data="../assets/images/icon-delete-filter.svg" class="icon close-icon">
+                        </object>Filter löschen</a>
+                          
+                      </div>
+                        <form method="post" id="accordion-filter">
+                            <div class="advanced-filter-section">
+                              <a href="" class="filter-heading filter-link hide-desktop-filter" data-toggle="collapse" data-target="#filter1">
+                                <object type="image/svg+xml" data="../assets/images/collection-icon.svg" class="icon jewellery-icon">
+                                </object>
+                                Collection <object type="image/svg+xml" data="../assets/images/language-arrow-icon.svg" class="icon float-right">
+                                </object></a>
+                                <div id="filter1" class="collapse show" data-parent="#accordion-filter">
+                                <div class="form-group text-link">
+                                  <label for="search" class="d-none">.</label>
+                                    <input type="search" value="" placeholder="Suchen …" name="Search" id="search">
+                                    <button class="search-btn"> <object type="image/svg+xml" data="../assets/images/search-icon.svg" class="icon icon-search">
+                                    </object></button>
+                                </div>
+                                <div class="filter-scrollbar" data-mdb-perfect-scrollbar='true'>
+                               <div class="form-group">
+                                <label class="text-link" for="checkbox1"><div  class="d-none">.</div>
+                                    <input type="checkbox" checked="checked" name="checkbox1" id="checkbox1">
+                                    <span class="checkmark"></span>
+                                    Solitaire
+                                  </label>
+                               </div> 
+                               <div class="form-group">
+                                <label class="text-link" for="checkbox2"><div  class="d-none">.</div>
+                                  <input type="checkbox" name="checkbox2" id="checkbox2">
+                                    <span class="checkmark"></span>
+                                    Aura
+                                  </label>
+                               </div> 
+                               <div class="form-group">
+                                <label class="text-link" for="checkbox3"><div  class="d-none">.</div>
+                                  <input type="checkbox" name="checkbox3" id="checkbox3">
+                                    <span class="checkmark"></span>
+                                    Balou
+                                  </label>
+                               </div> 
+                               <div class="form-group">
+                                <label class="text-link" for="checkbox4"><div  class="d-none">.</div>
+                                  <input type="checkbox" name="checkbox4" id="checkbox4">
+                                    <span class="checkmark"></span>
+                                    Bloom
+                                  </label>
+                               </div> 
+                               <div class="form-group">
+                                <label class="text-link" for="checkbox5"><div  class="d-none">.</div>
+                                  <input type="checkbox" name="checkbox5" id="checkbox5">
+                                    <span class="checkmark"></span>
+                                    Butterfly
+                                  </label>
+                               </div> 
+                               <div class="form-group">
+                                <label class="text-link" for="checkbox6"><div  class="d-none">.</div>
+                                  <input type="checkbox" name="checkbox6" id="checkbox6">
+                                    <span class="checkmark"></span>
+                                    Cala
+                                  </label>
+                               </div> 
+                               <div class="form-group">
+                                <label class="text-link" for="checkbox7"><div  class="d-none">.</div>
+                                  <input type="checkbox" name="checkbox7" id="checkbox7">
+                                    <span class="checkmark"></span>
+                                    Carmen
+                                  </label>
+                               </div> 
+                               <div class="form-group">
+                                <label class="text-link" for="checkbox8"><div  class="d-none">.</div>
+                                  <input type="checkbox" name="checkbox8" id="checkbox8">
+                                    <span class="checkmark"></span>
+                                    Century
+                                  </label>
+                               </div> 
+                                </div>
+                              </div>
+                            </div>
+                            <div class="advanced-filter-section">
+                              <a href="" class="filter-heading filter-link hide-desktop-filter collapsed" data-toggle="collapse" data-target="#filter2">
+                                <object type="image/svg+xml" data="../assets/images/jewellery-icon.svg" class="icon jewellery-icon">
+                                </object>
+                                Schmuckart <object type="image/svg+xml" data="../assets/images/language-arrow-icon.svg" class="icon float-right">
+                                </object></a>
+                                <div id="filter2" class="dont-collapse-sm collapse" data-parent="#accordion-filter">
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox9"><div  class="d-none">.</div>
+                                    <input type="checkbox" checked="checked" name="checkbox9" id="checkbox9">
+                                     <span class="checkmark"></span>
+                                     Ringe
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox10"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox10" id="checkbox10">
+                                     <span class="checkmark"></span>
+                                     Armschmuck
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox11"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox11" id="checkbox11">
+                                     <span class="checkmark"></span>
+                                     Ketten & Colliers
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox12"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox12" id="checkbox12">
+                                     <span class="checkmark"></span>
+                                     Ohrschmuck
+                                   </label>
+                                </div> 
+                              </div>
+                             </div>
+                             <div class="advanced-filter-section">
+                              <a href="" class="filter-heading filter-link hide-desktop-filter" data-toggle="collapse" data-target="#filter3">
+                                <object type="image/svg+xml" data="../assets/images/jewellery-icon.svg" class="icon jewellery-icon">
+                                </object>
+                                Material <object type="image/svg+xml" data="../assets/images/language-arrow-icon.svg" class="icon float-right">
+                                </object></a>
+                                <div id="filter3" class="dont-collapse-sm collapse show" data-parent="#accordion-filter">
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox13"><div  class="d-none">.</div>
+                                    <input type="checkbox"  checked="checked" name="checkbox13" id="checkbox13">
+                                     <span class="checkmark"></span>
+                                     Weißgold
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox14"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox14" id="checkbox14">
+                                     <span class="checkmark"></span>
+                                     Gelbgold
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox15"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox15" id="checkbox15">
+                                     <span class="checkmark"></span>
+                                     Roségold
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox16"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox16" id="checkbox16">
+                                     <span class="checkmark"></span>
+                                     Platin
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox17"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox17" id="checkbox17">
+                                     <span class="checkmark"></span>
+                                     Silber
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox18"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox18" id="checkbox18">
+                                     <span class="checkmark"></span>
+                                     Diverses
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox19"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox19" id="checkbox19">
+                                     <span class="checkmark"></span>
+                                     Stahl
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox20"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox20" id="checkbox20">
+                                     <span class="checkmark"></span>
+                                     Keramik
+                                   </label>
+                                </div> 
+                              </div>
+                             </div>
+                             <div class="advanced-filter-section">
+                              <a href="" class="filter-heading filter-link hide-desktop-filter collapsed" data-toggle="collapse" data-target="#filter4">
+                                <object type="image/svg+xml" data="../assets/images/jewellery-icon.svg" class="icon jewellery-icon">
+                                </object>
+                                Besatz <object type="image/svg+xml" data="../assets/images/language-arrow-icon.svg" class="icon float-right">
+                                </object></a>
+                                <div id="filter4" class="dont-collapse-sm collapse" data-parent="#accordion-filter">
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox21"><div  class="d-none">.</div>
+                                    <input type="checkbox"  checked="checked" name="checkbox21" id="checkbox21">
+                                     <span class="checkmark"></span>
+                                     Diamant
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox22"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox22" id="checkbox22">
+                                     <span class="checkmark"></span>
+                                     Farb-Edelstein
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox23"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox23" id="checkbox23">
+                                     <span class="checkmark"></span>
+                                     Quarze
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox24"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox24" id="checkbox24">
+                                     <span class="checkmark"></span>
+                                     Perlen
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox25"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox25" id="checkbox25">
+                                     <span class="checkmark"></span>
+                                     Perlmutt
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox26"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox26" id="checkbox26">
+                                     <span class="checkmark"></span>
+                                     Rubin
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox27"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox27" id="checkbox27">
+                                     <span class="checkmark"></span>
+                                     Saphir
+                                   </label>
+                                </div> 
+                                <div class="form-group">
+                                  <label class="text-link" for="checkbox28"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox28" id="checkbox28">
+                                     <span class="checkmark"></span>
+                                     Smaragd
+                                   </label>
+                                </div> 
+                              </div>
+                             </div>
+                             <div class="advanced-filter-section">
+                              <a href="" class="filter-heading filter-link hide-desktop-filter" data-toggle="collapse" data-target="#filter5">
+                                <object type="image/svg+xml" data="../assets/images/jewellery-icon.svg" class="icon jewellery-icon">
+                                </object>
+                                Preis <object type="image/svg+xml" data="../assets/images/language-arrow-icon.svg" class="icon float-right">
+                                </object></a>
+                                <div id="filter5" class="dont-collapse-sm collapse show" data-parent="#accordion-filter">
+                                <div class="price-range-slider">
+                                    <div id="slider-range" class="range-bar"></div>
+                                    <div class="range-value">
+                                        <label for="amount" class="d-none">.</label>
+                                        <input type="text" id="amount" readonly class="float-left"  name="amount">
+                                        <label for="amount1" class="d-none">.</label>
+                                        <input type="text" id="amount1" readonly class="float-right text-right"  name="amount1">
+                                    </div>
+                                  </div>
+                                  <div class="grp-icon">
+                                      <span class="small-text-bold">Gefundene Produkte </span>
+                                      <img src="../assets/images/group-icon.svg" alt="Group-icon">
+                                  </div>
+                                </div>
+                             </div>
+                             <div class="advanced-filter-section">
+                                <ul class="small-link-icon">
+                                    <li><a href=""> <object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                                    </object>Ringe</a></li>
+                                    <li><a href=""> <object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                                    </object>Weißgold</a></li>
+                                    <li><a href=""> <object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                                    </object>€ 1.000 - € 2.000</a></li>
+                                </ul>
+                                <div class="reset-filter-section small-link-icon">
+                                    <a href=""><object type="image/svg+xml" data="../assets/images/icon-delete-filter.svg" class="icon close-icon">
+                                    </object>Filter löschen</a>
+                                    <a href="" class="primary-ghosted-btn">Filter übernehmen</a>
+                                </div>
+                             </div>
+                            </form>
+                    </div>
+                    <div class="selected-filter">
+                        <ul class="small-link-icon">
+                            <li><span class="strong-text">Ausgewählte Filter:</span></li>
+                            <li><a href=""> <object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                            </object>Ringe</a></li>
+                            <li><a href=""><object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                            </object> Ketten & Colliers</a></li>
+                            <li><a href=""><object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                            </object> Ohrschmuck</a></li>
+                            <li><a href=""><object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                            </object> Weißgold</a></li>
+                            <li><a href=""><object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                            </object> 1.000 € - 2.000 €</a></li>
+                            <li><a href=""><object type="image/svg+xml" data="../assets/images/remove-icon.svg" class="icon close-icon">
+                            </object> alle Filter löschen</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+<!-- JS Global Compulsory (Do not remove)-->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/jquery-ui.min.js"></script>
+<script> 
+$(function() {
+	$( "#slider-range" ).slider({
+	  range: true,
+	  min: 250,
+	  max: 500,
+	  values: [ 5, 500 ],
+	  slide: function( event, ui ) {
+        $( "#amount" ).val( "€" + ui.values[ 0 ] );
+        $( "#amount1" ).val( "€" + ui.values[ 1 ] );
+	  }
+	});
+    $( "#amount" ).val( "€" + $( "#slider-range" ).slider( "values", 0 ));
+    $( "#amount1" ).val( "€" + $( "#slider-range" ).slider( "values", 1 ));
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,444 @@
+.header-middle{
+    .header-menu {
+        .main-menu {
+            nav{
+                ul{
+                    li{
+                        &:hover{
+                            .megamenu-collections-list{
+                                a{
+                                    color: $color-primary;
+                                    &::after{
+                                        display: none;
+                                    }
+                                }
+
+                            }
+                        }
+                        &:nth-child(2), &:nth-child(5), &:nth-child(7){
+                            .mega-menu{
+                                &.mega2{
+                                    .wagner-menu-collection-list{
+                                        padding-left: 2px;
+                                        ul{
+                                            padding-right: 270px;
+                                            @media (max-width: 1200px) and (min-width: 992px) {
+                                                padding-right: 0px;
+                                            }
+                                            @media (max-width: 1300px) and (min-width: 1201px) {
+                                                padding-right: 250px;
+                                            }
+                                            li{
+                                                width: 24.5%;
+                                                @media (max-width: 1200px) and (min-width: 992px) {
+                                                    width: 18.5%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(5){
+                            .mega-menu{
+                                &.mega2{
+                                    .wagner-menu-collection-list{
+                                        padding-top: 39px;
+                                    }
+                            }
+                        }
+                        }
+                        &:nth-child(2){
+                            .mega-menu{
+                                &.mega2{
+                                    .wagner-menu-collection-list{
+                                        padding-top: 38px;
+                                    }
+                            }
+                        }
+                        }
+                        &:nth-child(3){
+                            .mega-menu{
+                                &.mega2{
+                                    .wagner-menu-collection-list{
+                                        padding-top: 29px;
+                                    }
+                            }
+                        }
+                        }
+                        &:nth-child(7){
+                            .mega-menu{
+                                &.mega2{
+                                    .wagner-menu-collection-list{
+                                        padding-top: 34px;
+                                    }
+                            }
+                        }
+                        }
+                        &:nth-child(4){
+                            .mega-menu{
+                                &.mega2{
+                                    .wagner-menu-collection-list{
+                                        padding-top: 24px;
+                                    }
+                            }
+                        }
+                        }
+                        
+                        &:nth-child(4), &:nth-child(6){
+                            .mega-menu{
+                                &.mega2{
+                                    ul{
+                                        padding-left: 5px;
+                                        li{
+                                            margin-right: 24px;
+                                            @media (max-width: 1200px) and (min-width: 992px) {
+                                                margin-right: 15px;
+                                            }
+                                        }
+                                    }
+                                    .wagner-menu-collection-list{
+                                        ul{
+                                            li{
+                                                width: 214px;
+                                                @media (max-width: 1200px) and (min-width: 992px) {
+                                                    width: 18%;
+                                                }
+                                                @media (max-width: 1300px) and (min-width: 1201px) {
+                                                    width: 189px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            } 
+                        }
+                        &:nth-child(3){
+                            .mega-menu{
+                                &.mega2{
+                                    ul{
+                                        li{
+                                            margin-right: 20px;
+                                        }
+                                    }
+                                    .wagner-menu-collection-list{
+                                        padding-left: 4px;
+                                    }
+                                }
+                            } 
+                        }
+                        &:nth-child(1){
+                            .mega-menu{
+                                border-top: 1px solid #ddd;
+                            }
+                            .rolex-logo-menu-detail{
+                                padding: 0px 0 25px;
+                                width: 1140px;
+                                margin: 0 auto;
+                                .rolex-logo-img{
+                                    width:120px;
+                                    @media (max-width: 767px) {
+                                        position: absolute;
+                                        left: 13px;
+                                        z-index: 1;
+                                    }
+                                }
+                                @media (max-width: 1200px) and (min-width: 992px) {
+                                    width: 100%;
+                                }
+                                .rolex-menu-list{
+                                    .collapse{
+                                        display: block;
+                                        &.show{
+                                            @media (max-width: 767px) {
+                                                display: block;
+                                            } 
+                                        }
+                                        @media (max-width: 767px) {
+                                            display: none;
+                                            margin: 25px auto 11px;
+                                            border-bottom: 1px solid #ececec;
+                                        }
+                                        
+                                    }
+                                    .rolex-menu-mobile{
+                                        display: none;
+                                        @media (max-width: 767px) {
+                                        display: block;
+                                        font-size: 20px;
+                                        font-family: "Helvetica";
+                                        color: #000;
+                                        img{
+                                            width:20px;
+                                            margin-left: 5px;
+                                            transform: rotate(180deg);
+                                            -webkit-transform: rotate(180deg);
+                                            -moz-transform: rotate(180deg);
+                                        }
+                                        }
+                                        &.collapsed{
+                                            img{
+                                            transform: rotate(0deg);
+                                            -webkit-transform: rotate(0deg);
+                                            -moz-transform: rotate(0deg);
+                                            }
+                                        }
+                                    }
+                                    @media (max-width: 767px) {
+                                        width: 100%;
+                                        text-align: right;
+                                        margin-top: 20px;
+                            
+                                    }
+                                    
+                                    ul{
+                                        padding: 0;
+                                        margin: 0 auto;
+                                        li{
+                                            list-style: none;
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                            margin: 0 auto;
+                                            @media (max-width: 767px) {
+                                                display: block;
+                                            }
+                                            &:last-child{
+                                                vertical-align: middle;
+                                                a{
+                                                    padding: 10px 30px 10px;
+                                                    border-radius: 50px;
+                                                    border:1px solid #36754d;
+                                                    color: #36754d;
+                                                    margin-right: 0;
+                                                    @media (max-width: 991px) and (min-width: 768px) {
+                                                        padding:10px 15px;
+                                                    }
+                                                    @media (max-width: 767px) {
+                                                        display: none;
+                                                    }
+                                                    
+                                                }
+                                            }
+                                            a{
+                                                font-size:16px;
+                                                line-height: 19px;
+                                                color: $color-secondary;
+                                                font-family: $font-helvetica;
+                                                font-weight: normal;
+                                                display: inline-block;
+                                                margin-right: 30px;
+                                                vertical-align: middle;
+                                                padding: 20px 0 20px;
+                                                text-transform: none;
+                                                &.active, &:hover{
+                                                    color: #36754d;
+                                                    
+                                                }
+                                                &::after{
+                                                    display: none;
+                                                }
+                                                @media (max-width: 991px) and (min-width: 768px) {
+                                                    font-size: 14px;
+                                                    margin-right: 6px;
+                                                }
+                                                @media (max-width: 767px) {
+                                                    padding: 22px 0 22px;
+                                                    border-top: 1px solid #ececec;
+                                                    text-align: center;
+                                                    display: block;
+                                                    width:100%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .slideshow-container{
+                                text-align: center;
+                                margin: 0 auto;
+                                width: 1140px;
+                                position: relative;
+                                padding-bottom: 20px;
+                                @media (max-width: 1200px) and (min-width: 992px) {
+                                    width: 100%;
+                                }
+                                a{
+                                    padding: 0;
+                                    color: #333;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    text-transform: capitalize;
+                                    &::after{
+                                        display: none;
+                                    }
+                                    span, h5{
+                                        font-family: 'Helvetica';
+                                        font-weight: bold;
+                                        color: #000;
+                                    }
+                                 }
+                            }
+                            .rolex-product-list {
+                                .rolex-product-m {
+                                    clear: both;
+                                    display: inline-block;
+                                    width: 181px;
+                                    margin: 0px 30px 0 0;
+                                    text-align: center;
+                                    height: 203px;
+                                    .rolex-product-img{
+                                        height: auto;
+                                    }
+                                    @media (max-width: 1200px) and (min-width: 992px) {
+                                        width: 150px;
+                                    }
+                                }
+                                
+                            } 
+                        }
+                        .mega-menu{
+                            padding: 30px 30px;
+                            box-shadow: 0px 30px 10px -10px rgba(0 , 0 , 0 , 0.16);
+                            border:none;
+                            right:0;
+                            margin: 0 auto;
+                            border-radius: 0;   
+                            left:0;
+                            position: absolute;
+                            top: 100%;
+                            z-index: 99;
+                            min-width: 10rem;
+                            text-align: left;
+                            list-style: none;
+                            background-color: #fff;
+                            background-clip: padding-box;
+                            opacity: 0;
+                            visibility: hidden;
+                            @media (min-width: 1520px) {
+                                    padding: 30px 150px;
+                            }
+                            .megamenu-collections-list{
+                                width: 214px;
+                                display: inline-block;
+                                margin: 0 25px 0 0;
+                                @media (max-width: 1200px) and (min-width: 992px) {
+                                    width: 167px;
+                                    margin: 0 15px 0 0;
+                                }
+                                @media (max-width: 1300px) and (min-width: 1201px) {
+                                    width: 199px;
+                                    margin: 0 15px 0 0;
+                                }
+                                .megamenu-collection-img{
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                                 a{
+                                        display: block;
+                                        font-size: 16px;
+                                        text-align: left;
+                                        margin-top: 5px;
+                                        text-transform: capitalize;
+                                        padding: 0;
+                                }
+                            }  
+                            .wagner-menu-collection-list {
+                                padding: 38px 0px 0;
+                                width: 1220px;
+                                margin: 0 auto;
+                                @media (max-width: 1280px) and (min-width: 992px) {
+                                    width: 940px;
+                                }
+                                @media (max-width: 1300px) and (min-width: 1201px) {
+                                    width: 1100px;
+                                }
+                                h5 {
+                                    font-size: 26px;
+                                    font-family: 'Spectral-ital';
+                                    color: #777;
+                                    position: relative;
+                                    padding-bottom: 10px;
+                                    &::after{
+                                        position: absolute;
+                                        content: "";
+                                        border-bottom: 1px solid #777;
+                                        height: 1px;
+                                        width: 49px;
+                                        left:0;
+                                        bottom: 0;
+                                    }
+                                }
+                                
+                            }
+                            &.mega2{
+                                border-top:1px solid #e0e0e0;
+                                .wagner-menu-collection-list{
+                                    ul{
+                                        text-align: left;
+                                        li{
+                                            width:18.5%;
+                                            text-align: left;
+                                            margin-bottom: 0;
+                                            &:hover{
+                                                a{
+                                                    color:$color-text-info;
+                                                    &::after{
+                                                        display: none;
+                                                    }  
+                                                }  
+                                            } 
+                                            a{
+                                              color: $color-primary;
+                                                font-size: 16px;
+                                                text-align: left;
+                                                text-transform: capitalize;
+                                                padding-bottom: 5px; 
+                                              &::after{
+                                                  display: none;
+                                              }  
+                                            }
+                                        }
+                                    }
+                                } 
+                                ul{
+                                    padding: 0;
+                                    li{
+                                        list-style: none;
+                                        display: inline-block;
+                                        margin-right:10px;
+                                        margin-bottom: 30px;
+                                        margin-left: auto;
+                                        &:last-child{
+                                            margin-right: 0;
+                                        } 
+                                    
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        } 
+    }
+    .dropdown-hover{
+        transition: 0.1s all ease-in-out;
+        -webkit-transition: 0.1s all ease-in-out;
+        -moz-transition: 0.1s all ease-in-out;
+        -ms-transition: 0.1s all ease-in-out;
+        &.in{
+        .dropdown-menu{
+                display: block;
+                transition: 0.1s all ease-in-out;
+                -webkit-transition: 0.1s all ease-in-out;
+                -moz-transition: 0.1s all ease-in-out;
+                -ms-transition: 0.1s all ease-in-out;
+            }
+        }
+    } 
+}
+
+
+

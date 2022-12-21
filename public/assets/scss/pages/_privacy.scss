@@ -1,0 +1,94 @@
+.privacy-heading{
+    .display-text2{
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        @media (max-width: 767px) {
+            font-size: 26px;
+            padding-bottom: 10px;
+        }
+        &::after{
+            border-bottom: 1px solid $color-secondary;
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left:0;
+            right:0;
+            height: 1px;
+            width: 49px;
+            margin: 0 auto;
+        }
+    }
+    p{
+        margin-bottom: 15px;
+        span{
+            font-size: 12px;
+        }
+    }
+}
+.privacy-section-detail {
+    border-bottom: 1px solid #e0e0e0;
+    @media (max-width: 767px) {
+        margin-top:30px;
+        p{
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    .panel-heading{
+        border-top: 1px solid #e0e0e0;
+        padding: 22px 0;
+        h3{
+            padding-right: 24px;
+            margin-bottom: 0;
+            @media (max-width: 767px) {
+                font-size: 16px;
+            }
+        }
+        a{
+            display: block;
+            @media (max-width: 991px) {
+                color: $color-primary;
+                line-height: 21px;
+            }
+            &.collapsed{
+                font-weight: normal;
+                img{
+                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg); 
+                }
+            }
+            img{
+                right:0;
+                top:8px;
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg); 
+            }
+        }
+        .collapse {
+            padding: 4.5px;
+        }
+    }
+    
+}
+.privacy-section{
+    max-width: 946px;
+    margin: 0 auto;
+}
+.agb-section{
+    max-width: 782px;
+    margin: 0 auto;
+    .privacy-heading{
+        p{
+            width:70%;
+            margin: 0 auto 25px;
+            @media (max-width: 767px) {
+                width:98%;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

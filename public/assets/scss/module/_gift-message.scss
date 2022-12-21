@@ -1,0 +1,31 @@
+.gift-message{
+    .display-text2{
+        font-size: 32px;
+        font-family: $font-ebgaramond-regular;
+        font-style: normal;
+    }
+    .gift-banner {
+        padding: 35px 0;
+        margin-bottom: 30px;
+    }
+    label{
+        font-size:16px;
+        line-height: 20px;
+        font-family: $font-neutosans;
+    }
+    textarea{
+        background-color: #e0e0e0;
+        padding: 14px 13px;
+        resize: none;
+        height: 125px;
+        font-size:16px;
+        line-height: 26px;
+        font-family: $font-centurygothic;
+        border-bottom: 2px solid $color-secondary;
+        margin-bottom: 60px;
+    }
+    button{
+        width:100%;
+        margin-top:60px;
+    }
+}

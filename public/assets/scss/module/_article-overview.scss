@@ -1,0 +1,244 @@
+.article-overview-section{
+    padding-bottom: 60px;
+    @media (max-width: 767px) {
+       .mt-30{
+           margin-top: 0 !important;
+       }
+       .jewellery-article-section{
+           &:first-child{
+               margin-top: 30px;
+           }
+       }
+       .container{
+           padding: 0 7px;
+       }
+    }
+.jewellery-article-section {
+    padding: 40px 0px 0px;
+    overflow: hidden;
+        .row{
+            display: block;
+            clear: both;
+        }
+    .jewellery-article-text {
+        &.article-padding-left{
+        padding-left: 30px;
+        @media (min-width: 1520px) {
+            padding-left: 18%;
+        }
+        @media (max-width: 991px) and (min-width: 768px) {
+            padding-left: 0;
+        }
+        @media (max-width: 767px) {
+            padding-left:10px;
+            padding-top: 10px;
+        }  
+        }
+        &.article-padding-right{
+            padding-right: 30px;
+        @media (min-width: 1520px) {
+            padding-right: 23.5%;
+        } 
+        @media (max-width: 767px) {
+            padding-right:0;
+        }  
+        }
+        padding-top: 45px;
+        @media (max-width: 767px) {
+            padding:0 10px 30px ;
+        }
+        @media (max-width: 1200px) and (min-width: 768px) {
+          padding-top: 0;
+        } 
+        @media (max-width: 991px) and (min-width: 768px) {
+            padding-bottom: 40px;
+          } 
+        span, .display-text1{
+            color: $color-primary;
+        }
+        .display-text1{
+            margin-bottom: 15px;
+            @media (max-width: 767px) {
+                font-size: 36px;
+                line-height: 30px;
+                margin-top: 10px;
+            } 
+            @media (max-width: 1200px) and (min-width: 992px) {
+                margin-bottom: 0px;
+            } 
+            &::after{
+                position: absolute;
+                bottom: 0;
+                border-bottom: 1px solid $color-secondary;
+                width:40px;
+                height: 1px;
+                left:0;
+                content: "";
+                display: none;
+            }
+            &.article-heading-border{
+                padding-bottom: 5px;
+                @media (max-width: 767px) {
+                    padding-bottom: 15px;
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    border-bottom: 1px solid #777777;
+                    width: 49px;
+                    left: 0;
+                    height: 1px;
+                    display: block;
+                }
+            }
+        }
+        span{
+            text-transform: uppercase;
+            font-size: 12px;
+            @media (max-width: 767px) {
+                display: none;
+             } 
+        }
+        p{
+            line-height: 28px;
+            color: $color-primary; 
+            @media (max-width: 767px) {
+                font-size: 16px;
+                line-height: 26px;
+                max-height: 50px;
+                overflow: hidden;
+             } 
+        }
+        a{
+            display: inline-block;
+            margin-top: 4px;
+            color: $color-primary; 
+            &:hover{
+                color: $color-text-white;
+            }
+        }
+    }
+    .jewellery-article-img{
+        &.article-padding-img-left{
+            margin-left: 40px;
+            width: 544px;    
+            @media (min-width: 1520px) {
+                margin-left: 195px;
+            } 
+            @media (max-width: 1200px) and (min-width: 992px) {
+                margin-left: auto;
+                width: 100%;
+            } 
+            @media (max-width: 991px) and (min-width: 768px) {
+                margin: 0px auto;
+                text-align: center;
+                width:auto;
+            } 
+            @media (max-width: 767px) {
+                margin-left:auto;
+                width:100%;
+            }    
+        }
+        &.article-padding-img-right {
+            margin-left: -75px;
+            @media (max-width: 991px) and (min-width: 768px) {
+                margin: 0px auto;
+                text-align: center;
+            }  
+            @media (max-width: 767px) {
+                margin-left:auto;
+                width: 100%;
+            }  
+        }
+        @media (max-width: 991px) {
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+&.article-overview-new-layout{
+    .jewellery-article-section{
+        .jewellery-article-img{
+            &.article-padding-img-left{
+                @media (min-width: 1520px){
+                    margin-left: 125px;
+                }
+            }
+        }
+    } 
+    
+}
+}
+.article-boxes{
+    width: 33%;
+    padding: 0 13px;
+    @media (min-width: 1520px){
+    width: 458px;
+    margin: 0 33px 0 auto;
+    padding: 0;
+    &:nth-child(2){
+        margin-right: 0;
+    }
+    }
+    &:last-child{
+        margin-left: 7px;
+        @media (min-width: 1520px){
+            width: 458px;
+            margin-left: 0;
+        }
+        @media (max-width: 991px) and (min-width: 768px){
+            margin-left: 5px;
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+            padding: 0;
+            margin-left: auto;
+            .blog-detail{
+                display: inline-block;
+                width: 48.9%;
+                padding: 0 2.5px;
+            }
+        }
+    }
+    .blog-detail{
+        .blog-content{
+            h3{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        width: 50%;
+        padding: 0 5px;
+        .blog-detail{
+            .blog-content{
+                padding: 5px 0;
+                h3{
+                    padding-bottom: 0;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            } 
+        }
+        .mt-30{
+            margin-top: 0 !important;
+        }
+    }
+    @media (max-width: 576px) and (min-width: 390px) {
+    .blog-img {
+        max-width: 179px;
+    }
+    }
+    
+    
+}
+.article-blog-section2{
+    padding: 56px 0 50px;
+    @media (max-width: 767px) {
+        padding: 30px 0;
+    }
+}
+
+

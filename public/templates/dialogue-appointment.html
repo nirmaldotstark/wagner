@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/jquery.datetimepicker.css">
+    <title>Newsletter Section</title>
+    
+</head>
+<body>
+    <div class="appointment-dialogue">
+        <div class="container">
+            <div class="appointment-dialogue-m">
+                <form method="post" class="common-form mt-30">
+                    <div class="new-subscribe-form-fields ">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6">
+                                <div class="position-relative form-group">
+                                    <label for="amrede" class="form-up-text">Anrede* </label>
+                                    <select name="amrede" id="amrede">
+                                        <option>Herr</option>
+                                    </select>
+                                    <span class="arrow position-absolute"><object type="image/svg+xml" data="assets/images/chevron-icon.svg" class="icon icon-arrow">
+                                    </object></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="position-relative form-group">
+                                    <label for="title" class="form-up-text">Titel (optional)</label>
+                                    <select name="title" id="title">
+                                        <option>Dr.</option>
+                                    </select>
+                                    <span class="arrow position-absolute"><object type="image/svg+xml" data="assets/images/chevron-icon.svg" class="icon icon-arrow">
+                                    </object></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6">
+                                <div class="position-relative form-group">
+                                    <label for="vorname" class="form-up-text">Vorname*</label>
+                                    <input type="text" value="Max" placeholder="" id="vorname" name="vorname">
+                                    </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="position-relative form-group">
+                                    <label for="nachname" class="form-up-text">Nachname*</label>
+                                    <input type="text" value="Mustermann" placeholder="" id="nachname" name="nachname">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6">
+                                <div class="position-relative form-group">
+                                    <label for="appointment_email" class="form-up-text">E-Mail Adresse*</label>
+                                    <input type="email" value="" placeholder="max.mustermann@mail.at" id="appointment_email" name="appointment_email">
+                                    </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="position-relative form-group">
+                                    <label for="telephone" class="form-up-text">Telefon (optional)</label>
+                                    <input type="text" value="+43 676 123 4567" placeholder="" id="telephone" name="telephone">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group newsletter-checkbox">
+                        <label class="text-left" for="checkbox2"><div class="d-none">.</div>
+                            <input type="checkbox" name="checkbox2" id="checkbox2">
+                            <span class="checkmark"></span>
+                            E-Newsletter abonnieren
+                        </label>
+                        <label class="text-left" for="checkbox3"><div class="d-none">.</div>
+                            <input type="checkbox" name="checkbox3" id="checkbox3">
+                            <span class="checkmark"></span>
+                            Print-Newsletter abonnieren
+                        </label>
+                        <div id="add-notes2">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="position-relative form-group">
+                                            <label for="address" class="form-up-text d-none">Adresse</label>
+                                            <input type="text" value="" placeholder="Adresse" id="address" name="address">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="position-relative form-group">
+                                            <label for="information" class="form-up-text d-none">Zusatzinformation (optional)</label>
+                                            <input type="text" value="" placeholder="Zusatzinformation (optional)" id="information" name="information">
+                                            </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="position-relative form-group">
+                                            <div class="row">
+                                            <div class="col-lg-3 col-md-4">
+                                            <label for="postal" class="form-up-text d-none">Postleitzahl</label>
+                                            <input type="text" value="" placeholder="Postleitzahl" id="Postleitzahl" name="Postleitzahl">
+                                            </div>
+                                            <div class="col-lg-9 col-md-8">
+                                                <label for="Ort" class="form-up-text d-none">Ort</label>
+                                                <input type="text" value="" placeholder="Ort" id="Ort" name="Ort">
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="position-relative form-group">
+                                            <label for="amrede" class="form-up-text d-none">Land </label>
+                                            <select name="amrede" id="amrede">
+                                                <option>Land</option>
+                                            </select>
+                                            <span class="arrow position-absolute"><object type="image/svg+xml" data="../assets/images/chevron-icon.svg" class="icon icon-arrow">
+                                            </object></span>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="position-relative form-group">
+                                            <label for="betreff" class="form-up-text d-none">Betreff* </label>
+                                            <select name="betreff" id="betreff">
+                                                <option>Termin vereinbaren</option>
+                                            </select>
+                                            <span class="arrow position-absolute"><object type="image/svg+xml" data="../assets/images/chevron-icon.svg" class="icon icon-arrow">
+                                            </object></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="position-relative form-group">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12 date">
+                                                    <div class="date">
+                                                        <label for="date" class="form-up-text d-none">Datum wählen</label>
+                                                        <input type="text" name="filter-date" id="filter-date" placeholder="Datum wählen">
+                                                        <span class="arrow position-absolute"><object type="image/svg+xml" data="../assets/images/appointment-calendar-icon.svg" class="icon icon-arrow">
+                                                        </object></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label for="message" class="form-up-text d-none">Ihre Anfrage </label>
+                                        <textarea placeholder="Ihre Anfrage" name="message" id="message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-left" for="checkbox4"><div class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox4" id="checkbox4" checked="checked">
+                                    <span class="checkmark"></span>
+                                    Ich akzeptiere die <a href="" class="default-link-icon">Allgemeinen Geschäftsbedingungen*</a>
+                                </label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="form-group text-right">
+                        <button class="primary-ghosted-btn">Nachricht senden</button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JS Global Compulsory (Do not remove)-->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/jquery.datetimepicker.full.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            'use strict';
+            jQuery('#filter-date').datetimepicker();
+        });
+    </script>
+</body>
+
+</html>

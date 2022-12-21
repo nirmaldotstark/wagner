@@ -1,0 +1,177 @@
+.services-overview{
+    padding: 40px 0 0px;
+    overflow: hidden;
+    @media (max-width: 767px) {
+        padding: 40px 0 0;
+    }
+    .display-text2{
+        font-family: $font-ebgaramond;
+        font-style: italic;
+        line-height: 52px;
+        @media (max-width: 767px) {
+            margin-top: 25px;
+            font-size: 30px;
+            font-family: 'Spectral-ital';
+            line-height: 36px;
+            padding-bottom: 10px;
+            &::after{
+                position: absolute;
+                bottom: 0;
+                border-bottom: 1px solid #777;
+                width: 40px;
+                height: 1px;
+                left: 0;
+                content: "";
+            }
+        }
+    }
+    .container {
+        @media (min-width: 1520px) {
+        max-width: 1070px;
+        }
+    }
+    .jewellery-article-section{
+        overflow: hidden;
+        .row{
+            display: block;
+            clear: both;
+        }
+        .jewellery-article-text{
+            padding-top: 70px;
+            @media (max-width: 767px) {
+               padding-top: 0;
+               .lead-text{
+                   font-size: 16px;
+               }
+            }
+        }
+    }
+    .primary-ghosted-btn{
+        margin-top: 10px;
+    }
+}
+.services-heading{
+    margin-bottom: 24px;
+    @media (max-width: 767px) {
+        margin-bottom: 10px;
+    }
+    .display-text1{
+    position: relative;
+    padding-bottom:8px;
+    @media (max-width: 767px) {
+        font-size: 30px;
+        line-height: 46px;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left:0;
+        margin:0 auto;
+        width: 49px;
+        height: 1px;
+        right: 0;
+        border-bottom: 1px solid $color-secondary;
+        text-align: center;
+    }
+    }
+}
+.services-content{
+    p{
+        line-height: 28px;
+        @media (max-width: 767px) {
+        line-height: 24px;
+        font-size: 16px;
+        font-family: $font-neutosans;
+        }
+        @media (min-width: 1520px) {
+                margin-right: 180px;
+        }
+    }
+    .blog-detail2-left-heading{
+        padding: 40px 0;
+        @media (max-width: 767px) {
+            padding: 0;
+            .display-text2{
+                position: relative;
+                padding-bottom: 14px;
+                margin-bottom: 20px;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    left:0;
+                    margin:0 auto;
+                    width: 49px;
+                    height: 1px;
+                    right: 0;
+                    border-bottom: 1px solid $color-secondary;
+                    text-align: center;
+                }
+            }
+            ul{
+                margin-bottom: 0;
+                li{
+                    &:first-child {
+                        color: #777777;
+                    }
+                }
+            }
+        }
+        @media (min-width: 1520px) {
+            padding-left: 160px;
+        }
+    }
+}
+.services-new-section{
+    overflow: hidden;
+    .service-content-new{
+        @media (min-width: 1520px) {
+        padding-left: 26%;
+        }
+    }
+    .row{
+        display: block;
+        clear: both;
+        @media (max-width: 767px) {
+            margin-top: 15px;
+        }
+    }
+}
+.responsive-align-left{
+    @media (max-width: 767px) {
+        text-align: left;
+    }
+}
+.services-blog-banner-section{
+    @media (max-width: 767px) {
+    .display-text1{
+        width: 100%;
+        padding-bottom: 0;
+        &::after{
+            display: none;
+        }
+    }
+    }
+}
+.service-content-new{
+    p{
+        margin-bottom: 25px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 18px;
+        }
+    }
+}
+.services-blog{
+    .view-all-products-btn {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        @media (max-width: 767px) {
+            margin-top: 30px;
+            margin-bottom: 0px;
+        }
+    }
+}

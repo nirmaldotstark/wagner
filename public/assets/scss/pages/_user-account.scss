@@ -1,0 +1,72 @@
+.user-account-section{
+    padding: 60px 0 200px;
+    @media (max-width: 767px) {
+        padding-bottom: 70px;
+    }
+    .user-account-edit{
+        @media (min-width: 1520px) {
+        margin-right: 132px;
+        }
+        margin-bottom: 64px;
+    .display-text2{
+        font-size: 26px;
+        font-style: normal;
+        font-weight: normal;
+        padding-bottom: 9px;
+        border-bottom: 1px solid #eaeaea;
+        line-height: 40px;
+        letter-spacing: -0.11px;
+        font-family: $font-spectral;
+    }
+    table{
+        tr{
+            td{
+                @include text-heading;
+                font-size:16px;
+                line-height: 28px;
+                padding: 5px 0;
+                vertical-align: top;
+                @media (max-width: 991px) and (min-width: 768px) {
+                    line-height: 26px;
+                }
+                &:nth-child(2){
+                    padding:5px 0px;
+                }
+                &.small-text-bold{
+                    line-height: 28px;
+                    font-weight: bold;
+                    font-size:13px;
+                    width: 120px;
+                    @media (max-width: 767px) {
+                        width: auto;
+                    }
+                }
+                .small-link-icon{
+                    margin-bottom: 66.5px;
+                    margin-top: 20px;
+                    @media (max-width: 1200px) and (min-width: 992px) {
+                        margin-bottom: 19.5px;
+                    }
+                    @media (max-width: 991px) and (min-width: 768px) {
+                        margin-bottom: 5px;
+                    }
+                    .icon-right-arrow{
+                        margin: 0 2px;
+                        vertical-align: middle;
+                        transform: rotate(270deg);
+                        -webkit-transform: rotate(270deg);
+                        -ms-transform: rotate(270deg);
+                        -moz-transform: rotate(270deg);
+                        filter: invert(39%) sepia(92%) saturate(312%) hue-rotate(8deg) brightness(105%) contrast(90%);
+                        -ms-filter:invert(39%) sepia(92%) saturate(312%) hue-rotate(8deg) brightness(105%) contrast(90%);
+                    }
+                    }
+                }
+            }
+        }
+    }
+    .user-edit-profile {
+        margin-top: 10px;
+    }
+}
+

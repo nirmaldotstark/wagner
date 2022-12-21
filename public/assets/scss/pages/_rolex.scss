@@ -1,0 +1,311 @@
+.rolex-product-section{
+    padding: 57px 0 116px;
+    @media (max-width: 767px) {
+        padding-bottom: 30px;
+    }
+    .rolex-product-page-m{
+        width:1020px;
+        margin:0 auto;
+        @media (max-width: 1200px) and (min-width: 768px) {
+            width:100%;
+        }
+        @media (max-width: 767px) {
+            width:100%;
+        }
+    }
+    .rolex-product-heading {
+        margin-bottom: 26px;
+        p{
+            line-height: 22px;
+            width:650px;
+            margin:0 auto;
+            font-family: $font-helvetica;
+            font-weight: 300;
+            color: #000;
+            @media (max-width: 767px) {
+                width:100%;
+            }
+        }
+        span{
+            color: #000;
+            margin-bottom: 10px;
+            font-family: $font-helvetica;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+            @media (max-width: 767px) {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+        }
+        .display-text2{
+            font-size: 38px;
+            color: #000;
+            margin-bottom: 20px;
+            font-family: $font-helvetica;
+            font-style: normal;
+            @media (max-width: 767px) {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+.rolex-product-list{
+    .rolex-product-m{
+        margin-bottom: 20px;
+    span{
+        display: block;
+        line-height: 22px;
+        color: #000;
+        font-family: $font-helvetica;
+        @media (max-width: 767px) {
+            font-size: 11px;
+        }
+    }
+    h5{
+        color: #000;  
+        font-family: $font-helvetica;
+        text-transform: uppercase;
+        @media (max-width: 767px) {
+            font-size: 11px;
+            margin-bottom: 0;
+        }
+    }
+    .rolex-product-img {
+        height: 380px;
+        overflow: hidden;
+        @media (max-width: 1200px) and (min-width: 768px) {
+            height: auto;
+        }
+        @media (max-width: 767px) {
+            height: auto;
+        }
+    }
+    }
+}
+.rolex-product-boxes-section{
+    margin-top: 61px;
+    @media (max-width: 767px) {
+        margin-top: 59px;
+        .col-6:first-child{
+            padding-right: 7px;
+        }
+        .col-6:nth-child(2){
+            padding-left: 7px;
+        }
+    }
+    h6{
+        color: #000;
+        margin-bottom: 30px;
+        font-family: $font-helvetica;
+    }
+    .rolex-product-boxes-detail{
+        margin-bottom: 40px;
+        p{
+            margin:9.5px auto 0;
+            color: #000;
+            line-height: 22px;
+            font-family: $font-helvetica;
+            font-weight: bold;
+            @media (max-width: 767px) {
+            font-size: 13px;
+            letter-spacing: 0;
+            line-height: 17px;
+            width: 86%;
+            margin: 10px 0 20px;
+            }
+        }
+        .fixed-rolex-img{
+            width:500px;
+            height: 367px;
+            @media (max-width: 1200px) and (min-width: 768px) {
+                width:100%;
+                height: auto;
+            }
+            @media (max-width: 767px) {
+                width:100%;
+                height: auto;
+            }
+        }
+    }
+}
+.rolex-description{
+    margin-top:90px;
+    @media (max-width: 767px) {
+        margin-top:20px;
+    }
+    h4{
+        font-size: 30px;
+        line-height: 22px;
+        color: #000;
+        margin: 78px auto 20px;
+        font-family: $font-helvetica;
+        font-weight: bold;
+        @media (max-width: 767px) {
+            line-height: 30px;
+            margin: 60px auto 6px;
+            font-size: 24px;
+        }
+    }
+    p{
+        width:650px;
+        line-height: 22px;
+        margin:0 auto 30px;
+        font-family: $font-helvetica;
+        font-weight: 300;
+        @media (max-width: 991px) and (min-width: 768px) {
+            width:100%;
+        }
+        @media (max-width: 767px) {
+            width:100%;
+        }
+    }
+    a{
+        display: inline-block;
+        background-color: #4e7c65;
+        padding: 10px 30px 10px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 50px;
+        font-family: $font-helvetica;
+        font-weight: normal;
+        @media (max-width: 767px) {
+            padding: 10px 30px 10px;
+        }
+    }
+}
+.rolex-logo-menu-detail{
+    padding: 5px 0 20px;
+    @media (max-width: 767px) {
+        padding: 0;
+    }
+    .rolex-logo-img{
+        width:120px;
+        @media (max-width: 767px) {
+            position: absolute;
+            left: 13px;
+            z-index: 1;
+        }
+    }
+    .rolex-menu-list{
+        width:89%;
+        .collapse{
+            display: block;
+            &.show{
+                @media (max-width: 767px) {
+                    display: block;
+                } 
+            }
+            @media (max-width: 767px) {
+                display: none;
+                margin: 0 auto 11px;
+                border-bottom: 1px solid #ececec;
+            }
+            
+        }
+        .rolex-menu-mobile{
+            display: none;
+            @media (max-width: 767px) {
+            display: block;
+            font-size: 20px;
+            font-family: "Helvetica";
+            color: #000;
+            min-height: 50px;
+            padding-right: 15px;
+            img{
+                width:20px;
+                margin-left: 5px;
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+            }
+            }
+            &.collapsed{
+                img{
+                transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                }
+            }
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+            text-align: right;
+            margin-top: 20px;
+
+        }
+        @media (max-width: 1200px) and (min-width: 992px) {
+            width:87%;
+        }
+        @media (max-width: 991px) and (min-width: 768px) {
+            width:82%;
+        }
+        ul{
+            padding: 0;
+            margin: 0 auto;
+            li{
+                list-style: none;
+                display: inline-block;
+                vertical-align: middle;
+                @media (max-width: 767px) {
+                    display: block;
+                }
+                &:last-child{
+                    vertical-align: middle;
+                    a{
+                        padding: 10px 30px 10px;
+                        border-radius: 50px;
+                        border:1px solid #36754d;
+                        color: #36754d;
+                        margin-right: 0;
+                        @media (max-width: 991px) and (min-width: 768px) {
+                            padding:10px 15px;
+                        }
+                        @media (max-width: 767px) {
+                            display: none;
+                        }
+
+                    }
+                }
+                a{
+                    font-size:16px;
+                    line-height: 19px;
+                    color: $color-secondary;
+                    font-family: $font-helvetica;
+                    font-weight: normal;
+                    display: inline-block;
+                    margin-right: 30px;
+                    vertical-align: middle;
+                    padding: 20px 0 20px;
+                    &.active, &:hover{
+                        color: #36754d;
+                        
+                    }
+                    @media (max-width: 991px) and (min-width: 768px) {
+                        font-size: 14px;
+                        margin-right: 6px;
+                    }
+                    @media (max-width: 767px) {
+                        padding: 22px 0 22px;
+                        border-top: 1px solid #ececec;
+                        text-align: center;
+                        display: block;
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
+}
+.rolex-logo-menu-section{
+    @media (max-width: 767px) {
+        .col-md-12{
+            padding: 0;
+        }
+    }
+}

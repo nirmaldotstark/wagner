@@ -1,0 +1,124 @@
+.uhren-banner{
+    .row{
+        display: block;
+        clear: both;
+    }
+    .mini-product-slider{
+        .slick-dots {
+            @media (max-width: 767px) {
+            margin-top: -40px;
+            li{
+                &.slick-active{
+                    button{
+                        background-color: #fff;
+                    }
+                } 
+            }
+            }
+        }
+        .slick-arrow{
+         @media (max-width: 767px) {
+            display: none  !important;
+        }
+    }
+    }
+    .uhren-banner-content{
+        padding-top: 10px;
+        @media (min-width: 1520px) {
+            padding-top: 33px;
+        } 
+        @media (max-width: 767px) {
+           padding-top: 15px;
+           text-align: left !important;
+        }
+        .ubhren-logo-img{
+            text-align: center;
+            margin: 0 auto 10px;
+            @media (max-width: 767px) {
+                margin-bottom: 30px;
+             }
+        }
+        p{
+            color: $color-primary;
+            @media (max-width: 767px) {
+                text-align: left;
+             }
+        }
+        a{
+            .icon-dropdown-arrow{
+                margin-right: 5px;
+                height: 8px;
+                width: 8px;
+                vertical-align: middle;
+                filter: invert(44%) sepia(68%) saturate(418%) hue-rotate(8deg) brightness(98%) contrast(87%);
+                -ms-filter: invert(44%) sepia(68%) saturate(418%) hue-rotate(8deg) brightness(98%) contrast(87%);
+            }
+            @media (max-width: 767px) {
+                text-align: left;
+            }
+            &.primary-ghosted-btn{
+                @media (max-width: 991px) {
+                    display: none !important;
+                }
+        }
+        }
+        .uhren-layout-text{
+            padding-bottom: 10px;
+            margin-bottom: 17px;
+            font-size: 40px;
+            line-height: 46px;
+            @media (max-width: 767px) {
+                line-height: 45px;
+                font-size: 40px;
+                margin-bottom: 8px;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                bottom: 0px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                margin: 0 auto;
+                width: 49px;
+                height: 1px;
+                border-bottom: 1px solid $color-primary;
+                @media (max-width: 767px) {
+                  display: none;
+                 }
+            }
+        }
+        h2,h1{
+            line-height: 45px;
+            font-size: 38px;
+            @media (min-width: 1520px) {
+                font-size: 48px;
+                line-height: 56px;
+            } 
+            @media (max-width: 1200px) and (min-width: 992px) {
+                line-height: 40px;
+                font-size: 28px;
+            }
+            @media (max-width: 767px) {
+                line-height: 45px;
+                font-size: 40px;
+                margin-bottom: 8px;
+            }
+        }
+        span{
+            @include text-heading;
+            font-size: 11px;
+            line-height: 22px;
+            letter-spacing: -0.11px;
+            display: block;
+            font-family: $font-centurygothic-bold;
+            margin-bottom: 5px;
+        }
+
+    }
+    .uhren-banner-img{
+        img{
+            width: 100%;
+        }
+    }
+}

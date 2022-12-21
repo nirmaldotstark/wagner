@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wagner_Mailbestaetigung</title>
+    <style>
+        .order-product-detail thead{
+            position: relative;
+        }
+        .order-product-detail thead::after{
+            border-bottom: 1px solid #E0E0E0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 1px;
+            content: "";
+        }
+        @media (max-width: 767px) {
+        .order-details-description-m{
+            width: 100% !important;
+            margin-bottom: 30px !important;
+        }
+        .product-description li{
+            display: inline-block !important;
+            margin-left: 2px;
+            font-size: 12px !important;
+            line-height: 16px !important;
+        }
+        .product-description li img, small{
+            display: none;
+        }
+        .order-product-small-brief{
+            border-bottom:none !important;
+        }
+        .order-product-amount{
+            margin: 30px auto !important;
+        }
+        .order-logo{
+            max-width: 142px;
+            margin: 0 auto;
+        }
+        .order-confirm-message{
+            margin-bottom: 20px !important;
+        }
+        .order-product-detail span{
+            display: inline-block !important;
+        }
+        .order-product-detail span.greeting-text{
+            display: none !important;
+        }
+        .order-product-detail p{
+            font-size: 13px !important;
+            line-height: 18px !important;
+            margin-top: 8px !important;
+        }
+        .shop-cart-img{
+            width: 100px !important;
+            height: 100px !important;
+        }
+        .product-description th:nth-child(2), .product-description :nth-child(3){
+            display: none;
+        }
+        .cart-description-list, .order-number-amount{
+            width: 100% !important;
+        }
+        .order-detail-number, .order-detail-amount{
+            font-size: 13px !important;
+        }
+        .order-detail-number{
+            text-align: left !important;
+        }
+        .footer-address{
+            width:auto !important;
+        }
+        }
+        @media (max-width: 767px) and (min-width: 401px) {
+        .cart-description{
+            width: 69% !important;
+        } 
+        }
+        @media (max-width: 400px) {
+        .cart-description{
+            width: 60% !important;
+        }
+        }
+    </style>
+</head>
+<body style="font-family:arial,sans-serif; font-weight:normal; margin:0 auto;">
+    <div class="order-email" style="max-width:600px; margin:0 auto; padding: 30px 0px;">
+        <div class="inner-email-section" style="padding: 0 20px;">
+        <div class="order-logo" style="text-align: center; margin-bottom: 34.6px;">
+            <img src="../../assets/images/email-logo.svg" alt="Logo" style="max-width:100%;">
+        </div>
+        <div class="order-confirm-message" style="margin-bottom: 60px; color: #777777; font-size: 14px; line-height: 22px;">
+            <p style="margin-bottom: 0;">Sehr geehrte Frau Bruckner,<br/> <br/>
+
+                vielen Dank – Ihre <strong> Bestellanfrage Nr. 12335345 </strong> vom 20.11.2020, 11:16 Uhr ist bei uns eingegangen. Diese wird nun von uns geprüft. Wir melden uns zuverlässig mit einer Bestätigung.<br><br>
+                
+                Bei Fragen sind wir gerne per E-Mail unter <a href="#" style="color:#977d2e; text-decoration:none;">webshop@juwelier-wagner.at</a> erreichbar oder rufen Sie uns unter +43 1 512 0 512 an. <br><br>
+                
+                Mit freundlichen Grüßen<br>
+                Ihr Team von Juwelier Wagner</p>
+        </div>
+        <div class="order-product-detail">
+            <table style="width:100%;">
+                <thead>
+                    <tr class="product-description" >
+                        <th style="text-align:left; font-weight: bold; font-size: 14px; line-height: 18px; color: #333333; padding-bottom: 10px;">Bestellanfrage #12334535</th>
+                        <th style="text-align:right; font-weight: bold; font-size: 14px; line-height: 18px; color: #333333; padding-bottom: 10px;">Menge</th>
+                        <th style="text-align:right; font-weight: bold; font-size: 14px; line-height: 18px; color: #333333; padding-bottom: 10px;">Preis</th>
+                    </tr>
+                   
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #777;">
+                    <td  colspan="3" style="padding: 17px 0 20px; border-bottom: 1px solid #e0e0e0;">
+                    <div class="shop-cart-img" style="background-color: #eaeaea; height: 126px; width:126px; overflow: hidden; text-align: center; margin:0 10px 0 auto; float:left;">
+                    <img src="../../assets/images/product-img1.png" alt="" style="width: 80%; margin:0 auto; text-align: center;">
+                    </div>
+                    <div class="cart-description" style="float:left; width:75%;">
+                        <div class="cart-description-list" style="float:left; width:67%;">
+                        <h4 class="cart-desc-heading" style="margin:0 auto; font-size: 20px; font-weight:normal; line-height: 23px; color: #333; font-style: italic; font-family: Times New Roman;">Wagner, Balou Special, Ring</h4>
+                        <ul class="product-description secondary-text-color" style="padding: 0; margin: 4px auto 14px;">
+                        <li style="list-style:none; display:block; font-size:14px; line-height:26px; color:#777;">
+                            <img src="../../assets/images/jewellery-icon.svg" class="icon jewellery-icon" style="height:13px; width:15px; margin-right:5px; vertical-align: middle;">
+                            Ring
+                        </li>
+                        <li style="list-style:none; display:block; font-size:14px; line-height:26px; color:#777;">
+                            <img src="../../assets/images/collection-icon.svg" class="icon collection-icon" style="height:13px; width:15px; margin-right:5px; vertical-align: middle;">
+                            18 Kt Roségold
+                        </li>
+                        <li style="list-style:none; display:block; font-size:14px; line-height:26px; color:#777;">
+                            <img src="../../assets/images/diamond-icon.svg" class="icon diamond-icon" style="height:13px; width:15px; margin-right:5px; vertical-align: middle;">
+                            0,14 ct Diamanten
+                        </li>
+                        <li style="list-style:none; display:block; font-size:14px; line-height:26px; color:#777;">
+                            <img src="../../assets/images/email-scale-icon.svg" class="icon jewellery-icon"  style="height:13px; width:15px; margin-right:5px; vertical-align: middle;">
+                            Ringgröße 6
+                        </li>
+                        </ul>
+                        <small class="secondary-text-color product-description" style="font-size:12px; line-height:26px; color:#777;">Referenznummer: XX000.X.XX</small>
+                        </div>
+                        <div class="order-number-amount" style=" float:left; width:33%;">
+                            <div class="order-detail-number" style=" float:left; width:41%; text-align:right; vertical-align: middle; font-size:16px; line-height: 23px; color:#777;">
+                                <span style="display: none;">Menge :</span> 1
+                               </div>
+                               <div class="order-detail-amount" style=" float:left; width:59%;  text-align:right; vertical-align: middle; font-size:16px; line-height: 23px; color:#333;">€ 4.650,–
+                               </div>
+                        </div>
+                    </div>
+                    
+                    </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="padding-bottom: 20px; border-bottom: 1px solid #e0e0e0;">
+                        <div class="shop-cart-img" style="float:left; width:126px; margin-right:10px; text-align: center;">
+                        <img src="../../assets/images/cart-img1.png" alt="cart-img1" style=" width:97px; margin:0 auto; text-align: center;">
+                        </div>
+                        <div class="cart-description" style="float: left; width: 75%; margin-top: 10px;">
+                        <h4 class="cart-desc-heading" style="margin:0 auto; font-weight:normal; font-size: 20px; line-height: 16px; color: #333; font-style: italic; font-family: Times New Roman;">Kostenlose Geschenkbox</h4>
+                        <span  class="greeting-text" style="font-size:12px; line-height:14px; color:#777; display:block; margin:7px auto 5px; font-style: italic; font-weight: bold;">Ihr Grußtext</span>
+                        <p style="font-size:14px; line-height:20px; color:#777; margin: 0 auto;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At.</p>
+                        </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="order-product-amount" style="margin:15px auto; background-color: #eaeaea; padding:12px 15px 10px;">
+            <table style="width:100%;">
+                <tr>
+                    <td style="font-size:16px; line-height: 16px; color: #333; padding: 10px 0;">Zwischensumme</td>
+                    <td style="font-size:16px; line-height: 16px; color: #333; text-align: right; padding: 10px 0;">€ 3.250,–</td>
+                </tr>
+                <tr>
+                    <td style="font-size:16px; line-height: 16px; color: #333; padding: 10px 0 15px;">Kostenloser Versand</td>
+                    <td style="font-size:16px; line-height: 16px; color: #333; text-align: right; padding: 10px 0 15px;"></td>
+                </tr>
+                <tr><td colspan="3" style="border-top:1px solid #777;"></td></tr>
+                <tr> 
+                    <td style="font-size:16px; line-height: 16px; color: #333; padding: 15px 0 10px;">Gesamt inkl. Mwst</td>
+                    <td style="font-size:16px; line-height: 16px; color: #333; text-align: right; padding: 15px 0 10px;">€ 12.600,– </td>
+                </tr>
+            </table>
+        </div>
+        <div class="order-product-small-brief" style="margin-bottom: 30px; border-bottom: 1px solid #e0e0e0;">
+            <h5 style="font-size:14px; line-height:16px; font-style: italic; color: #333; margin:0;">Ihre Anmerkungen</h5>
+            <p style="font-size:14px; line-height:20px; color: #777777; padding-bottom: 15px; margin:5px auto 0;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At.</p>
+        </div>
+        <div class="order-details-description">
+            <div class="order-details-description-m" style="display: inline-block; width:47%; margin-right: 20px; margin-bottom:40px; vertical-align:top;">
+                <h6 style="font-size:15px; line-height:17px; color:#333; border-bottom:1px solid #eaeaea; margin:0 auto; padding-bottom: 10px; "><strong>Zahlungsinformationen</strong></h6>
+                <p style="font-size:14px; line-height:22px; color:#333; margin-top:10px; margin-bottom:0;">Juwelier Wagner <br>
+                    Frau Karin Bruckner <br>
+                    Maysedergasse 2 <br>
+                    1010 Wien <br>
+                    Österreich <br>
+                    T: +43 123 234 345 45</p>
+            </div>
+            <div class="order-details-description-m" style="display: inline-block; width:48.5%; margin-bottom:40px; vertical-align:top;">
+                <h6 style="font-size:15px; line-height:17px; color:#333; border-bottom:1px solid #eaeaea; margin:0 auto; padding-bottom: 10px; "><strong>Zahlungsart</strong></h6>
+                <img src="../../assets/images/mastercard-icon.png" alt="mastercard-icon" style="margin-right:9.7px; margin-top:10px;  display: inline-block;">
+                <p style="font-size:14px; line-height:22px; color:#333; margin-top:9px; display: inline-block; vertical-align: top; margin-bottom: 0px;">MasterCard</p>
+                <span style="display: block; font-size: 10px; line-height: 22px; color: #333; opacity: 0.4;">Payment ID: 23kjasdf394dksdfl2934dsf</span>
+            </div>
+        </div>
+        <div class="order-details-description">
+            <div class="order-details-description-m" style="display: inline-block; width:47%; margin-right: 20px; margin-bottom:30px; vertical-align:top;">
+                <h6 style="font-size:15px; line-height:17px; color:#333; border-bottom:1px solid #eaeaea; margin:0 auto; padding-bottom: 10px; "><strong>Versandinformationen</strong></h6>
+                <p style="font-size:14px; line-height:22px; color:#333; margin-top:10px; margin-bottom:0;">Frau Karin Bruckner <br>
+                    Maysedergasse 2 <br>
+                    1010 Wien <br>
+                    Österreich <br>
+                    T: +43 123 234 345 45</p>
+            </div>
+            <div class="order-details-description-m" style="display: inline-block; width:48.5%; margin-bottom:30px; vertical-align:top;">
+                <h6 style="font-size:15px; line-height:17px; color:#333; border-bottom:1px solid #eaeaea; margin:0 auto; padding-bottom: 10px; "><strong>Versandart</strong></h6>
+                <p style="font-size:14px; line-height:22px; color:#333; margin-top:10px; margin-bottom:0; width:99%;"> <strong style="display: block;">Persönliche Abholung: Kärnter Straße 32, 1010 Wien</strong> Ihre Bestellung ist frühestens 2 Werktage nach Zahlungseingang ab 13:00 Uhr in unserem Geschäft Kärntnerstraße 32, 1010 Wien abholbereit.</p>
+            </div>
+        </div>
+        </div>
+        <div class="order-footer" style="text-align: center; margin-top: 30px; border-top: 1px solid #e0e0e0;">
+            <div class="order-logo" style="text-align: center; margin-bottom: 18px; margin-top:30px">
+                <img src="../../assets/images/email-logo.svg" alt="Logo" style="max-width:100%;">
+            </div>
+            <div class="footer-address" style="text-align: justify; padding: 0 30px; width:336px; margin: 0 auto;">
+            <p style="font-size:13px; line-height:23px; color:#777; margin-bottom: 10px; margin-top:0;"><strong style="font-size:14px; line-height:16px; color:#777;"> Juwelier Wagner </strong> | Kärntner Straße 32, 1010 Wien</p>
+            <p style="font-size:13px; line-height:23px; color:#777; margin-bottom: 10px; margin-top:0;"><strong style="font-size:14px; line-height:16px; color:#777;"> Juwelier Wagner </strong> | Graben 21/Tuchlauben 2, 1010 Wien</p>
+            <p style="font-size:13px; line-height:23px; color:#777; margin-bottom: 10px; margin-top:0;"><strong style="font-size:14px; line-height:16px; color:#777;"> Rolex Boutique </strong>  | Tuchlauben 2, 1010 Wien</p>
+            <p style="font-size:13px; line-height:23px; color:#777; margin-bottom: 10px; margin-top:0;"><strong style="font-size:14px; line-height:16px; color:#777;"> Hublot Boutique </strong> | Kohlmarkt 10, 1010 Wien</p>
+            </div>
+            <span style="display: block; font-size:13px; line-height:23px; color:#777; margin-bottom: 30px; margin-top:30px;">Mo. bis Fr. 10:00 – 18:30 Uhr, Sa. 10:00 – 18:00</span>
+            <a href="tel:+43 1 512 0 512" style="font-size:13px; line-height:23px; color:#777; text-decoration: none; margin-bottom: 10px; margin-top:0; display: block;"> +43 1 512 0 512</a>
+            <a href="mailto:info@juwelier-wagner.at" style="font-size:13px; line-height:23px; color:#777; text-decoration: none; margin-bottom: 10px; margin-top:0; display: block;"> info@juwelier-wagner.at</a>
+            <a href="www.juwelier-wagner.at" style="font-size:13px; line-height:23px; color:#777; text-decoration: none; margin-bottom: 10px; margin-top:0; display: block;"> www.juwelier-wagner.at</a>
+            <div class="footer-social-links">
+                <a href="#"><img src="../../assets/images/blog-fb-icon.svg" alt="fb-icon" style="margin-right: 15px; height: 15px; width: 15px;"></a>
+                <a href="#"><img src="../../assets/images/insta-icon.svg" alt="insta-icon" style="height: 15px; width: 15px;"></a>
+            </div>
+            <span style="font-size:11px; line-height:32px; color:#757575; margin-bottom: 0px; margin-top:0; display: block;">Juwelier Wagner Gesellschaft m.b.H., Kärntner Straße, 1010 Wien</span>
+        </div>
+    </div>
+</body>
+</html>

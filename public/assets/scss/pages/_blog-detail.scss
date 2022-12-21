@@ -1,0 +1,175 @@
+.blog-heading-text{
+    color: $color-primary;
+    font-size: 30px;
+    line-height: 46px;
+    @media (max-width: 767px) {
+    font-size: 22px;
+    line-height: 30px;
+    }
+}
+.blog-detail2-new-layout{
+    padding-bottom: 10px;
+    .blog-detail-left-text{
+        p{
+            margin-bottom: 31px;
+            @media (max-width: 767px) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+.blog-detail-left-text{
+    @media (max-width: 1200px) and (min-width: 992px) {
+        .display-text2{
+            font-size: 30px;
+        }
+    }
+    p{
+        margin-bottom: 15px;
+        color: $color-primary;
+        line-height: 28px;
+    }
+}
+.blog-detail-left-img{
+    @media (max-width: 991px) and (min-width: 768px) {
+        display: none;
+    }
+    .bracelet1 {
+        top: -130px;
+        @media (min-width: 1520px) {
+            top: -160px;
+            left: 0;
+            right: 0;
+        }
+        @media (max-width: 767px) {
+            position: relative !important;
+            top:0;
+        }
+    }
+}
+.quote-blog{
+    padding: 60px 0 30px;
+    @media (max-width: 767px) {
+        padding-top: 40px;
+    }
+    .quote-box{
+        background-color: #f7f7f7;
+        padding: 41px 22px 42px;
+        text-align: center;
+        .icon-quote-start{
+           top:30px;
+           right: 40px;
+        }
+        .icon-quote-end{
+            bottom:30px;
+            left: 40px;
+         }
+        @media (min-width: 1520px) {
+            min-height: 394px;
+            padding: 98px 22px;
+        }
+        h3{
+            color: $color-primary;
+            width:95%;
+            margin: 22px auto; 
+            font-size: 36px;
+            @media (max-width: 1200px) and (min-width: 992px) {
+                font-size: 26px;
+                line-height: 31px;
+            }
+             @media (min-width: 1520px) {
+                width:83%;
+                margin: 0px auto; 
+                font-size: 40px;
+             }
+             @media (max-width: 767px) {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+    .quote-img{
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}
+.blog-content{
+    margin-bottom: 15px;
+    .blog-content-m{
+        margin-bottom: 30px;
+        @media (max-width: 767px) {
+        margin-bottom: 0;
+        }
+        p{
+            color: $color-primary;
+            margin-bottom: 30px;
+            width:663px;
+            a{
+                font-size: 16px;
+                text-decoration: underline;
+            }
+            @media (max-width: 767px) {
+                width:100%;
+            }
+        }
+        &.margin-blog-left{
+            margin-left: 213px;
+            @media (max-width: 1200px) and (min-width: 992px) {
+                margin-left:50px;
+            }
+            @media (max-width: 991px) and (min-width: 768px) {
+                margin-left:0px;
+            }
+            @media (max-width: 767px) {
+                margin-left: auto;
+            }
+        }
+    }
+}
+.blog-gallery-slider, .blog-gallery-slider2{
+    .slick-dots{
+        bottom: -30px;
+    }
+    .slick-dots li button{
+        background-color: $bg-primary;
+    }
+}
+.blog-gallery-slider2{
+    .slick-dots{
+        position: relative;
+        bottom: -5px;
+    }
+}
+.blog-border-section{
+    border-top: 1px solid #eaeaea;
+}
+.blog-gallery-slider2{
+    @media (max-width: 767px) {
+        .blog-gallery-img {
+            width: 314px;
+            height: 208px;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+        .slick-dots{
+            li{
+                width: 28%;
+                margin: 0 2px;
+                button{
+                    width: 100%;
+                    height: 5px;
+                    background-color:#757575;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+
+}
+.uhren-blog-content-section{
+    overflow: hidden;
+}
+

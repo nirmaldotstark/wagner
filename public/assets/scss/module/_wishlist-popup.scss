@@ -1,0 +1,238 @@
+.popup{
+    width: 700px;
+    margin: 148px auto;
+    padding: 60px 30px 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
+    margin-bottom: 30px;
+    max-width: 100%;
+    background-color: #fff;
+    .modal-content{
+        border:none;
+        border-radius: 0;
+    }
+    .modal-header{
+        border:none;
+        padding:0;
+        position: relative;
+        button{
+            position: absolute;
+            top: -30px;
+            right: 10px;
+            padding: 0;
+        }
+    }
+    &.wishlist-logged-out{
+        width:788px;
+        @media (max-width: 767px) {
+            padding: 98px 20px 100px;
+        }
+    }
+    .heading{
+        margin-bottom: 0;
+        h2{
+            font-family: $font-centurygothic;
+        }
+        p{
+            line-height: 28px;
+            border-bottom:1px solid #e0e0e0;
+            padding-bottom: 30px;
+            margin-bottom: 0;
+        }
+    }
+    .form-group{
+        margin-bottom: 0;
+        label{
+            padding: 0;
+            left:0;
+            line-height: 17px;
+            top: 14px;
+        }
+        input{
+            padding-left: 30px;
+        }
+        textarea{
+            padding-left: 72px;
+            font-size:14px;
+        }
+    }
+    .wihlist-sharing-btn{
+        padding-top: 30px;
+        .wishlist-sharing{
+            margin-top: 10px;
+        span{
+            display: inline-block;
+            margin-right: 13px;
+            line-height: 17px;
+            vertical-align: middle;
+            
+        }
+        .icon-m{
+            margin-right: 15px;
+            height:29px;
+            width:30px;
+            vertical-align: middle;
+        }
+        }
+        .wishlist-button{
+            button{
+                font-family: $font-centurygothic;
+            }
+        }
+    }
+    .wishlist-log-out-box {
+        padding: 30px 0 0;
+        @media (max-width: 767px) {
+            padding: 15px 0 0;
+        }
+    }
+    .wishlisht-log-out-left {
+        width: 50%;
+        padding-right: 30px;
+        @media (max-width: 767px) {
+           width:100%;
+           padding-right: 0;
+        }
+        a{
+            margin-top: 10px;
+            @media (max-width: 767px) {
+                &.extra-small-link-icon{
+                    display: none !important;
+                }
+             }
+            .icon{
+                vertical-align: middle;
+                height: 13px;
+                width:13px;
+                font-size: 12px;
+                line-height: 17px;
+            }
+        }
+        .whislist-mobile-link{
+            display: none;
+            @media (max-width: 767px) {
+               display: block;
+            }
+            input{
+                background-color: #ececec;
+                color: $color-primary;
+                font-size: 16px;
+                line-height: 26px;
+                padding: 18px 60px 18px 18px;
+                font-family: $font-centurygothic;
+                margin-bottom: 40px;
+            }
+            button{
+                right:0;
+                padding: 18px;
+                min-width: auto;
+            }
+            ul{
+                padding: 0;
+                margin:0 auto;
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    width:32%;
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #757575;
+                    img{
+                        display: block;
+                        width:50px;
+                        margin: 0 auto 10px;
+                    }
+                }
+            }
+        }
+    }
+    .wishlisht-log-out-right {
+        width: 50%;
+        padding-left: 30px;
+        border-left: 1px solid #e0e0e0;
+        @media (max-width: 767px) {
+            width: 100%;
+            padding-left: 0;
+            border-left: none;
+            margin-top: 40px;
+        }
+        p{
+            margin-bottom: 0;
+            @media (max-width: 767px) {
+                width: 90%;
+                margin: 0 auto 15px;
+            }
+        }
+        input{
+            font-family: $font-centurygothic;
+            padding: 15px 0 30px;
+            margin-bottom: 30px;
+            font-size: 14px;
+            @media (max-width: 767px) {
+                padding: 18px 18px 18px;
+                border: 1px solid #979797;
+                border-radius: 3px;
+                margin-bottom: 15px;
+                font-size: 16px;
+            }
+        }
+        button{
+            width:100%;
+            margin-bottom: 10px;
+            @media (max-width: 767px) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+.header-shopping-icon{
+    .cart-quantity{
+        display: none;
+    }
+    .favorite-product-added, .cart-product-added{
+        .outline-icon{
+            display: none;
+        }
+        .cart-quantity{
+            display: block;
+            .quantity-text{
+                height: 15px;
+                width: 15px;
+                background-color: #333;
+                border-radius: 100%;
+                right: -4px;
+                top:0;
+               p{
+                color: #fff;
+                font-size: 11px;
+                vertical-align: middle;
+                text-align: center;
+                margin-bottom: 0;
+                line-height: 15px;
+               }
+            }
+        }
+    }
+}
+#sidebar-cart-new{
+    &.show{
+        .favorite-product-added{
+            .cart-quantity {
+                border-bottom: 2px solid #977D2E;
+                padding-bottom: 5px;
+            }
+            
+        }
+    }
+}
+#sidebar-cart{
+    &.show{
+        .cart-product-added{
+            .cart-quantity {
+                border-bottom: 2px solid #977D2E;
+                padding-bottom: 5px;
+            }
+            
+        }
+    }
+}

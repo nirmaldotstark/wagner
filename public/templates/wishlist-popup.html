@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Wishlist Popup</title>
+</head>
+<body>
+<div class="popup">
+    <div class="heading">
+        <h2>Wunschliste teilen</h2>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
+    </div>
+    <form method="post">
+        <div class="form-group position-relative">
+            <label class="position-absolute strong-text" for="email">An</label>
+            <input type="email" value="" placeholder="E-Mail Adressen" id="email" name="email">
+        </div>
+        <div class="form-group position-relative">
+            <label class="position-absolute strong-text" for="message">Nachricht</label>
+            <textarea placeholder="(optional)" id="message" name="message"></textarea>
+        </div>
+        <div class="wihlist-sharing-btn overflow-hidden">
+            <div class="wishlist-sharing float-left">
+                <span class="strong-text">Oder als Link teilen</span>
+                <object type="image/svg+xml" data="../assets/images/icon-attachment.svg" class=" icon-m icon-attachment">
+                </object>
+                <object type="image/svg+xml" data="../assets/images/icon-mail.svg" class="icon-m icon-mail">
+                </object>
+            </div>
+            <div class="wishlist-button float-right">
+                <button class="secondary-ghosted-btn">Wunschliste teilen</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="popup wishlist-logged-out">
+    <div class="heading">
+        <h2>Wunschliste teilen</h2>
+    </div>
+    <div class="wishlist-log-out-box overflow-hidden">
+        <div class="wishlisht-log-out-left float-left text-center">
+            <p>Ohne Anmeldung können Sie diesen Link kopieren und weiterversenden.</p>
+            <a href="" class="extra-small-link-icon d-block">http://www.juwelier-wagner.at/wunschliste</a>
+            <a href="" class="extra-small-link-icon d-block"> <object type="image/svg+xml" data="../assets/images/icon-link.svg" class="icon icon-mail">
+            </object> Link kopieren</a>
+            <div class="whislist-mobile-link">
+                <div class="form-group position-relative">
+                    <label class="d-none" for="link-copy">.</label>
+                    <input type="text" value="jwlr-wg.nr/VhoWIH" id="link-copy" name="link-copy" readonly>
+                    <button class="primary-btn position-absolute"><svg xmlns="http://www.w3.org/2000/svg" width="24.001" height="24.001" viewBox="0 0 24.001 24.001">
+                        <path fill="#fff" d="M14.116 18.5L10.4 22.213a6.094 6.094 0 0 1-8.618-8.618L5.5 9.882q.081-.081.166-.16a.563.563 0 0 1 .947.388q.014.338.057.674a.565.565 0 0 1-.159.473l-3.53 3.529A4.406 4.406 0 0 0 9.21 21.02l3.713-3.713.017-.017a4.406 4.406 0 0 0-1.31-7.111.565.565 0 0 1-.334-.547 2.916 2.916 0 0 1 .132-.715.558.558 0 0 1 .746-.341 6.094 6.094 0 0 1 1.942 9.924zm-4.233-4.385a6.057 6.057 0 0 0 1.942 1.306.558.558 0 0 0 .746-.341 2.916 2.916 0 0 0 .132-.715.565.565 0 0 0-.334-.547 4.406 4.406 0 0 1-1.31-7.111l.017-.017 3.713-3.713a4.406 4.406 0 0 1 6.232 6.233l-3.53 3.529a.565.565 0 0 0-.159.473q.043.336.057.674a.563.563 0 0 0 .947.388q.084-.078.166-.16l3.712-3.714A6.094 6.094 0 1 0 13.6 1.785L9.883 5.5a6.1 6.1 0 0 0 0 8.615z" transform="translate(.001 .002)"/>
+                    </svg></button>
+                </div>
+                <p>oder direkt über die folgenden Links</p>
+                <ul>
+                    <li><a href="#"><img src="../assets/images/sms-icon.svg" alt="sms-icon">SMS</a></li>
+                    <li><a href="#"><img src="../assets/images/whatsapp-icon.svg" alt="Whatsapp-icon">Whatsapp</a></li>
+                    <li><a href="#"><img src="../assets/images/facebook-icon.svg" alt="fb-icon">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="wishlisht-log-out-right float-right">
+            <p class="text-center">Um Ihre Wunschliste per E-Mail teilen zu können, müssen Sie sich anmelden.</p>
+            <form method="post">
+                <div class="form-group position-relative">
+                    <label for="email2" class="d-none">.</label>
+                    <input type="email" value="" placeholder="E-Mail Adresse" id="email2" name="email2">
+                </div>
+                <div class="form-group position-relative">
+                    <label for="password" class="d-none">.</label>
+                   <input type="password" value="" placeholder="Kennwort" id="password" name="password">
+                </div>
+                <div class="form-group">
+                   <button class="primary-btn">Anmelden</button>
+                 </div>
+                 <span class="product-description text-center d-block">Noch kein Kundenkonto? <a href="" class="text-link">Jetzt registrieren</a></span>
+            </form>
+        </div>
+    </div>
+    
+</div>
+<!-- JS Global Compulsory (Do not remove)-->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script> 
+$(function() {
+	$( "#slider-range" ).slider({
+	  range: true,
+	  min: 250,
+	  max: 500,
+	  values: [ 5, 500 ],
+	  slide: function( event, ui ) {
+        $( "#amount" ).val( "€" + ui.values[ 0 ] );
+        $( "#amount1" ).val( "€" + ui.values[ 1 ] );
+	  }
+	});
+    $( "#amount" ).val( "€" + $( "#slider-range" ).slider( "values", 0 ));
+    $( "#amount1" ).val( "€" + $( "#slider-range" ).slider( "values", 1 ));
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+.faq-section-m{
+    padding: 0px 20px;
+    
+    @media (min-width: 1520px) {
+        padding: 0px 218px 0;
+    }
+    @media (max-width: 767px) {
+        padding: 0;
+    }
+    .privacy-section-detail{
+        margin-top: 20px;
+        .display-text3{
+           font-family: $font-spectral-ital;
+           font-size: 30px; 
+           margin-bottom: 15px;
+           line-height: 46px;
+           @media (max-width: 767px) {
+                line-height: 34px;
+                border-bottom: 1px solid #e0e0e0;
+                margin: 0 10px;
+                padding-bottom: 10px;
+           }
+        }
+        .panel-default{
+            padding: 0 30px;
+            @media (max-width: 767px) {
+                padding: 0 10px;
+            }
+        }
+        h3{
+            font-size: 18px;
+        }
+         .panel-heading{
+             padding: 28px 0;
+             a{
+                 text-transform: capitalize;
+                 color: $color-secondary;
+                &.collapsed{
+                    color: $color-primary;
+                }
+             }
+         }
+         .panel-collapse{
+             a{
+                 color: $color-text-info;
+             }
+         }
+    }  
+}
+.faq-section{
+    padding: 40px 0;
+    @media (max-width: 767px) {
+        padding: 15px 0;
+    }
+    .privacy-heading {
+        .display-text2{
+            padding-bottom: 6px;
+        }
+    }
+    .blog-list{
+        .blog-list-m{
+            margin-top: 0;
+            a{
+                color: #757575;
+                min-width: 145px;
+                @media (max-width: 1200px) and (min-width: 768px) {
+                    min-width: auto;
+                }
+                &:hover{
+                    color: $color-text-info;
+                    background-color: transparent;
+                    border:1px solid $color-text-info;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+    .privacy-heading{
+        .display-text2{
+            font-size: 36px;
+        }
+    } 
+    }
+}
+.faq-new-layout{
+    margin-bottom: 80px;
+    @media (max-width: 767px) {
+        margin-bottom: 0;
+    }
+        .faq-section-m{
+        .privacy-section-detail {
+            border-bottom: none;
+            .faq-new-border{
+                .panel{
+                    &:last-child{
+                        .panel-heading{
+                            border-bottom: 1px solid #e0e0e0;
+                        }
+                        .panel-collapse{
+                            &.show{
+                                background-color: #fff;
+                                margin-top: -1px;
+                                border-bottom: 1px solid #e0e0e0;
+                            }
+                        } 
+                        
+                    }
+                    
+                }
+            }
+            
+            .display-text3{
+                margin-top: 40px;
+            }
+        }
+    }
+}

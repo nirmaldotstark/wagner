@@ -1,0 +1,74 @@
+.primary-btn{
+    @include default-btn;
+    background-color: $bg-primary;
+    padding: 12px 33px 11px;
+    color:$color-text-white;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: $font-centurygothic;
+    border:none;
+    min-width: 122px;
+    &:hover{
+        background-color: $bg-primary-hover;
+        color:$color-text-white;
+    }
+    @media (max-width: 767px) {
+        min-width: 122px;
+    }
+}
+.secondary-btn{
+    @include default-btn;
+    background-color: $color-primary;
+    padding: 12px 20px;
+    color:$color-text-white;
+    font-size: 16px;
+    border:1px solid $bg-transparent;
+    text-transform: capitalize;
+    line-height: 20px;
+    min-width: 122px;
+    font-family: $font-centurygothic;
+    &:hover{
+        background-color: $bg-white;
+        color:$color-primary;
+        border-color:$color-primary;
+    }
+    @media (max-width: 767px) {
+        min-width: 122px;
+    }
+}
+.primary-ghosted-btn{
+    @include default-btn;
+    background-color: transparent;
+    padding: 12px 20px 11px;
+    color:$color-secondary;
+    font-size: 14px;
+    border:1px solid $color-secondary;
+    line-height: 19px;
+    min-width: 122px;
+    font-family: $font-centurygothic;
+    &:hover{
+        background-color: $color-secondary;
+        color:$color-text-white;
+    }
+    @media (max-width: 767px) {
+        min-width: 122px;
+    }
+}
+.secondary-ghosted-btn{
+    @include default-btn;
+    background-color: $bg-white;
+    padding: 12px 20px 11px;
+    color:$bg-primary;
+    font-size: 14px;
+    border:1px solid $bg-primary;
+    line-height: 19px;
+    min-width: 122px;
+    font-family: $font-centurygothic;
+    &:hover{
+        background-color: $bg-primary;
+        color:$color-text-white;
+    }
+    @media (max-width: 767px) {
+        min-width: 122px;
+    }
+}

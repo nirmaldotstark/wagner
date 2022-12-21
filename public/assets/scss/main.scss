@@ -1,0 +1,87 @@
+/* Bootstrap 4.5.3  */
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+                                                                                                                                                                              @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+
+/* Abstracts */
+@import "abstracts/variables";
+@import "abstracts/mixin";
+
+/* Abstracts */
+@import "components/button";
+
+/* Abstracts */
+@import "base/base";
+@import "base/fonts";
+
+/* Parts */
+@import "parts/header";
+@import "parts/footer";
+
+/*Module*/
+@import "module/banner-slider";
+@import "module/product-default-slider";
+@import "module/client-logo";
+@import "module/insights.scss";
+@import "module/blog-component";
+@import "module/newsletter";
+@import "module/article-overview";
+@import "module/filter-module";
+@import "module/collection-banner-breadcrumb";
+@import "module/product-description-section";
+@import "module/uhren-banner";
+@import "module/wishlist-popup";
+@import "module/megamenu";
+@import "module/onload-popup";
+@import "module/register";
+@import "module/search-module";
+@import "module/cookie-disclaimer";
+@import "module/gift-message";
+@import "module/credit-card-mobile";
+@import "module/common-form";
+@import "module/non-binding-inquiry";
+@import "module/lexikon";
+@import "module/map-tooltip-active";
+@import "module/product-zoom-module";
+@import "module/sidebar";
+@import "module/responsive-megamenu";
+@import "module/search-page";
+@import "module/datepicker";
+
+/* Pages */
+@import "pages/home";
+@import "pages/collection-overview";
+@import "pages/schmuck-overview";
+@import "pages/product-detail";
+@import "pages/login.scss";
+@import "pages/uhren-watches";
+@import "pages/blog-detail";
+@import "pages/wishlist";
+@import "pages/shop-cart";
+@import "pages/account-actiavtion";
+@import "pages/rolex";
+@import "pages/blog-detail2";
+@import "pages/user-account";
+@import "pages/blog";
+@import "pages/checkout-thank-you";
+@import "pages/blog-detail3";
+@import "pages/blog-subpage";
+@import "pages/privacy";
+@import "pages/about";
+@import "pages/services-overview";
+@import "pages/checkout-main";
+@import "pages/contact";
+@import "pages/wagner-shop";
+@import "pages/faq";
+@import "pages/landingpage";
+@import "pages/404";
+@import "pages/newsletter-page";
+@import "pages/uhren-kollektionen"
+
+
+
+
+

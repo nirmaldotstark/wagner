@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27.805" height="23.107" viewBox="0 0 27.805 23.107">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#757575;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="ico_pickup" transform="translate(0 -1.894)">
+        <g id="XMLID_1524_" transform="translate(.5 12.921)">
+            <g id="XMLID_1525_">
+                <path id="XMLID_1529_" d="M.5 11.5l4.715.943a1.158 1.158 0 0 1 .919 1.3l-.861 6.027a1.158 1.158 0 0 1-1.146.994H.5z" class="cls-1" transform="translate(-.5 -11.5)"/>
+                <path id="XMLID_1527_" d="M5.5 13.579A11.758 11.758 0 0 1 8.974 13c1.833 0 2.882 1.264 5.211 1.737 2.5.507 4.053 1.086 4.053 2.316s-1.882 1.845-8.105 0" class="cls-1" transform="translate(.29 -11.263)"/>
+                <path id="XMLID_1526_" d="M18.316 17.158A29.119 29.119 0 0 1 23.527 16c1.447 0 2.895.579 2.895 1.737-1.978.868-8.877 4.632-11.579 4.632S5 18.895 5 18.895" class="cls-1" transform="translate(.211 -10.789)"/>
+            </g>
+        </g>
+        <path id="Pfad_216" d="M8.5 14.027V6.5h17.369v12.737" class="cls-1" transform="translate(1.263 .632)"/>
+        <path id="Pfad_217" d="M8.5 7.132L10.868 2.5H23.5l2.368 4.632" class="cls-1" transform="translate(1.263)"/>
+        <path id="Pfad_218" d="M14.658 2.5L13.5 7.132v3.474h5.79V7.132L18.132 2.5" class="cls-1" transform="translate(2.053)"/>
+    </g>
+</svg>

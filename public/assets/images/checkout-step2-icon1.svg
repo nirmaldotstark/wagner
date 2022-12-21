@@ -1,0 +1,10 @@
+<svg id="ico_shipping_active" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35.233" height="21.826" viewBox="0 0 35.233 21.826">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_383" data-name="Rectangle 383" width="35.233" height="21.826" fill="none" stroke="#757575" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_559" data-name="Group 559" clip-path="url(#clip-path)">
+    <path id="Path_143" data-name="Path 143" d="M31.324,54.922h1.49M15.681,60.136A2.98,2.98,0,1,0,12.7,63.117,2.981,2.981,0,0,0,15.681,60.136Zm21.6,0A2.979,2.979,0,1,0,34.3,63.117,2.979,2.979,0,0,0,37.282,60.136ZM20.15,42.257v6.705H14.937V42.257M9.721,60.136H5.995V42.257H28.342V60.136H17.169M34.3,48.962H32.068v3.724h4.469V51.2Zm2.979,11.174h2.979V51.2l-4.469-4.471h-7.45m0,13.408h2.981" transform="translate(-5.512 -41.774)" fill="none" stroke="#757575" stroke-width="1"/>
+  </g>
+</svg>

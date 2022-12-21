@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Newsletter Section</title>
+</head>
+<body>
+    <div class="newsletter-section shadow position-relative">
+        <div class="container">
+            <div class="newsletter-section-m position-relative">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="newsletter-img position-absolute">
+                            <img src="../assets/images/newsletter-img.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-8">
+                        <div class="newsletter-form common-form text-center">
+                            <h2 class="newsletter-heading">Verpassen Sie keine Neuigkeiten
+                            mehr von Juwelier Wagner</h2>
+                            <form method="#">
+                                <div class="form-group new-subscribe-form-fields">
+                                  <label for="newsletter" class="form-up-text"> E-Mail Adresse </label><input type="email" value="max.mustermann@mail.at" placeholder="" id="newsletter" name="newsletter">
+                                </div>
+                                <div class="new-subscribe-form-fields">
+                                    <div class="form-group newsletter-checkbox">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 newsletter-checkbox">
+                                                <label class="text-left" for="checkbox1"><div  class="d-none">.</div>
+                                                <input type="checkbox" name="checkbox1" checked="checked" id="checkbox1">
+                                                <span class="checkmark"></span>
+                                                E-Newsletter abonnieren
+                                                </label>
+                                                <label class="text-left" for="checkbox2"><div  class="d-none">.</div>
+                                                    <input type="checkbox" name="checkbox2" id="checkbox2">
+                                                    <span class="checkmark"></span>
+                                                    Print-Newsletter abonnieren 
+                                                </label>
+                                                <div class="print-newsletter">
+                                                    <div class="form-group">
+                                                        <div class="row m-0">
+                                                            <div class="col-lg-6 col-md-6 p-0">
+                                                                <label for="amrede" class="d-none">.</label>
+                                                                <select name="amrede" id="amrede">
+                                                                    <option>Anrede</option>
+                                                                </select>
+                                                                <span class="arrow position-absolute"><object type="image/svg+xml" data="../assets/images/chevron-icon.svg" class="icon icon-arrow">
+                                                                </object></span>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 pr-0">
+                                                                <label for="Titel" class="d-none">.</label>
+                                                                <select name="Titel" id="Titel">
+                                                                    <option>Titel (optional)</option>
+                                                                </select>
+                                                                <span class="arrow position-absolute"><object type="image/svg+xml" data="../assets/images/chevron-icon.svg" class="icon icon-arrow">
+                                                                </object></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="row m-0">
+                                                            <div class="col-lg-6 col-md-6 p-0">
+                                                                <label for="vorname" class="d-none">.</label>
+                                                                <input type="text" value="Vorname" placeholder="" id="vorname" name="vorname">
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 pr-0">
+                                                                <label for="nachname" class="d-none">.</label>
+                                                                <input type="text" value="Nachname" placeholder="Nachname" id="nachname" name="nachname">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="printnewsletter-form">
+                                                        <div class="form-group">
+                                                            <div class="row m-0">
+                                                                <div class="col-md-6 col-lg-6 p-0">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="Adresse" class="form-up-text d-none">Firmenname (optional)</label>
+                                                                        <input type="text" value="Adresse" placeholder="" id="Adresse" name="Adresse">
+                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-lg-6 pr-0">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="Zusatzinformation" class="form-up-text d-none">Zusatzinformation</label>
+                                                                        <input type="text" value="Zusatzinformation (optional)" placeholder="" id="Zusatzinformation" name="Zusatzinformation">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-lg-6">
+                                                                    <div class="position-relative form-group">
+                                                                       <div class="row m-0">
+                                                                           <div class="col-lg-4 col-md-4 pl-0">
+                                                                            <label for="postal" class="form-up-text d-none">Postleitzahl</label>
+                                                                            <input type="number" value="1234" placeholder="" id="postal" name="postal">
+                                                                           </div>
+                                                                           <div class="col-lg-8 col-md-8 pl-0">
+                                                                            <label for="ort" class="form-up-text d-none">Ort</label>
+                                                                            <input type="text" value="Österreich" placeholder="" id="ort" name="ort">
+                                                                           </div>
+                                                                       </div>
+                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-lg-6">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="land" class="form-up-text d-none">Land</label>
+                                                                        <select name="title-optional" id="land" name="land">
+                                                                            <option>Österreich</option>
+                                                                        </select>
+                                                                        <span class="arrow position-absolute"><object type="image/svg+xml" data="../assets/images/chevron-icon.svg" class="icon icon-arrow">
+                                                                        </object></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                                <label class="text-left" for="checkbox3"><div  class="d-none">.</div>
+                                                    <input type="checkbox" name="checkbox3" id="checkbox3">
+                                                    <span class="checkmark"></span>
+                                                    Ich aktzeptiere die <a href="#" class="default-link-icon">allgemeinen Geschäftsbediungen</a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group text-right mb-0">
+                                        <button>Anmelden</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JS Global Compulsory (Do not remove)-->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('#checkbox2').change(function(){
+        if(this.checked)
+        $('#printnewsletter-form').fadeIn('slow');
+        else
+        $('#printnewsletter-form').fadeOut('slow');
+        });
+        });
+    </script>
+</body>
+
+</html>

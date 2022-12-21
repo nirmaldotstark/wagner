@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 16 24">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#777;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="ico_collection" transform="translate(-4)">
+        <g id="XMLID_1663_">
+            <path id="XMLID_1335_" d="M16.72 6.2L15.5.5h-7L7.279 6.2" class="cls-1"/>
+            <path id="XMLID_1331_" d="M7.279 17.8L8.5 23.5h7l1.221-5.7" class="cls-1"/>
+            <circle id="XMLID_1329_" cx="7.5" cy="7.5" r="7.5" class="cls-1" transform="translate(4.5 4.5)"/>
+        </g>
+        <circle id="XMLID_1326_" cx=".5" cy=".5" r=".5" class="cls-1" transform="translate(11.5 11.5)"/>
+        <path id="XMLID_1323_" d="M12 7.5V12l2.5 2.5" class="cls-1"/>
+    </g>
+</svg>

@@ -1,0 +1,112 @@
+.error-middle-section{
+    .display-text2{
+        @media (max-width: 767px) {
+            font-size: 36px;
+        }
+    }
+    .display-text2, .display-text3{
+        color: $color-secondary;
+        padding-bottom: 15px;
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left:0;
+            right: 0;
+            text-align: center;
+            margin: 0 auto;
+            height: 1px;
+            width:49px;
+            border-bottom: 1px solid $color-secondary;
+        }
+    }
+    p{
+        margin: 18px auto 40px;
+        line-height: 28px;
+        max-width: 559px;
+        @media (max-width: 767px) {
+            max-width: 354px;
+            font-family: 'Nunito Sans';
+        }
+    }
+    .display-text3{
+        font-size: 30px;
+        font-family: $font-spectral-ital;
+        @media (max-width: 767px) {
+            font-size: 26px;
+        }
+    }
+    form{
+        max-width: 593px;
+        margin: 0 auto 90px;
+        @media (max-width: 767px) {
+            margin-bottom: 0px;
+        }
+        .form-group{
+        margin-top: 18px;
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+        }
+        input{
+            width:100%;
+            font-size: 26px;
+            color: $color-primary;
+            width:100%;
+            border:1px solid $color-text-info;
+           padding: 15px 10px 15px 55px;
+           opacity: 0.6;
+            @media (max-width: 767px) {
+                font-size: 16px;
+                min-height: 65px;
+            }
+        }
+        button{
+            background-color: #fff;
+            border: none;
+            left: 1px;
+            padding: 17px 10px 17px 20px;
+            top: 1px;
+            @media (max-width: 767px) {
+                padding: 11px 12px;
+                top:7px;
+            }
+            img{
+                width: 24px;
+                height: 24px;
+                filter: invert(44%) sepia(68%) saturate(418%) hue-rotate(8deg) brightness(98%) contrast(87%);
+                -ms-filter: invert(44%) sepia(68%) saturate(418%) hue-rotate(8deg) brightness(98%) contrast(87%);
+            }
+        }
+        }
+    }
+}
+.insight-old-layout{
+    margin-bottom: 5px;
+    .heading{
+        margin-bottom: 17.5px;
+    }
+    &.insights-section{
+        .row {
+            .col-md-4{
+                &.col-lg-4 {
+                    @media (max-width: 767px) {
+                    min-width: 275px;
+                    margin-right: 16px;
+                    }
+                }
+            }
+        }
+        .insight-content{
+            p{
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+.error-banner{
+    @media (max-width: 767px) {
+        img{
+            width: 100%;
+        }
+    }
+}

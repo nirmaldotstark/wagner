@@ -1,0 +1,240 @@
+.shop-login{
+    margin-bottom: 311px;
+    .shop-login-section{
+        padding: 60px 0 0;
+        width:892px;
+        margin:0 auto;
+        @media (max-width: 991px) and (min-width: 768px) {
+            width:100%;
+        }
+        h3,h4{
+            color:$color-primary;
+            font-size: 32px;
+            line-height: 42px;
+            margin-top: 30px;
+            font-family: $font-ebgaramond-regular;
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+        .shop-login-left{
+            width: 446px;
+            padding-right: 15px;
+            border-right: 1px solid #e0e0e0;
+            @media (max-width: 1200px) and (min-width: 992px) {
+                width:426px;
+             }
+             @media (max-width: 991px) and (min-width: 768px) {
+                 width:100%;
+                 border:none;
+                 padding: 0;
+             }
+        form{
+            margin-top: 12px;
+            margin-bottom: 0;
+          input{
+              background-color: transparent;
+              border:none;
+              border-bottom: 1px solid #c1c1c1;
+              padding-bottom: 30px;
+              width:100%;
+              transition: 0.3s all ease-in-out;
+              font-size:12px;
+             line-height: 26px;
+             font-family: $font-centurygothic;
+             color: $color-primary;
+             font-weight: 400;
+             margin-bottom: 15px;
+             padding-top: 0;
+              &:focus{
+                  padding-bottom: 10px;
+                  transition: 0.3s all ease-in-out;
+                  color: $color-text-info;
+                  border-color:$color-text-info;
+                  &::placeholder{
+                    color: $color-text-info;
+                  }
+                  &:-ms-input-placeholder{
+                    color: $color-text-info; 
+                  }
+                  &::-ms-input-placeholder{
+                    color: $color-text-info;
+                  }
+              }
+              &:hover{
+                color: $color-text-info;
+                border-color:$color-text-info;
+                &::placeholder{
+                  color: $color-text-info;
+                }
+                &:-ms-input-placeholder{
+                    color: $color-text-info; 
+                }
+                &::-ms-input-placeholder{
+                    color: $color-text-info;
+                }
+            }
+          }
+          button{
+              width:100%;
+              font-family: $font-centurygothic;
+              font-weight: 400;
+          }
+        }
+        }
+        .shop-login-right{
+            width: 446px;
+            padding-left: 15px;
+            @media (max-width: 1200px) and (min-width: 992px) {
+               width:426px;
+            }
+            @media (max-width: 991px) and (min-width: 768px) {
+                width:100%;
+                padding: 0;
+            }
+            p{
+                margin-bottom: 120px;
+                margin-top: 15px;
+                line-height: 28px;
+                color: $color-primary;
+            }
+            
+        }
+    }
+    a{
+        i.fa{
+            vertical-align: middle;
+        }
+    }
+}
+.shop-login-header{
+    padding: 46px 0 30px;
+    @media (max-width: 767px) {
+    padding: 30px 10px 25px;
+    &.cart-mobile-header{
+        .shop-logo {
+            display: none;
+        }
+    }
+    }
+    .shop-logo {
+        margin-left: 33%;
+        @media (max-width: 991px) and (min-width: 768px){
+            margin-left: 53%;
+        }
+        @media (max-width: 1200px) and (min-width: 992px){
+            margin-left: 35%;
+        }
+        @media (max-width: 767px) {
+            width: 140px;
+            margin: 0 auto;
+        }
+        
+    }
+    .shop-header-contact{
+        @media (max-width: 767px) {
+            display: none;
+        }
+        ul{
+            padding: 0;
+            margin: 0 auto;
+            li{
+                list-style: none;
+                display: block;
+                margin-bottom: 10px;
+                &:first-child{
+                    a{
+                        color: $color-text-info;
+                    }
+                }
+                a{
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-family: $font-centurygothic;
+                    font-weight: 400;
+                    .icon{
+                        margin-right: 5px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer{
+    padding: 0;
+    &.login-footer{
+        a{
+            margin-top: 13px;
+        }
+        .footer-newsletter{
+            padding: 27px 0 34px;
+            height: 129px;
+            @media (max-width: 767px) {
+                height: 184px;
+                position: relative;
+            }
+            .footer-text-link{
+                @media (max-width: 767px) {
+                position: absolute;
+                bottom: -132px;
+                text-align: center !important;
+                display: block;
+                left: 0;
+                right: 0;
+                line-height: 24px;
+                margin-top: 20px;
+                }
+            }
+           .payment-icons{
+               ul{
+                   margin-bottom: 0;
+                
+               }
+           }
+        }
+        .footer-offer{
+            ul{
+                @media (min-width: 1251px) {
+                padding-left: 60px;
+                }
+            }
+        }
+        .shop-login-newsletter{
+            text-align: right;
+            @media (min-width: 1251px) {
+                padding-right: 8px;
+            }
+            .payment-icons{
+                text-align: right;
+
+            }
+        }
+    }
+}
+.login-head-left-content{
+    top: 0;
+    left: 14px;
+    @media (max-width: 767px) {
+        display: none;
+    }
+    span{
+        &.display-text2{
+        font-size: 22px;
+        line-height: 33px;
+        margin-bottom: 2px;
+        letter-spacing: -0.11px;
+        @media (max-width: 991px) and (min-width: 768px){
+            font-size: 14px;
+            line-height: 33px;
+        }
+    }
+    }
+    .display-text2{
+        font-size: 28px;
+        line-height: 43px;
+        @media (max-width: 991px) and (min-width: 768px){
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Onload Popup</title>
+</head>
+<body>
+    <div class="modal show fade" id="onload-popup">
+    <div class="modal-dialog">
+     <!-- Modal content-->
+    <div class="modal-content">
+        
+           <div class="onload-popup-detail overflow-hidden">
+            <div class="onload-popup-img float-left">
+                <img src="../assets/images/popup-modal-img.jpg" alt="">
+            </div>
+            <div class="onload-popup-content float-right text-center position-relative">
+                <a class="close position-absolute secondary-text-color" data-dismiss="modal"><img src="../assets/images/close-wishlist-icon.svg" alt="close-icon"></a>
+                <h3 class="display-text3">Wir sind für sie da!</h3>
+                <p>Alle Informationen zu unseren Kontakt- und Servicemöglichkeiten finden sie <a href="">hier</a></p>
+                <a href="" class="secondary-ghosted-btn mt-30 d-inline-block">Kontakt- und Service</a>
+            </div>
+           </div>
+    </div>
+    </div>
+    </div>
+<!-- JS Global Compulsory (Do not remove)-->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(window).on('load', function() {
+        $('#onload-popup').modal('show');
+    });
+</script>
+</body>
+</html>

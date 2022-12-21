@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css?var=2">
+    <title>Checkout Step 4</title>
+</head>
+<body>
+
+  <div class="shop-login-header position-relative">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-8">
+                <div class="cart-breadcrumb position-absolute pt-0">
+                    <a href="" class="default-link-icon"><object type="image/svg+xml" data="assets/images/language-arrow-icon.svg" class="icon icon-contact">
+                    </object> Zurück zum Webshop</a>
+                  </div>
+                <div class="shop-logo text-center">
+                    <a href="index.html"><img src="assets/images/logo.svg" alt="header-logo"></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="shop-header-contact text-right">
+                    <ul>
+                        <li><a href="mailto:info@juwelier-wagner.at" class="default-text"> <object type="image/svg+xml" data="assets/images/envelope-icon.svg" class="icon icon-contact">
+                        </object>  info@juwelier-wagner.at</a></li>
+                        <li><a href="tel:+43 1 512 0 512" class="default-text"> <object type="image/svg+xml" data="assets/images/contact-icon.svg" class="icon icon-contact">
+                        </object>  +43 1 512 0 512</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="checkout-main">
+        <div class="container">
+            <form method="post" class="common-form">
+            <div class="row">
+                <div class="col-md-12 col-lg-8">
+                    <div class="checkout-main-left">
+                    <h3 class="display-text3">Kundeninformation</h3>
+                    <div class="checkout-main-details new-subscribe-form-fields">
+                        <div class="form-group">
+                            <span class="has-float-label">
+                            <input type="email" value="" placeholder="E-Mail Adresse" id="email_address" name="email_address" class="form-control1">
+                            <label for="email_address">E-Mail Adresse</label>
+                            </span>
+                        </div>
+                        <div class="form-group checkout-info">
+                            <span>Wir benötigen diese ausschließlich zur Bestätigung Ihrer Bestellung.</span>
+                        </div>
+                        <div class="form-group newsletter-checkbox mb-0">
+                            <label class="text-left" for="checkbox6"><div  class="d-none">.</div>
+                                <input type="checkbox" name="checkbox6" id="checkbox6">
+                                <span class="checkmark"></span>
+                                Ich möchte ein Kundenkonto eröffnen.
+                            </label>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="checkout-main-left checkout-step2-info">
+                        <h3 class="display-text3">Versandart</h3>
+                        <fieldset>
+                            <legend class="d-none">.</legend>
+                        <div class="control-group">
+                            <label class="control control-radio form-group " for="radio3">
+                                Kostenloser Versand
+                                    <input type="radio" name="radio3" checked="checked" id="radio3" data-toggle="collapse" data-target="#versandart-check1" />
+                                <div class="control_indicator"></div>
+                                <div class="radio-checked-info collapse show" id="versandart-check1">
+                                    <span>Im Falle eines Widerrufs, beachten Sie bitte unsere AGB</span>
+                                </div>
+                            </label>
+                            <label class="control control-radio form-group" for="radio4">
+                                Abholung Kärntnerstrasse 32, 1010 Wien
+                                    <input type="radio" name="radio3" id="radio4" data-toggle="collapse" data-target="#versandart-check1" />
+                                <div class="control_indicator"></div>
+                                <div class="radio-checked-info collapse" id="versandart-check1">
+                                    <span>Ihre Bestellung ist frühestens 2 Werktage nach Zahlungseingang ab 13:00 Uhr in unserem Geschäft Kärntner Straße 32, 1010 Wien abholbereit.</span>
+                                </div>
+                            </label>
+                            <label class="control control-radio form-group" for="radio5">
+                                Abholung Graben 21 / Tuchlauben 2, 1010 Wien
+                                    <input type="radio" name="radio3" id="radio5" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                    </fieldset>
+                    </div>
+                    <div class="checkout-main-left checkout-step3">
+                        <h4 class="display-text3">Adresse</h4>
+                        <div class="new-subscribe-form-fields ">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="position-relative form-group">
+                                        <label for="amrede" class="form-up-text">Anrede* </label>
+                                        <select name="amrede" id="amrede">
+                                            <option>Herr</option>
+                                        </select>
+                                        <span class="arrow position-absolute"><object type="image/svg+xml" data="assets/images/chevron-icon.svg" class="icon icon-arrow">
+                                        </object></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="position-relative form-group">
+                                        <label for="title-optional" class="form-up-text d-none">.</label>
+                                        <input type="text" placeholder="Titel (optional)" name="title-optional" id="title-optional">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="position-relative form-group">
+                                        <label for="vorname" class="form-up-text">Vorname*</label>
+                                        <input type="text" value="Max" placeholder="" id="vorname" name="vorname">
+                                     </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="position-relative form-group">
+                                        <label for="nachname" class="form-up-text">Nachname*</label>
+                                        <input type="text" value="Mustermann" placeholder="" id="nachname" name="nachname">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="position-relative form-group">
+                                        <label for="Firmenname (optional)" class="form-up-text d-none">Firmenname (optional)</label>
+                                        <input type="text" value="Max" placeholder="Firmenname (optional)" id="Firmenname (optional)" name="Firmenname (optional)">
+                                     </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="position-relative form-group">
+                                        <label for="telephone" class="form-up-text">Telefon (optional)</label>
+                                        <input type="text" value="+43 676 123 4567" placeholder="" id="telephone" name="telephone">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="position-relative form-group">
+                                        <label for="Strasse" class="form-up-text">Firmenname (optional)</label>
+                                        <input type="text" value="Musterstraße 23" placeholder="" id="Strasse" name="Strasse">
+                                     </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="position-relative form-group">
+                                        <label for="Zusatzinformation" class="form-up-text">Zusatzinformation</label>
+                                        <input type="text" value="Büro im Mezzanin" placeholder="" id="Zusatzinformation" name="Zusatzinformation">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="position-relative form-group">
+                                       <div class="row m-0">
+                                           <div class="col-lg-4 col-md-4 pl-0">
+                                            <label for="postal" class="form-up-text">Postleitzahl</label>
+                                            <input type="number" value="1234" placeholder="" id="postal" name="postal">
+                                           </div>
+                                           <div class="col-lg-8 col-md-8 p-0">
+                                            <label for="ort" class="form-up-text">Ort</label>
+                                            <input type="text" value="Österreich" placeholder="" id="ort" name="ort">
+                                           </div>
+                                       </div>
+                                     </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="position-relative form-group">
+                                        <label for="land" class="form-up-text">Land</label>
+                                        <select name="title-optional" id="land" name="land">
+                                            <option>Österreich</option>
+                                        </select>
+                                        <span class="arrow position-absolute"><object type="image/svg+xml" data="assets/images/chevron-icon.svg" class="icon icon-arrow">
+                                        </object></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group gift-banner" style="background-image: url(assets/images/gift-banner.jpg);">
+                            <h5 class="display-text3">Bestellung als Geschenk versenden?</h5>
+                            <p>Hinterlassen Sie Ihren Lieben einen netten Gruß.</p>
+                            <a href="" class="primary-ghosted-btn d-inline-block" data-toggle="collapse" data-target="#gift-notes">Ihr Geschenkgruß</a>
+                            <div class="form-group collapse" id="gift-notes">
+                                <label for="gift_notes" class="d-none">.</label>
+                                <textarea value="" placeholder="Ihr Geschenkgruß" name="gift_notes" id="gift_notes"></textarea>
+                                <div class="text-left radio-checked-info">
+                                    <span>Noch 200 Zeichen übrig</span>
+                                </div>
+                                <div class="text-right">
+                                    <a href="" class="d-inline-block primary-ghosted-btn">Speichern</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group newsletter-checkbox">
+                            <label class="text-left" for="checkbox2"><div  class="d-none">.</div>
+                                <input type="checkbox" name="checkbox2" id="checkbox2">
+                                <span class="checkmark"></span>
+                                Ich habe eine abweichende Rechnungsadresse
+                            </label>
+                            <label class="text-left" for="checkbox3"><div  class="d-none">.</div>
+                                <input type="checkbox" name="checkbox3" id="checkbox3">
+                                <span class="checkmark"></span>
+                                Ich habe Anmerkungen zu dieser Bestellung
+                            </label>
+                            <div class="form-group" id="add-notes">
+                                <label for="add_notes" class="d-none">.</label>
+                                <textarea value="" placeholder="Ihre Fragen, Wünsche Anregungen" name="add_notes" id="add_notes"></textarea>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="checkout-main-left checkout-step4">
+                        <h3 class="display-text3">Zahlungsart</h3>
+                        <div class="new-subscribe-form-fields ">
+                        <div class="credit-card-details-new border-line" >
+                            <fieldset>
+                                <legend class="d-none">.</legend>
+                            <div class="control-group">
+                                <label class="control control-radio form-group " for="radio1">
+                                    Kreditkarte
+                                        <input type="radio" name="radio" checked="checked" id="radio1"/>
+                                    <div class="control_indicator"></div>
+                                    <img src="assets/images/payment-icon1.png" alt="payment-icon1">
+                                    <img src="assets/images/payment-icon2.png" alt="payment-icon2">
+                                    <img src="assets/images/payment-icon4.png" alt="payment-icon4">
+                                </label>
+                                <div class="credit-card-details-section">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-12">
+                                                <div class="position-relative form-group">
+                                                    <label for="cardholder_name" class="form-up-text">Karteninhaber</label>
+                                                    <input type="text" value="Max Mustermann" placeholder="" id="cardholder_name" name="cardholder_name">
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="position-relative form-group">
+                                                    <label for="cardnumber" class="form-up-text">Kartennummer</label>
+                                                    <input type="text" value="123  234 4334 334" placeholder="" id="cardnumber" name="cardnumber">
+                                                    <img src="assets/images/payment-icon1.png" alt="payment-icon1" class="position-absolute">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="position-relative form-group">
+                                                   <div class="row m-0">
+                                                       <div class="col-lg-5 col-md-5 pl-0">
+                                                        <label for="card_expire" class="form-up-text">Postleitzahl</label>
+                                                        <input type="text" value="11/14" placeholder="" id="card_expire" name="card_expire">
+                                                       </div>
+                                                       <div class="col-lg-7 col-md-7 pl-0">
+                                                        <label for="cvv" class="form-up-text">Sicherheitscode</label>
+                                                        <input type="text" value="123" placeholder="" id="cvv" name="cvv">
+                                                       </div>
+                                                   </div>
+                                                 </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="control control-radio form-group" for="radio2">
+                                    Sofortüberweisung
+                                        <input type="radio" name="radio" id="radio2" />
+                                    <div class="control_indicator"></div>
+                                    <img src="assets/images/payment-icon3.png" alt="payment-icon1">
+                                </label>
+                            </div>
+                            </fieldset>
+                        </div>   
+                        <div class="form-group newsletter-checkbox border-line">
+                            <label class="text-left" for="checkbox7"><div  class="d-none">.</div>
+                                <input type="checkbox" name="checkbox7" checked = "checked" id="checkbox7">
+                                <span class="checkmark"></span>
+                                Ich stimme den Nutzungs- und Verkaufsbedingungen von Juwelier Wagner zu und nehme hiermit zur Kenntniss, dass bereitgestellte Informationen durch diese Website auf Servern gespeichert werden. 
+                            </label>
+                            <label class="text-left" for="checkbox4"><div  class="d-none">.</div>
+                                <input type="checkbox" name="checkbox4" checked = "checked" id="checkbox4">
+                                <span class="checkmark"></span>
+                                Ich möchte den Wagner Print Newsletter abonnieren
+                            </label>
+                            <label class="text-left" for="checkbox5"><div  class="d-none">.</div>
+                                <input type="checkbox" name="checkbox5" checked = "checked" id="checkbox5">
+                                <span class="checkmark"></span>
+                                Ich möchte den Wagner Newsletter abonnieren
+                            </label>
+                        </div>
+                        <div class="form-group text-right">
+                            <a href="/templates/wishlist-checkout/wagner_checkout_V3.html"> 
+                                    <button type="button" class="primary-btn">Jetzt bestellen</button>  
+                                </a>  
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="checkout-right-product-section">
+                        <h3 class="display-text3">Zusammenfassung</h3>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="default-product-box">
+                                        <img src="assets/images/product-img1.png" alt="product-img1.png">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="non-binding-product-detail position-relative">
+                                        <h3>Wagner</h3>
+                                        <span class="secondary-text-color product-description">Balou Special</span>
+                                        <ul class="product-description secondary-text-color">
+                                            <li>
+                                                <object type="image/svg+xml" data="assets/images/jewellery-icon.svg" class="icon jewellery-icon">
+                                                </object>   Ring, Ringweite 52
+                                            </li>
+                                            <li>
+                                                <object type="image/svg+xml" data="assets/images/jewellery-icon.svg" class="icon jewellery-icon">
+                                                </object>   18 Kt Roségold, 
+                                            </li>
+                                            <li>
+                                                <object type="image/svg+xml" data="assets/images/jewellery-icon.svg" class="icon jewellery-icon">
+                                                </object>  0,14 ct Diamant, Rosenquarz
+                                            </li>
+                                            
+                                            <li>Ref.: BA111-R-RX-51</li>
+                                        </ul>
+                                        <span class="product-description mb-0">€ 3.250,–</span>
+                                        <a href="" class="position-absolute extra-small-link-icon">bearbeiten</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img src="assets/images/product-img1.png" alt="product-img1.png">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="non-binding-product-detail position-relative">
+                                        <h3>Wagner</h3>
+                                        <span class="secondary-text-color product-description">Balou Special</span>
+                                        <ul class="product-description secondary-text-color">
+                                            <li>
+                                                <object type="image/svg+xml" data="assets/images/jewellery-icon.svg" class="icon jewellery-icon">
+                                                </object>   Ring, Ringweite 52
+                                            </li>
+                                            <li>
+                                                <object type="image/svg+xml" data="assets/images/jewellery-icon.svg" class="icon jewellery-icon">
+                                                </object>   18 Kt Roségold, 
+                                            </li>
+                                            <li>
+                                                <object type="image/svg+xml" data="assets/images/jewellery-icon.svg" class="icon jewellery-icon">
+                                                </object>  0,14 ct Diamant, Rosenquarz
+                                            </li>
+                                            
+                                            <li>Ref.: BA111-R-RX-51</li>
+                                        </ul>
+                                        <span class="product-description mb-0">€ 3.250,–</span>
+                                        <a href="" class="position-absolute extra-small-link-icon">bearbeiten</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img src="assets/images/cart-img1.png" alt="product-img1.png">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="non-binding-product-detail">
+                                        <h4>Geschenkbox</h4>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                    <div class="checkout-right-section">
+                        <table>
+                            <tbody><tr>
+                                <td>Zwischensumme</td>
+                                <td><small class="lead-text">€</small> 3.250,–</td>
+                            </tr>
+                            <tr>
+                                <td>Kostenloser Versand</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Gesamt inkl. Mwst</td>
+                                <td><small class="lead-text">€</small> 12.600,– </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                    <div class="product-description-detail">
+                    <div class="more-product-info">
+                        <div id="accordion">
+                            <div class="card1">
+                            <div class="card-header1">
+                                <a class=" collapsed default-link-icon secondary-text-color" data-toggle="collapse" href="#collapseOne">
+                                Versand
+                                <object type="image/svg+xml" data="assets/images/chevron-icon.svg" class="icon icon-arrow">
+                                </object>
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                <div class="card-body1">
+                                    <p>Lorem ipsum..</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="card1">
+                            <div class="card-header1">
+                                <a class="collapsed default-link-icon secondary-text-color" data-toggle="collapse" href="#collapseTwo">
+                                    Bezahlung
+                                    <object type="image/svg+xml" data="assets/images/chevron-icon.svg" class="icon icon-arrow">
+                                    </object>
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                <div class="card-body1">
+                                <p> Lorem ipsum..</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-support-list">
+                        <ul>
+                            <li><a href="" class="small-text secondary-text-color"> <object type="image/svg+xml" data="assets/images/faq-icon.svg" class="icon icon-faq">
+                            </object> Fragen zum Produkt oder Webshop?</a></li>
+                            <li><a href="" class="small-text secondary-text-color"> <object type="image/svg+xml" data="assets/images/icon-ring.svg" class="icon icon-ring">
+                            </object> Ringweite messen</a></li>
+                      
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+    
+    <footer class="footer login-footer">
+    <div class="footer-offer white-border">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="lead-text">
+              <li>
+                <object type="image/svg+xml" data="assets/images/offer-icon1.svg" class="offer-icons">
+                </object>
+                <span>kostenlose Lieferung</span>
+              </li>
+              <li>
+                <object type="image/svg+xml" data="assets/images/offer-icon2.svg" class="offer-icons">
+                </object>
+                <span>sichere Bezahlung</span>
+              </li>
+              <li>
+                <object type="image/svg+xml" data="assets/images/offer-icon3.svg" class="offer-icons">
+                </object>
+                <span>luxuriöse
+                Geschenksverpackung</span>
+              </li>
+              <li>
+                <object type="image/svg+xml" data="assets/images/offer-icon5.svg" class="offer-icons">
+                </object>
+                <span>Kostenlose Retoure</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-newsletter white-border">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-8">
+              <a class="footer-text-link  text-left d-block">Lieferung und Rücksendungen<br>
+                Datenschutz
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <h5>Zahlungsmöglichkeiten</h5>
+              <div class="payment-icons">
+                <ul>
+                  <li><a href="#"><img src="assets/images/payment-icon1.png" alt="payment-icon1" ></a></li>
+                  <li><a href="#"><img src="assets/images/payment-icon2.png" alt="payment-icon2" ></a></li>
+                  <li><a href="#"><img src="assets/images/payment-icon3.png" alt="payment-icon3" ></a></li>
+                  <li><a href="#"><img src="assets/images/payment-icon4.png" alt="payment-icon4" ></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+<!-- JS Global Compulsory (Do not remove)-->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $('#checkbox3').change(function(){
+    if(this.checked)
+    $('#add-notes').fadeIn('slow');
+    else
+    $('#add-notes').fadeOut('slow');
+    });
+    });
+</script>
+
+</body>
+</html>

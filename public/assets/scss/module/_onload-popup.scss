@@ -1,0 +1,93 @@
+#onload-popup{
+    margin-top:10%;
+    @media (max-width: 767px) {
+        margin-top:auto;
+    }
+    .modal-dialog{
+        max-width: 700px;
+        @media (max-width: 767px) {
+        width: 100%;
+        margin: 0 auto;
+        top: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        }
+        .modal-content{
+            border-radius: 0;
+            border:none;
+        }
+    }
+    .onload-popup-img{
+        width:300px;
+        height: 300px;
+        @media (max-width: 767px) {
+            width: 100%;
+            height: 100%;
+            img{
+                width:100%;
+            }
+        }
+    }
+    .onload-popup-content{
+        width:400px;
+        padding: 48px 20px 47px;
+        @media (max-width: 767px) {
+            width: 100%;
+            padding: 30px 20px;
+        }
+        
+        h3{
+            font-family: $font-spectral-ital;
+            font-size: 26px;
+            line-height: 40px;
+            position: relative;
+            padding-bottom: 12px;
+            margin-bottom: 15px;
+            color: $color-secondary;
+            &::after{
+                position: absolute;
+                content: "";
+                bottom: 0;
+                border-bottom: 1px solid $color-secondary;
+                width:49px;
+                height: 1px;
+                left:0;
+                right:0;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+        p{
+            margin-bottom: 0;
+            line-height: 28px;
+        }
+        a{
+            color: $color-text-info;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .secondary-ghosted-btn{
+            padding:  16px 30px 15px 30px;
+            font-family: 'Nunito Sans';
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+    .close{
+        top:10px;
+        right:15px;
+        opacity: 1;
+        height: 11px;
+        width: 11px;
+        img{
+            @media (max-width: 767px) {
+                height: 14px;
+                width: 14px;
+            }
+        }
+    }
+}

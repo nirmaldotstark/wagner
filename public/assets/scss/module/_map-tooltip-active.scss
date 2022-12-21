@@ -1,0 +1,92 @@
+.map-tooltip-active{
+    .map-tooltip-img {
+        left:20%;
+        right:0;
+        top:32%;
+        margin: 0 auto;
+        @media (min-width: 1520px) {
+            left:19%;
+            top:33%;
+        }
+        @media (max-width: 1200px) and (min-width: 992px) {
+            top: 28%;
+        }
+    }
+    .map-tooltip-content{
+        max-width:470px;
+        padding: 15px 30px 30px;
+        top:30%;
+        left:-26%;
+        right:0;
+        margin: 0 auto;
+        background-color: $color-text-white;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0 , 0.16);
+        @media (max-width: 1200px) and (min-width: 992px) {
+            top: 25%;
+            left: -39%;
+        }
+        @media (max-width: 991px) and (min-width: 768px) {
+            top: 53%;
+        }
+        @media (min-width: 1520px) {
+            left:-18%;
+        }
+        @media (max-width: 767px) {
+            padding: 15px 10px 30px;
+            top: 80%;
+            left:0;
+        }
+        &::after{
+            position: absolute;
+            right:-20px;
+            top:8%;
+            border-left:20px solid #fff;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            content: "";
+            height: 0;
+            width:0;
+            @media (max-width: 991px) and (min-width: 768px) {
+                right: 81px;
+                top: -11%;
+                transform: rotate(-90deg);
+                -webkit-transform: rotate(-90deg);
+                -moz-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
+            }
+            @media (max-width: 767px) {
+                right: 140px;
+                top: -11%;
+                transform: rotate(-90deg);
+                -webkit-transform: rotate(-90deg);
+                -moz-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
+            }
+        }
+        p{
+            margin-bottom: 0;
+            line-height: 23px;
+        }
+        .display-text3{
+            font-size: 26px;
+            font-family: $font-spectral-ital;
+            line-height: 46px;
+            margin-bottom: 15px;
+            &::after{
+                position: absolute;
+                content: "";
+                border-bottom: 1px solid $color-secondary;
+                left:0;
+                right:0;
+                text-align: center;
+                margin: 0 auto;
+                height: 1px;
+                width: 49px;
+                bottom: 0;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        display: none;
+    }
+}

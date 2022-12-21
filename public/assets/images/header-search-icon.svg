@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.944" height="23.072" viewBox="0 0 24.944 23.072">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#977d2e;stroke-linecap:round;stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="ico_suche" transform="translate(.5 .5)">
+        <g id="Gruppe_6">
+            <path id="Pfad_4" d="M9.236 17.154c5.1 0 9.236-3.84 9.236-8.577S14.338 0 9.236 0 0 3.84 0 8.577s4.135 8.577 9.236 8.577z" class="cls-1"/>
+        </g>
+        <g id="Gruppe_7" transform="translate(15.819 13.948)">
+            <path id="Pfad_5" d="M7.917 7.917L0 0" class="cls-1"/>
+        </g>
+    </g>
+</svg>

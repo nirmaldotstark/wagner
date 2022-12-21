@@ -1,0 +1,29 @@
+.register-page-m{
+    padding: 27px 0 200px;
+    .register-page{
+        max-width: 374px;
+        margin: 0 auto;
+    }
+    .display-text2{
+        font-size: 32px;
+        line-height: 42px;
+        font-family:$font-ebgaramond-regular;
+        font-style: normal;
+        margin-bottom: 20px;
+    }
+    .register-list{
+        &:last-child{
+            margin-bottom: 18px;
+        }
+        border:1px solid #c1c1c1;
+        padding: 30px 15px;
+        border-radius: 3px;
+        p{
+            font-size:16px;
+            margin-bottom: 0;
+        }
+        img{
+            width:30px;
+        }
+    }
+}

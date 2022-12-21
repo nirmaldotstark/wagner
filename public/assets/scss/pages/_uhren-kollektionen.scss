@@ -1,0 +1,62 @@
+.uhren-kollection-banner-layout{
+    .row{
+        justify-content: center;
+        align-items: center;
+        display: block;
+        overflow: hidden;
+        .col-lg-8.col-md-7{
+            float: right;
+        }
+        .col-lg-4.col-md-5{
+            float: left;
+        }
+    }
+    .uhren-kollektion-banner{
+        img{
+            max-width: 100%;
+        }
+    }
+    .uhren-kollection-banner-layout-content{
+        margin-top: 39%;
+        @media (max-width: 767px) {
+            margin-top: 30px;
+            .mt-30{
+                margin-top: 25px !important;
+            }
+        }
+        @media (max-width: 991px) and (min-width: 768px){
+            margin-top: 30px;
+        }
+        @media (max-width: 1300px) and (min-width: 992px){
+            margin-top: 30%;
+        }
+    }
+    .uhren-kollektion-slider{
+        .slick-dots {
+           bottom: 20px;
+        } 
+    }
+    &.kollection-layout-change{
+        .row{
+            .col-lg-8.col-md-7{
+                float: left;
+            }
+            .col-lg-4.col-md-5{
+                float: right;
+            }
+        }
+    }
+   
+}
+@media (max-width: 767px) {
+.uhren-kollection-product-list{
+    padding-bottom: 40px !important;
+    .product-detail{
+        padding-bottom: 20px;
+        .product-img {
+            padding: 20px 10px 0;
+            margin-bottom: 11px;
+        }
+    }
+} 
+}

@@ -1,0 +1,59 @@
+.account-activation{
+    padding: 58px 0 60px;
+    @media (max-width: 767px) {
+        padding: 15px 0 60px;
+        border-top: 1px solid #eaeaea;
+    }
+    .account-activation-box{
+        width:484px;
+        margin:0 auto;
+        @media (max-width: 767px) {
+            width: 95%;
+        }
+        h4{
+            font-style: normal;
+            font-size:32px;
+            line-height: 49px;
+            font-family: $font-spectral;
+        }
+        p{
+            line-height: 28px;
+            letter-spacing: -0.08px;
+            margin-bottom: 30px;
+            &.para-list{
+                font-size: 14px;
+            }
+        }
+        button{
+            width:100%;
+        }
+        label{
+            font-size:12px;
+            line-height: 26px;
+            padding: 0;
+            margin-bottom: 0;
+        }
+        small{
+            display: block;
+            .icon{
+                right:0;
+                top:5px;
+                width:17px;
+                height: 11px;
+                @media (max-width: 767px) {
+                    right: 10px;
+                    top: 18px;
+                }
+            }
+            input{
+                padding-bottom: 1px;
+                padding-top: 0;
+                padding-right: 30px;
+                @media (max-width: 767px) {
+                    padding: 14px 10px;
+                    border:1px solid #333;
+                }
+            }
+        }
+    }
+}

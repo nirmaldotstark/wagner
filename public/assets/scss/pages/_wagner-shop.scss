@@ -1,0 +1,223 @@
+.wagner-shop-section{
+    padding: 40px 0;
+    @media (max-width: 767px) {
+        background-color: #fafafa;
+        padding: 20px 0;
+        &.secondary-bg{
+            background-color: transparent;
+        }
+        .shops-btn{
+            margin-top:32px;
+            a{
+                display: block !important;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .float-left,.float-right{
+            float: none !important;
+            .shop-img{
+                img{
+                    width:100%;
+                }
+            }
+        }
+    }
+    .row{
+        display: block;
+    }
+    .common-content{
+        @media (max-width: 767px) {
+        .primary-btn {
+            margin-left: 0;
+        }
+        }
+        .display-text1{
+            @media (max-width: 767px) {
+                line-height: 40px;
+            }
+        }
+        &.common-padding-left{
+            padding: 0;
+            @media (min-width: 1520px) {
+               padding-right: 136px;
+            }
+        }
+    }
+    .shop-img-new-layout{
+        height: 408px;
+        overflow: hidden;
+        @media (max-width: 767px) {
+            height: auto;
+            padding: 0 20px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &.shop-new-layout{
+        &:nth-child(2n+1){
+            .common-content{
+                @media (min-width: 1520px) {
+                    padding-left: 95px;
+                }
+            }
+        }
+    }
+}
+.common-padding-img{
+    padding-right: 98px;
+    @media (max-width: 991px) {
+        padding-right: 0;
+    }
+}
+.shop-map-img{
+    margin-top: 40px;
+    @media (max-width: 767px) {
+       margin-top: 0;
+    }
+    img{
+    width:100%;
+}
+}
+.shop-location-content{
+    @media (max-width: 991px) {
+        padding: 30px 0 0;
+    &.float-right{
+        float:none  !important;
+    }
+}
+    .lead-text{
+        font-weight: bold;
+    }
+    p{
+        color: $color-secondary;
+        line-height: 23px;
+    }
+    img{
+        margin-right: 10px;
+    }
+    @media (max-width: 1200px) and (min-width: 992px) {
+    .shop-location-info {
+        width: 71%;
+    }
+    }
+    .after-hover{
+        display: block;
+    }
+    .before-hover{
+        display: none;
+    }
+    &:hover{
+        .after-hover{
+            display: none;
+        }
+        .before-hover{
+            display: block;
+        }
+    }
+}
+.wagner-shop-heading{
+    margin-top: -16px;
+    @media (max-width: 991px) {
+        margin-top: 10px;
+    }
+    .wagner-shop-heading-m{
+        padding: 23.5px 0 0px;
+        border-top: 1px solid #eaeaea;
+        @media (max-width: 767px) {
+            padding: 0px 0 12px;
+            border-top: 0;
+            .display-text1 {
+                font-size: 36px;
+                line-height: 55px;
+            }
+        }
+    }
+    .display-text1{
+        &::after{
+            position: absolute;
+            content: "";
+            border-bottom: 1px solid $color-secondary;
+            height: 1px;
+            width: 49px;
+            left:0;
+            right:0;
+            text-align: center;
+            margin: 0 auto;
+            bottom: 0;
+        }
+        &.shop-heading-new{
+            &::after{
+                display: none;
+            }
+        }
+    }
+}
+.shop-detail{
+    @media (max-width: 991px) {
+        background-color: #fff;
+        &.secondary-bg{
+            background-color: #fafafa;
+        }
+    }
+    .container {
+        @media (min-width: 1520px) {
+        max-width: 1190px;
+        }
+    }
+    .common-content{ 
+        padding: 0;
+    }
+    .shop-img{
+        outline: 1px solid $color-text-info;
+        outline-offset: -11px;
+        @media (max-width: 991px) {
+            margin-bottom: 15px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+
+}
+.shop-detail-new-layout{
+    @media (max-width: 991px) {
+        background-color: #fff;
+        &.secondary-bg{
+            background-color: #fafafa;
+        }
+    }
+    .container {
+        @media (min-width: 1520px) {
+                max-width: 1020px;
+                padding: 0 12px;
+                .shop-img{
+                    max-width: 471px;
+                }
+        }
+    }
+    .common-content{ 
+        padding: 0;
+    }
+    .shop-img{
+        outline: 1px solid $color-text-info;
+        outline-offset: -11px;
+        @media (max-width: 991px) {
+            margin-bottom: 15px;
+        }
+        img{
+            width: 100%;
+            
+        }
+    }
+
+}
+.wagner-shops-client-logo {
+    &.secondary-bg{
+        @media (max-width: 991px) {
+        background-color: #fff;
+        }
+    }
+}

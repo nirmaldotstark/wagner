@@ -1,0 +1,107 @@
+.about-us-section{
+    @media (max-width: 767px) {
+        padding-bottom: 30px!important;
+        padding-top: 38px;
+    }
+    .heading{
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+            line-height: 46px;
+            font-family: $font-ebgaramond;
+            font-style: italic;
+            text-transform: capitalize;
+            letter-spacing: -0.11px;
+            color: $color-primary;
+            @media (max-width: 767px) {
+                font-size: 26px;
+                line-height: 26px;
+            }
+        }
+    }
+    .blog-heading-text {
+        @media (max-width: 767px) {
+        font-size: 22px;
+        line-height: 29px;
+        width: 80%;
+        }
+    }
+    @media (min-width: 1520px) {
+    .blog-content{
+        .container{
+            max-width: 1020px;
+            .blog-content-m{
+                margin-left: 30px;
+                p{
+                    width:723px;
+                }
+                &.margin-blog-left{
+                    margin-left: 233px;
+                }
+            }
+        }
+    }
+    }
+}
+.about-overview{
+    &.article-overview-section {
+        .jewellery-article-section {
+            .jewellery-article-img{
+                height: 451px;
+                overflow: hidden;
+                @media (max-width: 991px) {
+                    height: auto;
+                }
+                
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 40px;
+    }
+    .jewellery-article-section{
+        padding-bottom: 30px;
+        @media (max-width: 767px) {
+            padding-bottom: 0px;
+           &:first-child{
+            margin-top: 0;
+           }
+        }
+        .jewellery-article-text{
+            span{
+                font-size: 12px;
+                font-weight: 700;
+                margin-bottom: 6px;
+                display: block;
+                @media (max-width: 767px) {
+                    display: block;
+                    margin-top: 10px;
+                }
+            }
+            .display-text1{
+                line-height: 52px;
+                padding-bottom: 9px;
+                @media (max-width: 767px) {
+                    font-size: 30px;
+                    line-height: 36px;
+                    width: 100%;
+                }
+                &::after{
+                    display: block;
+                }
+            }
+            @media (max-width: 767px) {
+                p{
+                    margin-bottom: 10px;
+                }
+            } 
+        }
+    }
+    @media (min-width: 1520px) {
+        .container{
+            max-width: 960px;
+        }
+    }
+}
