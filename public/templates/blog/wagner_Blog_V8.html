@@ -557,33 +557,33 @@
                             <div class="megamenu-collection-new text-center">
                               <div class="megamenu-collections-list">
                                   <div class="megamenu-collection-img position-relative">
-                                    <img src="../../assets/images/blog-megamenu1.jpg" alt="blog-megamenu1">
-                                  </div>
+<a href="/templates/blog/wagner_Blog_V8.html">                                    <img src="../../assets/images/blog-megamenu1.jpg" alt="blog-megamenu1">
+</a>                                  </div>
                                   <a style="
     text-transform: none;" href="/templates/blog/wagner_Blog_V8.html">Hinter den Kulissen</a>
                                 </div>
                                 <div class="megamenu-collections-list">
                                   <div class="megamenu-collection-img  position-relative">
-                                    <img src="../../assets/images/blog-megamenu2.jpg" alt="blog-megamenu2">
-                                  </div>
+<a href="/templates/blog/wagner_Blog_V8.html">                                    <img src="../../assets/images/blog-megamenu2.jpg" alt="blog-megamenu2">
+</a>                                  </div>
                                   <a href="/templates/blog/wagner_Blog_V8.html">Kultur</a>
                                 </div>
                                 <div class="megamenu-collections-list ">
                                   <div class="megamenu-collection-img position-relative">
-                                    <img src="../../assets/images/blog-megamenu3.jpg" alt="blog-megamenu3">
-                                  </div>
+<a href="/templates/blog/wagner_Blog_V8.html">                                    <img src="../../assets/images/blog-megamenu3.jpg" alt="blog-megamenu3">
+</a>                                  </div>
                                   <a href="/templates/blog/wagner_Blog_V8.html">Neuheiten</a>
                                 </div>
                                 <div class="megamenu-collections-list">
                                   <div class="megamenu-collection-img position-relative">
-                                    <img src="../../assets/images/blog-megamenu4.jpg" alt="blog-megamenu4">
-                                  </div>
+<a href="/templates/blog/wagner_Blog_V8.html">                                <img src="../../assets/images/blog-megamenu4.jpg" alt="blog-megamenu4">
+</a>                                  </div>
                                   <a href="/templates/blog/wagner_Blog_V8.html"><a href="#">Veranstaltungen</a></a>
                                 </div>
                                 <div class="megamenu-collections-list">
                                   <div class="megamenu-collection-img  position-relative">
-                                    <img src="../../assets/images/blog-megamenu5.jpg" alt="blog-megamenu5">
-                                  </div>
+<a href="/templates/blog/wagner_Blog_V8.html">                                    <img src="../../assets/images/blog-megamenu5.jpg" alt="blog-megamenu5">
+</a>                                  </div>
                                   <a href="/templates/blog/wagner_Blog_V8.html">Wissenswertes</a>
                                 </div>
                               </div>
@@ -1201,11 +1201,11 @@
         <div class="col-lg-12">
           <div class="blog-list-m">
             <ul>
-              <li><a href="#" class="primary-ghosted-btn d-inline-block">Backstage</a></li>
-              <li><a href="#" class="primary-ghosted-btn d-inline-block">Kultur</a></li>
-              <li><a href="#" class="primary-ghosted-btn d-inline-block">Neuheiten</a></li>
-              <li><a href="#" class="primary-ghosted-btn d-inline-block">Veranstaltungen</a></li>
-              <li><a href="#" class="primary-ghosted-btn d-inline-block">Wissenswertes</a></li>
+              <li><a href="/templates/blog/wagner_Blog_V8.html?tab=backstage" class="primary-ghosted-btn d-inline-block">Backstage</a></li>
+              <li><a href="/templates/blog/wagner_Blog_V8.html?tab=kultur" class="primary-ghosted-btn d-inline-block">Kultur</a></li>
+              <li><a href="/templates/blog/wagner_Blog_V8.html?tab=neuheiten" class="primary-ghosted-btn d-inline-block">Neuheiten</a></li>
+              <li><a href="/templates/blog/wagner_Blog_V8.html?tab=veranstaltungen" class="primary-ghosted-btn d-inline-block">Veranstaltungen</a></li>
+              <li><a href="/templates/blog/wagner_Blog_V8.html?tab=wissenswertes" class="primary-ghosted-btn d-inline-block">Wissenswertes</a></li>
             </ul>
           </div>
         </div>
@@ -1923,5 +1923,38 @@
 <script src="../../assets/js/slick.min.js"></script>
 <script src="../../assets/js/common.js"></script>
 
+<script type="text/javascript">
+  $(document).ready(function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const tab = urlParams.get('tab');
+
+    switch (tab) {
+      case 'backstage':
+      addActiveClass(0);
+      break;
+      case 'kultur':
+      addActiveClass(1); 
+      break;
+      case 'neuheiten':
+      addActiveClass(2);
+      break;
+      case 'veranstaltungen':
+      addActiveClass(3);
+      break;
+      case 'wissenswertes':
+      addActiveClass(4);
+      break;
+    
+      default:
+        break;
+    } 
+
+    function addActiveClass(index) {
+      console.log(index)
+      $('.blog-list-m ul').children().eq(index).addClass('active');
+    }
+ 
+  });
+</script>
 </body>
 </html>
