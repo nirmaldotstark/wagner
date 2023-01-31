@@ -1527,13 +1527,13 @@
                       <div class="newsletter-form common-form text-center">
                           <h2 class="newsletter-heading">Verpassen Sie keine Neuigkeiten
                           mehr von Juwelier Wagner</h2>
-                          <form method="post" id="newsletter-form">
+                          <form action="javascript:" id="newsletter-form">
                               <div class="form-group">
                                 <div class="form-label-group position-relative">
                                   <input type="email" value="" class="form-control" placeholder="E-Mail Adresse" id="newsletter-email" name="email">
                                   <label for="email">E-Mail Adresse</label>
                                 </div>
-                                <button class="main-newsletter-btn">Jetzt abonnieren <span class="fa fa-angle-right" aria-hidden="true"></span></button>
+                                <button type="button" class="main-newsletter-btn">Jetzt abonnieren <span class="fa fa-angle-right" aria-hidden="true"></span></button>
                                 <div class="new-subscribe-form-fields fade in" id="new-newsletter-form">
                                   <div class="form-group newsletter-checkbox">
                                       <div class="row">
@@ -1645,14 +1645,16 @@
                                               <label class="text-left" for="checkbox3"><small class="d-none">.</small>
                                                   <input type="checkbox" name="privacy_checkbox" id="checkbox3">
                                                   <span class="checkmark"></span>
-                                                  Ich akzeptiere die <a href="#" class="default-link-icon">Datenschutzbestimmungen</a>
-                                                  <label for="checkbox3-validation" class="privacy-checkbox-error">Bitte akzeptieren Sie die Datenschutzbestimmungen.</label>
+                                                  <p id="privacy_checkbox_text">
+                                                    Ich akzeptiere die <a href="#" class="default-link-icon">Datenschutzbestimmungen</a> 
+                                                  </p>
+                                                  <label style="display: none;" for="checkbox3-validation" class="privacy-checkbox-error">Bitte akzeptieren Sie die Datenschutzbestimmungen.</label>
                                               </label>
                                           </div>
                                       </div>
                                   </div>
                                   <div class="form-group text-right mb-0">
-                                      <button>JETZT ABONNIEREN</button>
+                                      <button type="submit">JETZT ABONNIEREN</button>
                                   </div>
                                 </div>
                               </div>
