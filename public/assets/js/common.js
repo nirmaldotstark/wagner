@@ -279,19 +279,10 @@ $(function($) {
 });
 
 $(document).ready(function () {
-
-  console.log("inside ready")
+ 
   $("#newsletter-form").submit(function() { 
   
-  if($('input[name=privacy_checkbox]:checkbox:checked').length > 0) {
-    $(".privacy-checkbox-error").css("display","none");
-    $("#privacy_checkbox_text").css("border-bottom","none"); 
-  }
-  else {
-    $(".privacy-checkbox-error").css("display","block");  
-    $("#privacy_checkbox_text").css("border-bottom","1px solid #CE5C4F"); 
-    $("#privacy_checkbox_text").css("margin-bottom","0px"); 
-  }
+  
   
   $("#newsletter-form").validate({
     // Specify validation rules
@@ -683,7 +674,7 @@ $('input[name=privacy_checkbox]').change(function(){
     $("#privacy_checkbox_text").css("border-bottom","none"); 
   }
   else {
-    $(".privacy-checkbox-error").css("display","block");
+    $(".privacy-checkbox-error").css("display","block"); 
     $("#privacy_checkbox_text").css("border-bottom","1px solid #CE5C4F"); 
   }
   });
