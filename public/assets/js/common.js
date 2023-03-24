@@ -679,9 +679,33 @@ $('input[name=privacy_checkbox]').change(function(){
   }
   });
 
-
-
-
+ 
+$(document).ready(function() {
+const arr = [90,91,92];
+let currentIndex = 0;
+$('#left-arrow').click(function() {
+  currentIndex--;
+if(currentIndex == -1) {
+currentIndex = 2;
+}
+let id = arr[currentIndex];
+console.log(currentIndex)
+$('#slick-slide'+id).click();
+})
+$('#right-arrow').click(function() {
+  currentIndex++;
+if(currentIndex == 3) {
+currentIndex = 0;
+}
+let id = arr[currentIndex];
+console.log(currentIndex)
+$('#slick-slide'+id).click();
+})
+})
+ 
+$('#newsletter-form input[type=email]').click(function() {
+$('.newsletter-img img').prop('src','/assets/images/newsletter-img2.png')
+});
 
 
   

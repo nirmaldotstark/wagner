@@ -14,13 +14,13 @@
       <div class="row">
         <div class="col-lg-12 col-md-12">
           <div class="header-left-side position-relative">
-            <img src="../../assets/images/clock.svg" alt="icon-clock">
+            <img src="/assets/images/clock.svg" alt="icon-clock">
             <span>Mo-Fr 10:00-18:30 | Sa 10:00-18:00</span>
           </div>
         </div>
       </div>
       <div class="header-top-close-icon position-absolute ">
-        <a href="#" class="close" data-dismiss="alert"><img src="../../assets/images/close-wishlist-icon.svg" alt="language-delete-icon" class="icon"></a>
+        <a href="#" class="close" data-dismiss="alert"><img src="/assets/images/close-wishlist-icon.svg" alt="language-delete-icon" class="icon"></a>
       </div>
     </div>
   </div>
@@ -33,16 +33,16 @@
                 <ul>
                   <li>
                     <a href="#">
-                      <img src="../../assets/images/language-icon.svg" alt="icon language-icon" class="icon">
+                      <img src="/assets/images/language-icon.svg" alt="icon language-icon" class="icon">
                       English
                     </a>
                   </li>
                   <li><a href="/templates/contentpages/kontakt_V6.html"> 
-                    <img src="../../assets/images/envelope-icon.svg" alt="icon language-icon" class="icon">
+                    <img src="/assets/images/envelope-icon.svg" alt="icon language-icon" class="icon">
                     Kontakt                    
                   </a></li>
-                  <li><a href="/templates/contentpages/wagner_standorte_V7.html"> 
-                    <img src="../../assets/images/map-icon.svg" alt="icon language-icon" class="icon">                
+                  <li><a href="/templates/contentpages/wagner_standorte_V6.html"> 
+                    <img src="/assets/images/map-icon.svg" alt="icon language-icon" class="icon">                
                     Geschäfte                   
                   </a></li>
                 </ul>
@@ -54,17 +54,17 @@
               <ul>
                 <li>
                   <a href="/templates/wishlist-checkout/wagner_wunschliste_V5.html">
-                    <img src="../../assets/images/heart-icon.svg" alt="icon icon-heart">
+                    <img src="/assets/images/heart-icon.svg" alt="icon icon-heart">
                   </a>
                 </li>
                 <li>
                   <a href="/templates/wishlist-checkout/wagner_warenkorb_V5.html">
-                    <img src="../../assets/images/basket-icon.svg" alt="icon icon-basket">
+                    <img src="/assets/images/basket-icon.svg" alt="icon icon-basket">
                   </a>
                 </li>
                 <li>
                   <a href="/templates/contentpages/search_sucheV3.html">
-                    <img src="../../assets/images/search-icon.svg" alt="icon icon-search">
+                    <img src="/assets/images/search-icon.svg" alt="icon icon-search">
                   </a>
                 </li>
               </ul>
@@ -74,9 +74,29 @@
         <div class="row">
             <div class="col-lg-12 col-md-12">
               <div class="header-logo text-center position-relative">
-                <a href="/startpage.html"><img src="../../assets/images/logo.svg" alt="Logo-img"></a>
+                <a href="/startpage.html"><img src="/assets/images/logo.svg" alt="Logo-img"></a>
                 <div class="rolex-img text-right">
-                  <img src="../../assets/images/rolax-logo.jpg" alt="Rolex-img">
+                  <img src="/assets/images/rolax-logo.jpg" alt="Rolex-img">
+                  <a href="http://www.retailer.com/rolex-section-url" style="display:none;"> <div class="rolex-retailer-clock"> </div> </a>
+                  <script src="https://static.rolex.com/retailers/clock/retailercall.js"></script>
+                  <script>
+                      setTimeout(function () {
+                          var lang_to_use = "de";
+                          if (window.location.href.indexOf('/en/') > 0) {
+                              lang_to_use = "en";
+                          }
+                          var rdp = new RolexRetailerClock();
+                          var rdpConfig = {
+                              dealerAPIKey: 'a14cd394345b21293e67db1d7b365791',
+                              lang: lang_to_use,
+                              colour: 'gold'
+                          };
+                          try {
+                              rdp.getRetailerClock(rdpConfig);
+                          } catch (err) { }
+                      }, 250);
+                            
+                  </script>
                 </div>
               </div>
             </div>
@@ -337,48 +357,58 @@
                           <a class="nav-link" href="/templates/kollektionen/schmuck-collection.html">Schmuck</a>
                           <div class="mega-menu mega2">
                             <div class="megamenu-collection-new text-center">
-                              <div class="megamenu-collections-list">
-                                  <div class="megamenu-collection-img position-relative">
-                                    <img src="/assets/images/schmuck-megamenu1.jpg" alt="schmuck-megamenu1">
-                                  </div>
-                                  <a href="#">Ringe</a>
-                                </div>
-                                <div class="megamenu-collections-list">
-                                  <div class="megamenu-collection-img  position-relative">
-                                    <img src="/assets/images/schmuck-megamenu2.jpg" alt="schmuck-megamenu2">
-                                  </div>
-                                  <a href="#">Armschmuck</a>
-                                </div>
-                                <div class="megamenu-collections-list ">
-                                  <div class="megamenu-collection-img position-relative">
-                                    <img src="/assets/images/schmuck-megamenu3.jpg" alt="schmuck-megamenu3">
-                                  </div>
-                                  <a href="#">Ohrschmuck</a>
-                                </div>
-                                <div class="megamenu-collections-list">
-                                  <div class="megamenu-collection-img position-relative">
-                                    <img src="/assets/images/schmuck-megamenu4.jpg" alt="schmuck-megamenu4">
-                                  </div>
-                                  <a href="#">Halsschmuck</a>
-                                </div>
-                                <div class="megamenu-collections-list">
-                                  <div class="megamenu-collection-img  position-relative">
-                                    <img src="/assets/images/schmuck-megamenu5.jpg" alt="schmuck-megamenu5">
-                                  </div>
-                                  <a href="#">Accessoires</a>
-                                </div>
-                              </div>
+    <div class="megamenu-collections-list">
+        <div class="megamenu-collection-img position-relative"> 
+        <a href="/templates/kollektionen/schmuck-collection-filteredV4.html">
+          <img src="/assets/images/schmuck-megamenu1.jpg" alt="schmuck-megamenu1">
+        </a>
+        </div>
+        <a href="/templates/kollektionen/schmuck-collection-filteredV4.html">Ringe</a>
+      </div>
+      <div class="megamenu-collections-list">
+        <div class="megamenu-collection-img  position-relative"> 
+        <a href="/templates/kollektionen/schmuck-collection-filteredV4.html">
+          <img src="/assets/images/schmuck-megamenu2.jpg" alt="schmuck-megamenu2">
+        </a>
+        </div>
+        <a href="/templates/kollektionen/schmuck-collection-filteredV4.html">Armschmuck</a>
+      </div>
+      <div class="megamenu-collections-list ">
+        <div class="megamenu-collection-img position-relative"> 
+        <a href="/templates/kollektionen/schmuck-collection-filteredV4.html">
+          <img src="/assets/images/schmuck-megamenu3.jpg" alt="schmuck-megamenu3">
+        </a>
+        </div>
+        <a href="/templates/kollektionen/schmuck-collection-filteredV4.html">Ohrschmuck</a>
+      </div>
+      <div class="megamenu-collections-list">
+        <div class="megamenu-collection-img position-relative"> 
+        <a href="/templates/kollektionen/schmuck-collection-filteredV4.html">
+          <img src="/assets/images/schmuck-megamenu4.jpg" alt="schmuck-megamenu4">
+        </a>
+        </div>
+        <a href="/templates/kollektionen/schmuck-collection-filteredV4.html">Halsschmuck</a>
+      </div>
+      <div class="megamenu-collections-list">
+        <div class="megamenu-collection-img  position-relative">
+        <a href="/templates/kollektionen/schmuck-collection-filteredV4.html">
+          <img src="/assets/images/schmuck-megamenu5.jpg" alt="schmuck-megamenu5">
+        </a>
+        </div>
+        <a href="/templates/kollektionen/schmuck-collection-filteredV4.html">Accessoires</a>
+      </div>
+    </div>
                             <div class="wagner-menu-collection-list">
                                 <h5 class="display-text3">Juwelen Marken</h5>
                                 <ul>
-                                    <li><a href="#">Wagner Collection</a></li>
+                                    <li><a href="/templates/kollektionen/wagner-jewellery-collection-filteredV3.html">Wagner Collection</a></li>
                                     <li><a href="#">Chopard</a></li>
                                 </ul>
                             </div>
                           </div>
                         </li>
                         <li class="nav-item dropdown-hover">
-                          <a class="nav-link" href="/templates/kollektionen/wagner-jewellery-collection-filteredV1.html">Wagner Jewellery</a>
+                          <a class="nav-link" href="/templates/kollektionen/wagner-jewellery.html">Wagner Jewellery</a>
                           <div class="mega-menu mega2">
                             <div class="megamenu-collection-new text-center">
                               <div class="megamenu-collections-list">
@@ -462,7 +492,7 @@
                           </div>
                         </li>
                         <li class="nav-item dropdown-hover">
-                          <a class="nav-link" href="/templates/startpage/anlasse-megamenu.html">Anlässe</a>
+                          <a class="nav-link" href="/templates/kollektionen/schmuck-collection-filteredV2.html">Anlässe</a>
                           <div class="mega-menu mega2">
                             <div class="megamenu-collection-new text-center">
                               <div class="megamenu-collections-list">
@@ -510,7 +540,7 @@
                           </div>
                         </li>
                         <li class="nav-item dropdown-hover">
-                          <a class="nav-link" href="/templates/startpage/uber-wagner-megamenu.html">Über Wagner</a>
+                          <a class="nav-link" href="/templates/kollektionen/uber-wagner.html">Über Wagner</a>
                           <div class="mega-menu mega2">
                             <div class="megamenu-collection-new text-center">
                               <div class="megamenu-collections-list">
@@ -521,7 +551,7 @@
                                 </div>
                                 <div class="megamenu-collections-list">
                                   <div class="megamenu-collection-img  position-relative">
-<a href="/templates/contentpages/wagner_service_V2.html"></a>                                    <img src="/assets/images/uber-wagner-megamenu2.jpg" alt="uber-wagner-megamenu2">
+<a href="/templates/contentpages/wagner_service_V2.html">                                    <img src="/assets/images/uber-wagner-megamenu2.jpg" alt="uber-wagner-megamenu2">
 </a>                                  </div>
                                   <a href="/templates/contentpages/wagner_service_V2.html">Saphir</a>
                                 </div>
@@ -539,7 +569,7 @@
                                 </div>
                                 <div class="megamenu-collections-list">
                                   <div class="megamenu-collection-img  position-relative">
-<a href="/templates/contentpages/wagner_service_V2.html"></a>                                    <img src="/assets/images/uber-wagner-megamenu5.jpg" alt="uber-wagner-megamenu5">
+<a href="/templates/contentpages/wagner_service_V2.html">                                    <img src="/assets/images/uber-wagner-megamenu5.jpg" alt="uber-wagner-megamenu5">
 </a>                                  </div>
                                   <a href="/templates/contentpages/wagner_service_V2.html">Guests & Friends</a>
                                 </div>
@@ -604,10 +634,12 @@
     text-transform: none;" href="/templates/blog/wagner_Blog_V8.html">Hinter den Kulissen</a></li>
                                     <li><a href="/templates/blog/wagner_Blog_V8.html">Neuheiten</a></li>
                                     <li><a href="/templates/blog/wagner_Blog_V8.html"><a href="#">Veranstaltungen</a></a></li>
+
+<li><a href="/templates/contentpages/lexikon_V2.html">Lexikon</a></li>
                                     <li><a href="/templates/blog/wagner_Blog_V8.html">Kultur</a></li>
                                     <li><a href="/templates/contentpages/nl_V1.html">Newsletter</a></li>
                                     <li><a href="/templates/blog/wagner_Blog_V8.html?prev=blog">Wissenswertes</a></li>
-                                    <li><a href="/templates/contentpages/lexikon_V2.html">Lexikon</a></li>
+                                    
                                 </ul>
                             </div>
                           </div>
@@ -626,28 +658,28 @@
       <div class="mobile-menu-m position-relative overflow-hidden">
         <div class="mobile-menu-left float-left">
         <div class="mobile-menu-icon d-inline-block">
-         <a href="#" class="js-menuToggle"><img src="../../assets/images/mobile-menu-icon.svg" alt="mobile-menu-icon"></a>
+         <a href="#" class="js-menuToggle"><img src="/assets/images/mobile-menu-icon.svg" alt="mobile-menu-icon"></a>
         </div>
         <div class="mobile-search-icon d-inline-block">
           <a data-toggle="modal" data-target="#search-popup">
-            <img src="../../assets/images/search-icon.svg" alt="icon-search">
+            <img src="/assets/images/search-icon.svg" alt="icon-search">
           </a>
         </div>
         </div>
         <div class=" mobile-menu-right text-right float-right">
           <div class="mobile-phone-icon d-inline-block">
             <a href="#">
-              <img src="../../assets/images/icon-mobile-phone.svg" alt="phone-icon">
+              <img src="/assets/images/icon-mobile-phone.svg" alt="phone-icon">
             </a>
           </div>
           <div class="mobile-cart-icon d-inline-block">
             <a href="#">
-              <img src="../../assets/images/icon-mobile-basket.svg" alt="basket-icon">
+              <img src="/assets/images/icon-mobile-basket.svg" alt="basket-icon">
             </a>
           </div>
         </div>
         <div class="logo text-center">
-          <img src="../../assets/images/logo.svg" alt="Logo">
+          <img src="/assets/images/logo.svg" alt="Logo">
         </div>
       </div>
       <div class="mobile-menu-slide pushNav js-topPushNav">
@@ -658,13 +690,13 @@
             </div>
           </div>
           <div class="mobile-logo text-center">
-            <a href="#"><img src="../../assets/images/logo.svg" alt="Logo"></a>
+            <a href="#"><img src="/assets/images/logo.svg" alt="Logo"></a>
           </div>
           <li class="nav-item">
-            <a class="nav-link openLevel js-openLevel" href="#">Rolex <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+            <a class="nav-link openLevel js-openLevel" href="#">Rolex <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
             <ul class="pushNav pushNav_level js-pushNavLevel">
               <div class="closeLevel js-closeLevel">
-                <a href="#" class="back-btn "><img src="../../assets/images/arrow-icon1.svg" alt="">Rolex</a>
+                <a href="#" class="back-btn "><img src="/assets/images/arrow-icon1.svg" alt="">Rolex</a>
               </div>
               <div class="closeLevel js-closeLevelTop">
                 <div class="menu-close text-right">
@@ -672,13 +704,13 @@
                 </div>
               </div>
               <div class="mobile-logo text-center">
-                <a href="#"><img src="../../assets/images/logo.svg" alt="Logo"></a>
+                <a href="#"><img src="/assets/images/logo.svg" alt="Logo"></a>
               </div>
               <li class="nav-item">
-                <a href="#" class="openLevel js-openLevel">Rolex bei Wagner  <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                <a href="#" class="openLevel js-openLevel">Rolex bei Wagner  <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
                 <ul class="pushNav pushNav_level js-pushNavLevel">
                   <div class="closeLevel js-closeLevel">
-                    <a href="#" class="back-btn "><img src="../../assets/images/arrow-icon1.svg" alt="">Rolex</a>
+                    <a href="#" class="back-btn "><img src="/assets/images/arrow-icon1.svg" alt="">Rolex</a>
                   </div>
                   <div class="closeLevel js-closeLevelTop">
                     <div class="menu-close text-right">
@@ -686,13 +718,13 @@
                     </div>
                   </div>
                   <div class="mobile-logo text-center">
-                    <a href="#"><img src="../../assets/images/logo.svg" alt="Logo"></a>
+                    <a href="#"><img src="/assets/images/logo.svg" alt="Logo"></a>
                   </div>
                   <li class="nav-item">
                     <div class="mobile-blog menu-blog-slider">
                       <div class="mobile-blog-detail">
                         <div class="mobile-blog-img position-relative">
-                          <img src="../../assets/images/rolex-product1.jpg" class="lazy" alt="blog-subpage1">
+                          <img src="/assets/images/rolex-product1.jpg" class="lazy" alt="blog-subpage1">
                         </div>
                         <div class="menu-blog-content">
                           <a href="#" class="lead-text">Datejust</a>
@@ -700,7 +732,7 @@
                       </div>
                       <div class="mobile-blog-detail">
                         <div class="mobile-blog-img position-relative">
-                          <img src="../../assets/images/rolex-product2.jpg" class="lazy" alt="blog-subpage1">
+                          <img src="/assets/images/rolex-product2.jpg" class="lazy" alt="blog-subpage1">
                         </div>
                         <div class="menu-blog-content">
                           <a href="#" class="lead-text">GMT-Master II</a>
@@ -708,7 +740,7 @@
                       </div>
                       <div class="mobile-blog-detail">
                         <div class="mobile-blog-img position-relative">
-                          <img src="../../assets/images/rolex-product3.jpg" class="lazy" alt="blog-subpage1">
+                          <img src="/assets/images/rolex-product3.jpg" class="lazy" alt="blog-subpage1">
                         </div>
                         <div class="menu-blog-content">
                           <a href="#" class="lead-text">Datejust</a>
@@ -716,7 +748,7 @@
                       </div>
                       <div class="mobile-blog-detail">
                         <div class="mobile-blog-img position-relative">
-                          <img src="../../assets/images/rolex-product4.jpg" class="lazy" alt="blog-subpage1">
+                          <img src="/assets/images/rolex-product4.jpg" class="lazy" alt="blog-subpage1">
                         </div>
                         <div class="menu-blog-content">
                           <a href="#" class="lead-text">GMT-Master II</a>
@@ -724,7 +756,7 @@
                       </div>
                       <div class="mobile-blog-detail">
                         <div class="mobile-blog-img position-relative">
-                          <img src="../../assets/images/rolex-product5.jpg" class="lazy" alt="blog-subpage1">
+                          <img src="/assets/images/rolex-product5.jpg" class="lazy" alt="blog-subpage1">
                         </div>
                         <div class="menu-blog-content">
                           <a href="#" class="lead-text">Datejust</a>
@@ -733,10 +765,10 @@
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="openLevel js-openLevel">Rolex bei Wagner <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                    <a href="#" class="openLevel js-openLevel">Rolex bei Wagner <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
                     <ul class="pushNav pushNav_level js-pushNavLevel">
                       <div class="closeLevel js-closeLevel">
-                        <a href="#" class="back-btn "><img src="../../assets/images/arrow-icon1.svg" alt="">Rolex</a>
+                        <a href="#" class="back-btn "><img src="/assets/images/arrow-icon1.svg" alt="">Rolex</a>
                       </div>
                       <div class="closeLevel js-closeLevelTop">
                         <div class="menu-close text-right">
@@ -744,28 +776,28 @@
                         </div>
                       </div>
                       <div class="mobile-logo text-center">
-                        <a href="#"><img src="../../assets/images/logo.svg" alt="Logo"></a>
+                        <a href="#"><img src="/assets/images/logo.svg" alt="Logo"></a>
                       </div> 
                       <li class="nav-item">
-                        <a href="#" class="openLevel js-openLevel">Rolex bei Wagner <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                        <a href="#" class="openLevel js-openLevel">Rolex bei Wagner <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
                       </li>
                       <li class="nav-item" >
-                        <a href="#" class="openLevel js-openLevel" >Rolex Collection  <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                        <a href="#" class="openLevel js-openLevel" >Rolex Collection  <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
                       </li>
                       <li class="nav-item">
-                        <a href="#" class="openLevel js-openLevel">Festliche Auswahl <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                        <a href="#" class="openLevel js-openLevel">Festliche Auswahl <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
                       </li>
                       <li class="nav-item">
-                        <a href="#" class="openLevel js-openLevel">Neue Modelle 2020 <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                        <a href="#" class="openLevel js-openLevel">Neue Modelle 2020 <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
                       </li>
                       <li class="nav-item">
-                        <a href="#" class="openLevel js-openLevel">Kontakt <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                        <a href="#" class="openLevel js-openLevel">Kontakt <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
                       </li>
                       <li class="nav-item">
                         <div class="mobile-blog menu-blog-slider">
                           <div class="mobile-blog-detail">
                             <div class="mobile-blog-img position-relative">
-                              <img src="../../assets/images/rolex-product1.jpg" class="lazy" alt="blog-subpage1">
+                              <img src="/assets/images/rolex-product1.jpg" class="lazy" alt="blog-subpage1">
                             </div>
                             <div class="menu-blog-content">
                               <a href="#" class="lead-text">Datejust</a>
@@ -773,7 +805,7 @@
                           </div>
                           <div class="mobile-blog-detail">
                             <div class="mobile-blog-img position-relative">
-                              <img src="../../assets/images/rolex-product2.jpg" class="lazy" alt="blog-subpage1">
+                              <img src="/assets/images/rolex-product2.jpg" class="lazy" alt="blog-subpage1">
                             </div>
                             <div class="menu-blog-content">
                               <a href="#" class="lead-text">GMT-Master II</a>
@@ -781,7 +813,7 @@
                           </div>
                           <div class="mobile-blog-detail">
                             <div class="mobile-blog-img position-relative">
-                              <img src="../../assets/images/rolex-product3.jpg" class="lazy" alt="blog-subpage1">
+                              <img src="/assets/images/rolex-product3.jpg" class="lazy" alt="blog-subpage1">
                             </div>
                             <div class="menu-blog-content">
                               <a href="#" class="lead-text">Datejust</a>
@@ -789,7 +821,7 @@
                           </div>
                           <div class="mobile-blog-detail">
                             <div class="mobile-blog-img position-relative">
-                              <img src="../../assets/images/rolex-product4.jpg" class="lazy" alt="blog-subpage1">
+                              <img src="/assets/images/rolex-product4.jpg" class="lazy" alt="blog-subpage1">
                             </div>
                             <div class="menu-blog-content">
                               <a href="#" class="lead-text">GMT-Master II</a>
@@ -797,7 +829,7 @@
                           </div>
                           <div class="mobile-blog-detail">
                             <div class="mobile-blog-img position-relative">
-                              <img src="../../assets/images/rolex-product5.jpg" class="lazy" alt="blog-subpage1">
+                              <img src="/assets/images/rolex-product5.jpg" class="lazy" alt="blog-subpage1">
                             </div>
                             <div class="menu-blog-content">
                               <a href="#" class="lead-text">Datejust</a>
@@ -808,41 +840,41 @@
                     </ul>
                   </li>
                   <li class="nav-item" >
-                    <a href="#" class="openLevel js-openLevel" >Rolex Collection  <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                    <a href="#" class="openLevel js-openLevel" >Rolex Collection  <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="openLevel js-openLevel">Festliche Auswahl <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                    <a href="#" class="openLevel js-openLevel">Festliche Auswahl <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="openLevel js-openLevel">Neue Modelle 2020 <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                    <a href="#" class="openLevel js-openLevel">Neue Modelle 2020 <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="openLevel js-openLevel">Kontakt <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                    <a href="#" class="openLevel js-openLevel">Kontakt <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item" >
-                <a href="#" class="openLevel js-openLevel" >Rolex Collection  <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                <a href="#" class="openLevel js-openLevel" >Rolex Collection  <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
               </li>
               <li class="nav-item">
-                <a href="#" class="openLevel js-openLevel">Festliche Auswahl <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                <a href="#" class="openLevel js-openLevel">Festliche Auswahl <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
               </li>
               <li class="nav-item">
-                <a href="#" class="openLevel js-openLevel">Neue Modelle 2020 <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                <a href="#" class="openLevel js-openLevel">Neue Modelle 2020 <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
               </li>
               <li class="nav-item">
-                <a href="#" class="openLevel js-openLevel">Kontakt <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                <a href="#" class="openLevel js-openLevel">Kontakt <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link openLevel js-openLevel" href="#">Uhren <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+            <a class="nav-link openLevel js-openLevel" href="#">Uhren <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link openLevel js-openLevel" href="#">Schmuck <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+            <a class="nav-link openLevel js-openLevel" href="#">Schmuck <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
             <ul class="pushNav pushNav_level js-pushNavLevel">
               <div class="closeLevel js-closeLevel">
-                <a href="#" class="back-btn "><img src="../../assets/images/arrow-icon1.svg" alt="">SCHMUCK</a>
+                <a href="#" class="back-btn "><img src="/assets/images/arrow-icon1.svg" alt="">SCHMUCK</a>
               </div>
               <div class="closeLevel js-closeLevelTop">
                 <div class="menu-close text-right">
@@ -850,14 +882,14 @@
                 </div>
               </div>
               <div class="mobile-logo text-center">
-                <a href="#"><img src="../../assets/images/logo.svg" alt="Logo"></a>
+                <a href="#"><img src="/assets/images/logo.svg" alt="Logo"></a>
               </div>
-              <li><a href="#"><div class="schmuck-banner mt-30"><img src="../../assets/images/collection-banner4.jpg" alt="collection-banner4"></div></a></li>
+              <li><a href="#"><div class="schmuck-banner mt-30"><img src="/assets/images/collection-banner4.jpg" alt="collection-banner4"></div></a></li>
               <li class="nav-item">
-                <a href="#" class="openLevel js-openLevel">Startseite Schmuck  <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                <a href="#" class="openLevel js-openLevel">Startseite Schmuck  <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
                 <ul class="pushNav pushNav_level js-pushNavLevel">
                   <div class="closeLevel js-closeLevel">
-                    <a href="#" class="back-btn "><img src="../../assets/images/arrow-icon1.svg" alt="">SCHMUCK</a>
+                    <a href="#" class="back-btn "><img src="/assets/images/arrow-icon1.svg" alt="">SCHMUCK</a>
                   </div>
                   <div class="closeLevel js-closeLevelTop">
                     <div class="menu-close text-right">
@@ -865,13 +897,13 @@
                     </div>
                   </div>
                   <div class="mobile-logo text-center">
-                    <a href="#"><img src="../../assets/images/logo.svg" alt="Logo"></a>
+                    <a href="#"><img src="/assets/images/logo.svg" alt="Logo"></a>
                   </div>
                   <li class="nav-item">
-                    <a href="#" class="openLevel js-openLevel">Startseite Schmuck  <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                    <a href="#" class="openLevel js-openLevel">Startseite Schmuck  <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
                     <ul class="pushNav pushNav_level js-pushNavLevel">
                       <div class="closeLevel js-closeLevel">
-                        <a href="#" class="back-btn "><img src="../../assets/images/arrow-icon1.svg" alt="">SCHMUCK</a>
+                        <a href="#" class="back-btn "><img src="/assets/images/arrow-icon1.svg" alt="">SCHMUCK</a>
                       </div>
                       <div class="closeLevel js-closeLevelTop">
                         <div class="menu-close text-right">
@@ -879,58 +911,58 @@
                         </div>
                       </div>
                       <div class="mobile-logo text-center">
-                        <a href="#"><img src="../../assets/images/logo.svg" alt="Logo"></a>
+                        <a href="#"><img src="/assets/images/logo.svg" alt="Logo"></a>
                       </div>
                       <li class="nav-item">
-                        <a href="#" class="openLevel js-openLevel">Startseite Schmuck  <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+                        <a href="#" class="openLevel js-openLevel">Startseite Schmuck  <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
                       </li>
                       <li class="nav-item">
                         <h6>KATEGORIEN</h6>
                       </li>
-                      <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ring <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-                      <li class="nav-item"><a href="#" class="openLevel js-openLevel">Armschmuck <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-                      <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ketten & Colliers <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-                      <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ohrschmuck <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-                      <li class="nav-item"><a href="#" class="openLevel js-openLevel">Accessoires <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+                      <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ring <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+                      <li class="nav-item"><a href="#" class="openLevel js-openLevel">Armschmuck <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+                      <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ketten & Colliers <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+                      <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ohrschmuck <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+                      <li class="nav-item"><a href="#" class="openLevel js-openLevel">Accessoires <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
                       <li class="nav-item">
                         <h6>MARKEN</h6>
                       </li>
-                      <li class="nav-item"><a href="#" class="openLevel js-openLevel">Wagner Juwelen Collectionen <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-                      <li class="nav-item"><a href="#" class="openLevel js-openLevel">Bulgari<img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-                      <li class="nav-item"><a href="#" class="openLevel js-openLevel">Chopard<img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+                      <li class="nav-item"><a href="#" class="openLevel js-openLevel">Wagner Juwelen Collectionen <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+                      <li class="nav-item"><a href="#" class="openLevel js-openLevel">Bulgari<img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+                      <li class="nav-item"><a href="#" class="openLevel js-openLevel">Chopard<img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
                     <h6>KATEGORIEN</h6>
                   </li>
-                  <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ring <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-                  <li class="nav-item"><a href="#" class="openLevel js-openLevel">Armschmuck <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-                  <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ketten & Colliers <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-                  <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ohrschmuck <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-                  <li class="nav-item"><a href="#" class="openLevel js-openLevel">Accessoires <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+                  <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ring <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+                  <li class="nav-item"><a href="#" class="openLevel js-openLevel">Armschmuck <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+                  <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ketten & Colliers <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+                  <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ohrschmuck <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+                  <li class="nav-item"><a href="#" class="openLevel js-openLevel">Accessoires <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
                   <li class="nav-item">
                     <h6>MARKEN</h6>
                   </li>
-                  <li class="nav-item"><a href="#" class="openLevel js-openLevel">Wagner Juwelen Collectionen <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-                  <li class="nav-item"><a href="#" class="openLevel js-openLevel">Bulgari<img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-                  <li class="nav-item"><a href="#" class="openLevel js-openLevel">Chopard<img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-                  <li><a href="#"><div class="schmuck-banner"><img src="../../assets/images/collection-banner4.jpg" alt="collection-banner4"></div></a></li>
+                  <li class="nav-item"><a href="#" class="openLevel js-openLevel">Wagner Juwelen Collectionen <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+                  <li class="nav-item"><a href="#" class="openLevel js-openLevel">Bulgari<img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+                  <li class="nav-item"><a href="#" class="openLevel js-openLevel">Chopard<img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+                  <li><a href="#"><div class="schmuck-banner"><img src="/assets/images/collection-banner4.jpg" alt="collection-banner4"></div></a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <h6>KATEGORIEN</h6>
               </li>
-              <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ring <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-              <li class="nav-item"><a href="#" class="openLevel js-openLevel">Armschmuck <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-              <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ketten & Colliers <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-              <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ohrschmuck <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-              <li class="nav-item"><a href="#" class="openLevel js-openLevel">Accessoires <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+              <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ring <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+              <li class="nav-item"><a href="#" class="openLevel js-openLevel">Armschmuck <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+              <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ketten & Colliers <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+              <li class="nav-item"><a href="#" class="openLevel js-openLevel">Ohrschmuck <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+              <li class="nav-item"><a href="#" class="openLevel js-openLevel">Accessoires <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
               <li class="nav-item">
                 <h6>MARKEN</h6>
               </li>
-              <li class="nav-item"><a href="#" class="openLevel js-openLevel">Wagner Juwelen Collectionen <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-              <li class="nav-item"><a href="#" class="openLevel js-openLevel">Bulgari<img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
-              <li class="nav-item"><a href="#" class="openLevel js-openLevel">Chopard<img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+              <li class="nav-item"><a href="#" class="openLevel js-openLevel">Wagner Juwelen Collectionen <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+              <li class="nav-item"><a href="#" class="openLevel js-openLevel">Bulgari<img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
+              <li class="nav-item"><a href="#" class="openLevel js-openLevel">Chopard<img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -1137,19 +1169,19 @@
           </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Anlässe <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+            <a class="nav-link" href="#">Anlässe <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Über Wagner <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+            <a class="nav-link" href="#">Über Wagner <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog <img src="../../assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
+            <a class="nav-link" href="#">Blog <img src="/assets/images/arrow-icon2.svg" alt="arrow-icon2" class="right-menu-icon"></a>
           </li>
           <li> 
             <div class="mobile-blog menu-blog-slider">
               <div class="mobile-blog-detail">
                 <div class="mobile-blog-img position-relative">
-                  <img src="../../assets/images/blog-subpage1.jpg" class="lazy" alt="blog-subpage1">
+                  <img src="/assets/images/blog-subpage1.jpg" class="lazy" alt="blog-subpage1">
                 </div>
                 <div class="menu-blog-content">
                   <a href="#" class="lead-text">Solitaire No 4</a>
@@ -1157,7 +1189,7 @@
               </div>
               <div class="mobile-blog-detail">
                 <div class="mobile-blog-img position-relative">
-                  <img src="../../assets/images/blog-subpage7.jpg" class="lazy" alt="blog-subpage1">
+                  <img src="/assets/images/blog-subpage7.jpg" class="lazy" alt="blog-subpage1">
                 </div>
                 <div class="menu-blog-content">
                   <a href="#" class="lead-text">TUDOR Style</a>
@@ -1165,7 +1197,7 @@
               </div>
               <div class="mobile-blog-detail">
                 <div class="mobile-blog-img position-relative">
-                  <img src="../../assets/images/blog-subpage1.jpg" class="lazy" alt="blog-subpage1">
+                  <img src="/assets/images/blog-subpage1.jpg" class="lazy" alt="blog-subpage1">
                 </div>
                 <div class="menu-blog-content">
                   <a href="#" class="lead-text">Solitaire No 4</a>
@@ -1173,7 +1205,7 @@
               </div>
               <div class="mobile-blog-detail">
                 <div class="mobile-blog-img position-relative">
-                  <img src="../../assets/images/blog-subpage7.jpg" class="lazy" alt="blog-subpage1">
+                  <img src="/assets/images/blog-subpage7.jpg" class="lazy" alt="blog-subpage1">
                 </div>
                 <div class="menu-blog-content">
                   <a href="#" class="lead-text">TUDOR Style</a>
@@ -1181,7 +1213,7 @@
               </div>
               <div class="mobile-blog-detail">
                 <div class="mobile-blog-img position-relative">
-                  <img src="../../assets/images/blog-subpage1.jpg" class="lazy" alt="blog-subpage1">
+                  <img src="/assets/images/blog-subpage1.jpg" class="lazy" alt="blog-subpage1">
                 </div>
                 <div class="menu-blog-content">
                   <a href="#" class="lead-text">Solitaire No 4</a>
@@ -1192,10 +1224,10 @@
           <li>
             <div class="mobile-menu-contact section">
               <ul>
-                <li><a href="" class="default-link-icon secondary-text-color"><img src="../../assets/images/phone-icon.svg" alt="phone-icon"> Kontakt</a></li>
-                <li><a href=""><img src="../../assets/images/service-icon.svg" alt="service-icon"> Service</a></li>
-                <li><a href=""><img src="../../assets/images/location-icon.svg" alt="location-icon"> Geschäfte</a></li>
-                <li><a href=""><img src="../../assets/images/language-icon.svg" alt="language-icon"> Deutsch</a></li>
+                <li><a href="" class="default-link-icon secondary-text-color"><img src="/assets/images/phone-icon.svg" alt="phone-icon"> Kontakt</a></li>
+                <li><a href=""><img src="/assets/images/service-icon.svg" alt="service-icon"> Service</a></li>
+                <li><a href=""><img src="/assets/images/location-icon.svg" alt="location-icon"> Geschäfte</a></li>
+                <li><a href=""><img src="/assets/images/language-icon.svg" alt="language-icon"> Deutsch</a></li>
               </ul>
             </div>
           </li>
@@ -1204,33 +1236,39 @@
     </div>
   </div>
 </header>
-   <!-- home-banner-slider -->
-  <div class="home-banner">
+  <!-- home-banner-slider -->
+  <div class="home-banner mt-10">
     <div class="container">
     <div class="row">
     <div class="col-lg-12">
+    <a href="javascript:" class="left-arrow" id="left-arrow"> 
+        <img src="/assets/images/arrow_left.svg" alt="Icon-top" >
+    </a> 
+    <a href="javascript:" class="right-arrow" id="right-arrow"> 
+       <img src="/assets/images/arrow_right.svg" alt="Icon-right">
+    </a>
     <div class="banner-slider">
     <div class="banner-m position-relative">
       <div class="banner-img position-relative">
         <picture>
-          <source media="(max-width: 767px)" srcset="../../assets/images/banner-mobile-img.png" />
-          <img src="../../assets/images/banner-image.png" alt="banner-image" />
+          <source media="(max-width: 767px)" srcset="assets/images/banner-mobile-img.webp" />
+          <img src="/assets/images/banner-image.webp" alt="banner-image" />
       </picture>
       </div>
     </div>
     <div class="banner-m position-relative">
       <div class="banner-img position-relative">
         <picture>
-          <source media="(max-width: 767px)" srcset="../../assets/images/banner-mobile-img.png" />
-          <img src="../../assets/images/banner-image.png" alt="banner-image" />
+          <source media="(max-width: 767px)" srcset="assets/images/banner-mobile-img.webp" />
+          <img src="/assets/images/banner-image.webp" alt="banner-image" />
       </picture>
       </div>
     </div>
     <div class="banner-m position-relative">
       <div class="banner-img position-relative">
         <picture>
-          <source media="(max-width: 767px)" srcset="../../assets/images/banner-mobile-img.png" />
-          <img src="../../assets/images/banner-image.png" alt="banner-image" />
+          <source media="(max-width: 767px)" srcset="assets/images/banner-mobile-img.webp" />
+          <img src="/assets/images/banner-image.webp" alt="banner-image" />
         </picture>
       </div>
       

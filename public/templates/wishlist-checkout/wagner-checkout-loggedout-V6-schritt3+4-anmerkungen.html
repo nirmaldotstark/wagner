@@ -206,7 +206,7 @@
                             <div class="form-group gift-banner" style="background-image: url(../../assets/images/gift-banner.jpg);">
                                 <h5 class="display-text3">Bestellung als Geschenk versenden?</h5>
                                 <p>Hinterlassen Sie Ihren Lieben einen netten Gruß.</p>
-                                <a href="#" class="primary-ghosted-btn d-inline-block" data-toggle="collapse" data-target="#gift-notes">Ihr Geschenkgruß</a>
+                                <a id="ihr_btn" href="#" class="primary-ghosted-btn d-inline-block" data-toggle="collapse" data-target="#gift-notes">Ihr Geschenkgruß</a>
                                 <div class="form-group collapse" id="gift-notes">
                                     <label for="gift_notes" class="d-none">.</label>
                                     <textarea value="" placeholder="Ihr Geschenkgruß" name="gift_notes" id="gift_notes"></textarea>
@@ -224,8 +224,8 @@
                                     <span class="checkmark"></span>
                                     Ich habe eine abweichende Rechnungsadresse
                                 </label>
-                                <label class="text-left" for="checkbox3"><div  class="d-none">.</div>
-                                    <input type="checkbox" name="checkbox3" id="checkbox3">
+                                <label class="text-left" for="comments_checkbox"><div  class="d-none">.</div>
+                                    <input type="checkbox" name="checkbox3" id="comments_checkbox">
                                     <span class="checkmark"></span>
                                     Ich habe Anmerkungen zu dieser Bestellung
                                 </label>
@@ -537,6 +537,21 @@
 <!-- JS Global Compulsory (Do not remove)-->
 <script src="../../assets/js/jquery.min.js" ></script>
 <script src="../../assets/js/slick.min.js"></script>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        setTimeout(() => { 
+            $('#comments_checkbox').click();
+        }, 1);
+        
+        $('#comments_checkbox').click(function() {
+            if($('#comments_checkbox').is(":checked"))  {
+                $('#add-notes').css('display','block');
+            } else {
+                $('#add-notes').css('display','none');
+            }
+        });
+    });
+     
+</script>
 </body>
 </html>
